@@ -1,0 +1,56 @@
+/* Navbar Container */
+.simple-navbar {
+    background-color: #363232; /* Black background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75); /* Black shadow */
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+/* Brand Styling */
+.simple-brand {
+    font-size: 1.5rem;
+    color: #ffffff; /* White text for brand */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.simple-brand:hover {
+    color: #ffffff; /* No hover effect */
+}
+
+/* Nav Links */
+.navbar-link {
+    font-size: 1.2rem;
+    color: #ffffff; /* White text */
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+/* @media screen and (min-width: 1024px) {
+    .home{
+        background-color: black;
+        
+       padding: 10px;
+        border-radius: 10px;
+    }
+} */
+
+/* Contact Button Styling */
+.contactUs {
+    font-size: 1rem;
+    color: #ffffff; /* White text */
+    background-color: rgb(224, 158, 34); /* Dark gray background for button */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.simple-contact:hover {
+    color: #ffffff; /* No hover effect */
+    background-color: #444444; /* Keep the same background */
+}
