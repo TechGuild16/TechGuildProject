@@ -1,33 +1,57 @@
+:root {
+    --navbarColor: #1A1A1A;
+    --navbarLinks: #0F0F0F;
+    --navbarLinksColor: #81807E;
+    --secondaryColor: #CE7D63;
+    --secondaryHoverColor: #ffaf94;
+}
+
 /* Navbar Container */
 .simple-navbar {
-    /* background-color: #363232; Black background */
-    background-color: #1A1A1A;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75); /* Black shadow */
-    padding: 10px 20px;
+    background-color: var(--navbarColor);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+    padding: 10px 0px;
     border-radius: 15px;
+    height: 12vh;
+    max-width: 1820px;
+
 }
 
 /* Brand Styling */
 .simple-brand {
     font-size: 1.5rem;
-    color: #ffffff; /* White text for brand */
-    font-weight: bold;
+    padding-left: 1.2vw;
+    color: #F3DFD8;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
 }
 
 .simple-brand:hover {
-    color: #ffffff; /* No hover effect */
+    color: #ffffff;
 }
 
-/* Nav Links */
-.navbar-link {
-    font-size: 1.2rem;
-    color: #ffffff; /* White text */
-    text-transform: uppercase;
-    padding: 10px 15px;
-    text-decoration: none;
+.nav-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 1vw;
+    background-color: var(--navbarLinks);
+    color: var(--navbarLinksColor);
+    border-radius: 0.5vw;
+}
+
+
+.navbar-link.active span {
+    background-color: var(--navbarLinks);
+    color: var(--secondaryHoverColor);
+    font-weight: 500;
+}
+
+
+.navbar-link:hover span {
+    background-color: var(--navbarLinks);
+    color:var(--secondaryHoverColor);
 }
 
 
@@ -40,18 +64,19 @@
     }
 } */
 
-/* Contact Button Styling */
-.contactUs {
-    font-size: 1rem;
-    color: #ffffff; /* White text */
-    background-color: rgb(224, 158, 34); /* Dark gray background for button */
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
+
+.getStarted {
+    background-color: var(--secondaryColor) !important;
+    color: #000 !important;
+}
+.navbar-collapse {
+    background-color:var(--navbarColor);
+    
+}
+.navbar-collapse .navbar-nav {
+    text-align: center; 
 }
 
-.simple-contact:hover {
-    color: #ffffff; /* No hover effect */
-    background-color: #444444; /* Keep the same background */
+.navbar-toggler .navbar-toggler-icon {
+    color: #fff;
 }

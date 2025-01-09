@@ -1,6 +1,6 @@
 import React from "react";
 import arrow from "../../Assets/arrowdown.png";
-import circle from "../../Assets/haflcircle.png";
+import circle from "../../Assets/startAProject.png";
 import "./Careers.css";
 import HowToApply from "./HowToApply/howToApply.jsx";
 import JobListings from "./joinTeam/jobListing";
