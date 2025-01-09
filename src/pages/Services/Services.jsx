@@ -1,8 +1,8 @@
 import React from "react";
-import arrow from "../../Assets/arrow.png";
+import arrow from "../../Assets/Arrow.png";
 import circle from "../../Assets/haflcircle.png";
-import sassImg from "../../Assets/servicePageSass.png";
-import FaqSection from "./ServiceComponents/FAQ section/FaqSection";
+import sassImg from "../../Assets/sassImage.jpeg";
+import FaqSection from "./ServiceComponents/FaqSection/FaqSection";
 import MarqueeService from "./ServiceComponents/MarqueeService";
 import OurService from "./ServiceComponents/OurService/OurService";
 import SucessStory from "./ServiceComponents/SuccessStories/SucessStory";
