@@ -1,0 +1,50 @@
+:root {
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --lightBlack: #1f1f1f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --careersText: #f9efec;
+  --paraText: #676665;
+  --timeLine: #b3b3b2;
+}
+
+.custom-card-container {
+  width: 98.2vw;
+  height: 116.06vh;
+  top: 767px;
+  left: 50px;
+  margin-top: 20px;
+  gap: 20px;
+  border-radius: 24px 24px 24px 24px;
+  border: 2px solid #1f1f1f;
+  opacity: 1;
+}
+
+.sub-container {
+  width: 95.2vw;
+  height: 12vh;
+  display: flex;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #1f1f1f;
+  background-color: var(--lightBlack);
+  align-items: center;
+  color: var(--careersText);
+}
+
+.sub-container h1 {
+  margin-top: 14px;
+  margin-left: 10px;
+}
+.small-div {
+  background-color: var(--lightBlack);
+}
+
+.size {
+  color: var(--careersText);
+}
+
+.description {
+  background-color: var(--lightBlack);
+}

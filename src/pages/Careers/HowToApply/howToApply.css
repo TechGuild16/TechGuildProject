@@ -1,0 +1,73 @@
+:root {
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --lightBlack: #1f1f1f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --careersText: #f9efec;
+  --paraText: #676665;
+  --timeLine: #b3b3b2;
+}
+.custum-card-container {
+  width: 1360px;
+  height: 991px;
+  position: absolute;
+  top: 1778px;
+  left: 40px;
+  padding: 10px 0 0 0;
+  gap: 10px;
+  border-radius: 20px 0 0 0;
+  border: 2px solid transparent;
+  opacity: 0;
+}
+.sub-container {
+  background-color: var(--navbarColor);
+}
+.card {
+  width: (327.5px) px;
+  height: 39.07vh;
+  gap: 0px;
+  border-radius: 12px 12px 12px 12px;
+  opacity: 0px;
+  background-color: var(--lightBlack);
+}
+
+.card-title {
+  width: Fill (327.5px) px;
+  height: (70px);
+  gap: 10px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  background-color: var(--lightBlack);
+  color: #81807e;
+}
+
+.card-subtitle {
+  width: 227.5px;
+  height: 30px;
+  padding: 30px 24px;
+  gap: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #262626;
+  opacity: 0;
+  color: var(--careersText);
+  background-color: #1f1f1f;
+  border-top: 2px solid #262626;
+}
+
+.card-text {
+  color: var(--careersText);
+  width: 279.5px;
+  height: 100px;
+  gap: 0px;
+  opacity: 0px;
+}
+.card-text p {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 24px;
+  text-align: left;
+  color: #b3b3b2;
+}
