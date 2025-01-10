@@ -4,7 +4,7 @@ import circle from "../../Assets/startAProject.png";
 import "./Careers.css";
 import HowToApply from "./HowToApply/howToApply.jsx";
 import JobListings from "./joinTeam/jobListing";
-import Testimonials from "./Testimonials/testimonials.jsx";
+import Testimonials from "./Testimonial/Testimonial.jsx";
 const Careers = () => {
   return (
     <>

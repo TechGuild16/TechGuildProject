@@ -37,11 +37,11 @@ const JobListings = () => {
   ];
 
   return (
-    <div className="p-4 custom-card-container">
-      <div className="sub-container">
-        <h1 className="mb-4">JOIN OUR TEAM AT NEXGEN</h1>
+    <div className="join-Main-div">
+      <div className="OurServiceHeading d-flex align-items-center justify-content-between">
+        <h1 className="uppercase">Join Our Team at NexGen</h1>
       </div>
-      <div className="mt-3 row g-4 ">
+      <div className="mt-1 row g-4">
         {jobs.map((job, index) => (
           <div key={index} className="col-md-6">
             <div className="card text-white h-100 small-div">

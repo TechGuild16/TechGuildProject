@@ -1,10 +1,12 @@
 import React from "react";
-import './Blogs.css'
-const Blog=()=>{
-    return(
-        <>
-                <h1>This is Blog page </h1>
-        </>
-    )
-}
-export default Blog
+import "./Blogs.css";
+import Testimonial from "./Testimonial/Testimonial";
+
+const Blog = () => {
+  return (
+    <>
+      <Testimonial />
+    </>
+  );
+};
+export default Blog;

@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../../../../../Assets/ServiceArrow.png";
+import arrow from "../../../../Assets/ServiceArrow.png";
 const TestimonialCard = ({
   heading,
   desc,
