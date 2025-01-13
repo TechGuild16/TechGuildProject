@@ -3,6 +3,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navigationbar/Navbar/Navbar.jsx";
+import Footer from "./components/ServiceComponents/Footer/Footer.jsx";
+import DynamicTitle from "./DynamicTitle.jsx";
 import About from "./pages/About/About.jsx";
 import Blog from "./pages/Blogs/Blogs.jsx";
 import Careers from "./pages/Careers/Careers.jsx";
@@ -10,21 +12,22 @@ import CaseStudy from "./pages/CaseStudy/CaseStudy.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Projects from "./pages/Projects/Projects.jsx";
-import Footer from "./pages/Services/ServiceComponents/Footer/Footer.jsx";
 import Services from "./pages/Services/Services.jsx";
 function App() {
   // Now navbar is an reusable component u can send link according to your need
   const navLinks = [
-    { path: "/services", label: "SERVICES", className: "service" },
+    { path: "/Services", label: "SERVICES", className: "service" },
     { path: "/CaseStudy", label: "CASE STUDY", className: "home" },
-    { path: "/about", label: "ABOUT", className: "about" },
-    { path: "/careers", label: "CAREERS", className: "careers" },
-    { path: "/blogs", label: "BLOGS", className: "blogs" },
-    { path: "/projects", label: "PROJECTS", className: "projects" },
+    { path: "/About", label: "ABOUT", className: "about" },
+    { path: "/Careers", label: "CAREERS", className: "careers" },
+    { path: "/Blogs", label: "BLOGS", className: "blogs" },
+    { path: "/Projects", label: "PROJECTS", className: "projects" },
+    { path: "/ContactUs", label: "CONTACT US", className: "projects" },
   ];
   return (
     <div className="App">
       <BrowserRouter>
+        <DynamicTitle />
         <Navbar
           brandName="TechGuild"
           brandLink="/"

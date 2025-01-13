@@ -1,12 +1,12 @@
 import React from "react";
-import arrow from "../../Assets/Arrow.png";
+import arrow from "../../Assets/arrow.png";
 import circle from "../../Assets/haflcircle.png";
-import sassImg from "../../Assets/sassImage.jpeg";
-import FaqSection from "./ServiceComponents/FAQ section/FaqSection";
-import MarqueeService from "./ServiceComponents/MarqueeService";
-import OurService from "./ServiceComponents/OurService/OurService";
-import SucessStory from "./ServiceComponents/SuccessStories/SucessStory";
-import Testimonial from "./ServiceComponents/Testimonial/Testimonial";
+import sassImg from "../../Assets/servicePageSass.png";
+import FaqSection from "../../components/FAQ section/FaqSection";
+import MarqueeService from "../../components/ServiceComponents/MarqueeService";
+import OurService from "../../components/ServiceComponents/OurService/OurService";
+import SucessStory from "../../components/ServiceComponents/SuccessStories/SucessStory";
+import Testimonial from "../../components/ServiceComponents/Testimonial/Testimonial";
 import "./Services.css";
 const Services = () => {
   return (

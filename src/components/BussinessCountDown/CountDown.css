@@ -1,0 +1,123 @@
+/* Main container styling */
+.countDown {
+    margin-top: 3vw;
+    width: 97.5vw;
+    min-height: 28.33vh;
+    border-radius: 12px;
+    background-color: var(--secondaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+  }
+  
+  /* Details section styling */
+  .countDownDetails {
+    width: 50%;
+  }
+  
+  .countDownDetails h3 {
+    font-weight: bold;
+    color: #000;
+    font-size: 3.5vw;
+    margin-bottom: 1vw;
+  }
+  
+  .countDownDetails p {
+    color: #333;
+    font-size: 1.2vw;
+    line-height: 1.5;
+  }
+  
+  /* Timer container styling */
+  .countDownTimer {
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+  }
+  
+  /* Timer box styling */
+  .timeBox {
+    background-color: #000;
+    color: #fff;
+    padding: 2vw;
+    border-radius: 8px;
+    width: 6vw;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* Number styling inside the box */
+  .timeBox h2 {
+    font-size: 2vw;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  
+  .timeBox .label {
+    position: absolute;
+    bottom: -2vw;
+    font-size: 1.2vw;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+  }
+  @media (max-width: 576px){
+    .countDown {
+      width: 92.5vw;
+      padding-bottom: 8vw;
+  }
+  .countDown{
+    flex-direction: column;
+  }
+  .countDownDetails {
+    width: 100%;
+}
+.countDownDetails h3 {
+  font-size: 8.5vw;
+}
+.countDownDetails p {
+  font-size: 3.2vw;
+}
+.timeBox .label {
+  position: absolute;
+  bottom: -6vw;
+  font-size: 3.2vw;
+}
+.footermarquee2 {
+  margin-top: 3vw;
+}
+.chooseTech :nth-child(2) row{
+  flex-direction: column;
+  padding-left: 2vw;
+}
+.chooseHeading {
+  padding: 3vw;
+}
+.guildCard {
+  padding: 4.5vw 2vw;
+}
+.chooseTechDiv {
+  width: 82.8vw;
+}
+.guildDetails h5 {
+  font-size: 6vw;
+}
+.guildCard :nth-child(2) img {
+  width: 11vw;
+}
+.timeBox {
+  width: 18vw;
+  height: 12vw;
+}
+.timeBox h2 {
+  font-size: 6vw;
+}
+  }

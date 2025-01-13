@@ -3,13 +3,15 @@ import circle from "../../Assets/haflcircle.png";
 import buttonLogo from "../../Assets/sassButton.png";
 import sassImg from "../../Assets/sassImage.jpeg";
 import shape from "../../Assets/Shape.png";
-import MarqueeService from "../Services/ServiceComponents/MarqueeService";
-import CountDown from "./BussinessCountDown/CountDown";
-import ChooseTech from "./ChooseTechGuild/ChooseTech";
+import CountDown from "../../components/BussinessCountDown/CountDown";
+import ChooseTech from "../../components/ChooseTechGuild/ChooseTech";
+import FaqSection from "../../components/FAQ section/FaqSection";
+import OurHomeService from "../../components/OurHomeService/OurHomeService";
+import OurWork from "../../components/OurWork/OurWork";
+import MarqueeService from "../../components/ServiceComponents/MarqueeService";
+import Testimonial from "../../components/ServiceComponents/Testimonial/Testimonial";
+import HomeStats from "../../components/StatsPage/HomeStats";
 import "./Home.css";
-import OurHomeService from "./OurHomeService/OurHomeService";
-import OurWork from "./OurWork/OurWork";
-import HomeStats from "./StatsPage/HomeStats";
 const Home = () => {
   return (
     <div className="home">
@@ -78,6 +80,8 @@ const Home = () => {
         <ChooseTech />
         <OurHomeService />
         <OurWork />
+        <Testimonial />
+        <FaqSection />
       </div>
     </div>
   );
