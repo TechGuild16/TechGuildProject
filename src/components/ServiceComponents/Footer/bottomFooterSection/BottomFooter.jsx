@@ -21,11 +21,11 @@ const BottomFooter = () => {
                         <div className="col-md-3  footerLinks"><FooterCard logo={behanceLogo} platformName="Behance" platformDesc="Create detailed presentations for our projects." /></div>
                     </div>
                 </div>
-                <div className="col-md-6  footerContainerSecond">
+                <div className="col-md-6 mt-3 mt-md-0 footerContainerSecond">
                     <div className="row">
                         <div className="col-md-12  footerLinksPart2">
                             <div className="row footerLinksShowcase">
-                                <div className="col-md-3  footerLinkStructure">
+                                <div className="col-6 col-md-3  footerLinkStructure">
                                     <h4>Home</h4>
                                     <div className="links">
                                         <Link>Why Us</Link>
@@ -34,7 +34,7 @@ const BottomFooter = () => {
                                         <Link>FAQ's</Link>
                                     </div>
                                 </div>
-                                <div className="col-md-3  footerLinkStructure">
+                                <div className="col-6 col-md-3  footerLinkStructure">
                                     <h4>Services</h4>
                                     <div className="links">
                                         <Link>Web Development</Link>
@@ -43,7 +43,7 @@ const BottomFooter = () => {
                                         <Link>Digital Marketing</Link>
                                     </div>
                                 </div>
-                                <div className="col-md-3  footerLinkStructure ">
+                                <div className="col-6 col-md-3  footerLinkStructure ">
                                     <h4>Projects</h4>
                                     <div className="links">
                                         <Link>Klothink</Link>
@@ -52,7 +52,7 @@ const BottomFooter = () => {
                                         <Link>Apex</Link>
                                     </div>
                                 </div>
-                                <div className="col-md-3  footerLinkStructure   structurelast ">
+                                <div className="col-6 col-md-3  footerLinkStructure   structurelast ">
                                     <h4>Blogs</h4>
                                     <div className="links">
                                         <Link>Business</Link>
