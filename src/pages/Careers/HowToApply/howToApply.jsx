@@ -1,8 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
+import React, { useState } from "react";
+import downbtn from "../../../Assets/downBtn.png";
+import rightArrow from "../../../Assets/rightArrow.png";
 import "./howToApply.css";
 
 const HowToApply = () => {
+  //***********STATES************//
+  const [showMore, setShowMore] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const steps = [
     {
       step: "Step 01",
@@ -54,38 +59,65 @@ const HowToApply = () => {
   ];
 
   return (
-    <div className="apply-Main-div">
-      <div className="OurServiceHeading d-flex align-items-center justify-content-between">
-        <h1 className="uppercase">Join Our Team at NexGen</h1>
+    <div
+      className="p-1 p-md-4 mt-3 mt-md-5 mx-3 rounded"
+      style={{ border: "2px solid var(--navbarColor)", width: "98vw" }}
+    >
+      <div
+        className="p-4 p-md-4 rounded d-flex justify-content-center align-items-center justify-content-md-start align-items-md-start"
+        style={{ backgroundColor: "var(--navbarColor)" }}
+      >
+        <h3 className="" style={{ color: "var(--textColor)" }}>
+          HOW TO APPLY
+        </h3>
       </div>
-      <div className="row w-100 m-1">
-        {steps.map((steps, index) => (
-          <div key={index} className="col-md-3">
-            <div
-              className="mt-3 rounded"
-              style={{ backgroundColor: "var(--navbarColor)" }}
-            >
-              <p
-                className="p-1 mb-1"
-                style={{ color: "var(--navbarLinksColor)" }}
-              >
-                {steps.step}
-              </p>
+      <div className="row">
+        {steps
+          .slice(0, showMore || !isMobile ? steps.length : 3)
+          .map((acheivement, index) => (
+            <div key={index} className="col-md-3 mt-2">
               <div
-                className="d-flex p-4 justify-content-center align-items-center mb-2"
-                style={{
-                  height: "14vh",
-                  backgroundColor: "var(--btnBackground",
-                }}
+                className="mt-3 rounded w-100 h-100"
+                style={{ backgroundColor: "var(--navbarColor)" }}
               >
-                <h5 style={{ color: "var(--textColor)" }}>{steps.title}</h5>
+                <p
+                  className="p-4 mb-2"
+                  style={{ color: "var(--navbarLinksColor)" }}
+                >
+                  {acheivement.step}
+                </p>
+                <div
+                  className="d-flex p-4 justify-content-center align-items-center mb-2"
+                  style={{
+                    height: "20vh",
+                    backgroundColor: "var(--btnBackground",
+                  }}
+                >
+                  <h5 style={{ color: "var(--textColor)" }}>
+                    {acheivement.title}
+                  </h5>
+                </div>
+                <p className="p-4" style={{ color: "var(--paragraphText)" }}>
+                  {acheivement.description}
+                </p>
               </div>
-              <p className="p-2" style={{ color: "var(--paragraphText)" }}>
-                {steps.description}
-              </p>
             </div>
-          </div>
-        ))}
+          ))}
+      </div>
+      <div className="d-block mt-4 d-md-none d-flex gap-2 w-100 p-2 justify-content-center align-items-center rounded backgroundColor">
+        <button
+          className="d-block d-md-none d-flex gap-2 w-100 p-2 justify-content-center align-items-center rounded backgroundColor"
+          onClick={() => setShowMore(!showMore)}
+          style={{
+            color: "var(--paragraphText)",
+            outline: "none",
+            border: "none",
+            transition: "ease-in-out 0.3s",
+          }}
+        >
+          <img src={showMore ? rightArrow : downbtn} alt="" />
+          {showMore ? "SHOW LESS" : "OUR ACHEIVEMENT"}
+        </button>
       </div>
     </div>
   );
