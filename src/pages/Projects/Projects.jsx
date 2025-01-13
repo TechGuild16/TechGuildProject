@@ -484,15 +484,15 @@ const Projects = () => {
                         <div className="col-md-4 mb-1 d-md-none">
                             <div className="row mb-2">
                                 <div className="col-md-12">
-                                    <div className="card" style={{ backgroundColor: 'var(--navbarColor)', height: '20vh' }}>
+                                    <div className="card" style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
                                         <div className="mt-3">
                                             <p className="mx-3" style={{ color: "var(--color)" }}>TECHANICAL USED</p>
-                                            <div className="d-flex flex-wrap mx-4 gap-3">
-                                                <span className="fs-6 w-50 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>React Native</span>
-                                                <span className="fs-6 w-25 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Fire base</span>
-                                                <span className="fs-6 w-25 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Redux</span>
-                                                <span className="fs-6 w-25 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Rest API</span>
-                                                <span className="fs-6 w-25 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Mongodb</span>
+                                            <div className="d-flex flex-wrap mx-4 gap-2">
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>React Native</span>
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Fire base</span>
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Redux</span>
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Rest API</span>
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Mongodb</span>
                                             </div>
                                         </div>
                                     </div>
@@ -529,15 +529,15 @@ const Projects = () => {
                         <div className="col-md-4 mb-1 d-md-none">
                             <div className="row mb-2">
                                 <div className="col-md-12">
-                                    <div className="card" style={{ backgroundColor: 'var(--navbarColor)', height: '20vh' }}>
+                                    <div className="card" style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
                                         <div className="mt-3">
                                             <p className="mx-3" style={{ color: "var(--color)" }}>TECHANICAL USED</p>
                                             <div className="d-flex flex-wrap mx-4 gap-3">
-                                                <span className="fs-6 w-50 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>WordPress</span>
-                                                <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>PHP</span>
-                                                <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>HTML5</span>
-                                                <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>CSS3</span>
-                                                <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>JAVASCRIPT</span>
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>HTML5</span>
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>CSS3</span>
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>JAVASCRIPT</span>
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>WordPress</span>
+                                                <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>PHP</span>
                                             </div>
                                         </div>
                                     </div>
