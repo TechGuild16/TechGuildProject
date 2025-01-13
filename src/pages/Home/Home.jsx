@@ -4,12 +4,14 @@ import circle from '../../Assets/haflcircle.png'
 import shape from '../../Assets/Shape.png'
 import sassImg from '../../Assets/sassImage.jpeg'
 import buttonLogo from '../../Assets/sassButton.png'
-import MarqueeService from "../Services/ServiceComponents/MarqueeService";
-import HomeStats from "./StatsPage/HomeStats";
-import CountDown from "./BussinessCountDown/CountDown";
-import ChooseTech from "./ChooseTechGuild/ChooseTech";
-import OurHomeService from "./OurHomeService/OurHomeService";
-import OurWork from "./OurWork/OurWork";
+import MarqueeService from "../../components/ServiceComponents/MarqueeService";
+import HomeStats from "../../components/StatsPage/HomeStats";
+import CountDown from "../../components/BussinessCountDown/CountDown";
+import ChooseTech from "../../components/ChooseTechGuild/ChooseTech";
+import OurHomeService from "../../components/OurHomeService/OurHomeService";
+import OurWork from "../../components/OurWork/OurWork";
+import Testimonial from "../../components/ServiceComponents/Testimonial/Testimonial";
+import FaqSection from '../../components/FAQ section/FaqSection'
 const Home = () => {
     return (
         <div className="home">
@@ -73,6 +75,8 @@ const Home = () => {
             <ChooseTech />
             <OurHomeService />
             <OurWork />
+            <Testimonial />
+            <FaqSection />
             </div>
         </div>
     )

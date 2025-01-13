@@ -65,3 +65,42 @@ code {
 ::-webkit-scrollbar {
   display: none;
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* globaly definded colors */
+:root {
+  --navbarColor: #1A1A1A;
+  --navbarLinks: #0F0F0F;
+  --navbarLinksColor: #81807E;
+  --secondaryColor: #CE7D63;
+  --secondaryHoverColor: #ffaf94;
+  --servicesText : #F9EFEC;
+  --paraText : #676665;
+  --successSectionLabelColor : #1F1F1F;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+.App{
+  background-color: var(--primaryColor);
+  min-height: 100vh;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root{
+  --primaryColor : #0b0b0b;
+}
+::-webkit-scrollbar{
+  display: none;
+}

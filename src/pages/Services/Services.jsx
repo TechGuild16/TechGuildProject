@@ -1,13 +1,13 @@
 import React from "react";
 import './Services.css';
 import circle from '../../Assets/haflcircle.png'
-import MarqueeService from "./ServiceComponents/MarqueeService";
+import MarqueeService from "../../components/ServiceComponents/MarqueeService";
 import sassImg from '../../Assets/servicePageSass.png'
 import arrow from '../../Assets/arrow.png'
-import OurService from "./ServiceComponents/OurService/OurService";
-import SucessStory from "./ServiceComponents/SuccessStories/SucessStory";
-import Testimonial from "./ServiceComponents/Testimonial/Testimonial";
-import FaqSection from "./ServiceComponents/FAQ section/FaqSection";
+import OurService from "../../components/ServiceComponents/OurService/OurService";
+import SucessStory from "../../components/ServiceComponents/SuccessStories/SucessStory";
+import Testimonial from "../../components/ServiceComponents/Testimonial/Testimonial";
+import FaqSection from "../../components/FAQ section/FaqSection";
 const Services = () => {
     return (
         <div className="service-container">
