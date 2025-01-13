@@ -3,8 +3,9 @@ import './CaseStudy.css'
 const CaseStudy = () => {
   return (
     <div>
-      this is casestudy
-    </div>
+        <h1>CaseStudy </h1>
+
+    </div> 
   )
 }
 
