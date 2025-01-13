@@ -23,19 +23,20 @@
   min-height: 57.31vh;
   position: relative;
 }
+
 .firstcareerContainer h1 {
   font-size: 4vw;
 }
+
 .secondcareerContainer {
   background-color: var(--navbarColor);
   margin-left: 1vw;
   width: 31vw;
   border-radius: 0.5vw;
   position: relative;
-}
-.secondcareerContainer {
   color: var(--careersText);
 }
+
 .secondcareerContainer .heading {
   font-size: 1.56vw;
   font-weight: 210;
@@ -44,21 +45,47 @@
   margin-left: 2px;
   margin-top: 3px;
 }
+
 .secondcareerContainer .paragraph {
   font-weight: 400;
-  font-size: 0.9vw;
-  line-height: 4.17px;
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.careerTextColor {
-  color: var(--careersText);
-}
-.paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 24px solid var(--navbarColor);
   padding-top: 1vw;
   width: 84.56%;
   color: var(--paraText);
+}
+
+/* For tablets and laptops */
+@media (min-width: 576px) {
+  .secondcareerContainer .paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+}
+
+/* For desktops */
+@media (min-width: 992px) {
+  .secondcareerContainer .paragraph {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+}
+
+/* For large desktops and bigger screens */
+@media (min-width: 1200px) {
+  .secondcareerContainer .paragraph {
+    font-size: 1.7rem;
+    line-height: 2.2;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.careerTextColor {
+  color: var(--careersText);
 }
 
 /************CTA BUTTON*********/
@@ -69,17 +96,20 @@
 .responsivelogo {
   display: none;
 }
+
 .callToActioncareer {
   position: absolute;
   bottom: 3%;
   width: 90%;
   padding-left: 1vw;
 }
-.careerbuttons :nth-child(1) h3 {
+
+.callToActioncareer h3 {
   color: #fff;
   font-weight: 400;
   font-size: 1.3vw;
 }
+
 .callToActioncareer :nth-child(2) h3 {
   color: #fff;
   font-weight: 400;
@@ -124,8 +154,9 @@
   .career-container {
     padding-left: 5vw;
   }
+
   .firstcareerContainer {
-    height: 68vh;
+    height: 49vh;
     border-radius: 23px;
   }
 
@@ -133,28 +164,35 @@
     height: 50vh;
     margin-top: 7vw;
   }
+
   .secondcareerContainer img {
     border-radius: 23px;
   }
+
   .heading h1 {
     font-size: 28px;
     padding-top: 3vw;
     padding-left: 2vw;
   }
+
   .headingtwo h1 {
     font-size: 28px;
     padding-left: 2vw;
   }
+
   .responsivelogo {
     display: block;
   }
+
   .responsivelogo img {
     width: 50vw;
     padding-top: 3vw;
   }
+
   .norespcircle {
     display: none;
   }
+
   .paragraph {
     padding-left: 2vw;
     padding-top: 3vw;

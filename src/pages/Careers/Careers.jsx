@@ -5,39 +5,38 @@ import "./Careers.css";
 import HowToApply from "./HowToApply/howToApply.jsx";
 import JobListings from "./joinTeam/jobListing";
 import Testimonials from "./Testimonial/Testimonial.jsx";
+
 const Careers = () => {
   return (
     <>
       <div className="career-container">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-8 firstcareerContainer">
-              <div className="">
-                <div className="heading">
-                  <h1 className="uppercase careerTextColor d-flex align-items-center gap-4">
-                    Unlock Your Potential
-                    <div className="d-flex align-items-center">
-                      <div className="outerarrowcircle norespcircle">
-                        <img src={circle} alt="" />
-                      </div>
+            <div className="col-md-8 col-12 firstcareerContainer">
+              <div className="heading">
+                <h1 className="uppercase careerTextColor d-flex align-items-center gap-4">
+                  Unlock Your Potential
+                  <div className="d-flex align-items-center">
+                    <div className="outerarrowcircle norespcircle">
+                      <img src={circle} alt="" />
                     </div>
-                  </h1>
-                </div>
-                <div className="headingtwo">
-                  <h1 className="uppercase careerTextColor">
-                    in the Digital World
-                  </h1>
-                </div>
-                <div className="d-flex align-items-center">
-                  <div className="outerarrowcircle responsivelogo ">
-                    <img src={circle} alt="" />
                   </div>
+                </h1>
+              </div>
+              <div className="headingtwo">
+                <h1 className="uppercase careerTextColor">
+                  in the Digital World
+                </h1>
+              </div>
+              <div className="d-flex align-items-center">
+                <div className="outerarrowcircle responsivelogo">
+                  <img src={circle} alt="" />
                 </div>
               </div>
             </div>
 
-            <div className="col-md-3 secondcareerContainer ">
-              <div class=" m-4 align-items-center">
+            <div className="col-md-4 col-12 secondcareerContainer">
+              <div className="m-4 align-items-center">
                 <div className="heading uppercase">
                   <h1>At NexGen</h1>
                 </div>
@@ -52,7 +51,6 @@ const Careers = () => {
                 </span>
               </div>
 
-              {/* <img src={sassImg} className="sassImage" alt="" /> */}
               <div className="callToActioncareer">
                 <div className="careerbuttons d-flex justify-content-between align-items-center">
                   <div className="d-flex gap-2 align-items-center">
@@ -65,6 +63,7 @@ const Careers = () => {
           </div>
         </div>
       </div>
+
       <div className="mt-3"></div>
       <JobListings />
       <div className="mt-3">
@@ -76,4 +75,5 @@ const Careers = () => {
     </>
   );
 };
+
 export default Careers;
