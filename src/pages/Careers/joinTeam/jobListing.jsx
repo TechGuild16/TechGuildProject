@@ -37,73 +37,90 @@ const JobListings = () => {
   ];
 
   return (
-    <div className="join-Main-div">
-      <div className="OurServiceHeading d-flex align-items-center justify-content-between">
-        <h1 className="uppercase">Join Our Team at NexGen</h1>
+    <>
+      <div className="container-fluid mt-3">
+        <div
+          className="p-1 p-md-4 mt-3 mt-md-5 rounded"
+          style={{ border: "2px solid var(--navbarColor)" }}
+        >
+        <div
+className="d-flex justify-content-between align-items-center p-4 mt-1 rounded"
+style={{ backgroundColor: "var(--navbarColor)" }}
+>
+<h3 style={{ color: "var(--textColor)" }}>
+ JOIN OUR TEAM AT NEXGEN
+</h3>
+</div>
+<div className="container-fluid mt-3">
+<div className="row mt-1 g-4">
+{jobs.map((job, index) => (
+<div key={index} className="col-md-6">
+<div className="text-white p-4 rounded small-div">
+  <div className="card-body">
+    <div className="d-flex justify-content-between align-items-center mb-3">
+      <h5 className="card-title">{job.title}</h5>
+      <button className="btn btn-sm btn-outline-light">
+        VIEW DETAILS
+      </button>
+    </div>
+
+    <div className="mb-3">
+      <div className="d-flex justify-content-between small mb-2">
+        <span
+          className="py-1 rounded time-line description"
+          style={{ color: "#B3B3B2" }}
+        >
+          Salary:{" "}
+          <span style={{ color: "#E6E6E6" }}>{job.salary}</span>
+        </span>
+        <span
+          className="px-2 py-1 rounded time-line description"
+          style={{ color: "#B3B3B2" }}
+        >
+          Experience:{" "}
+          <span style={{ color: "#E6E6E6" }}>{job.experience}</span>
+        </span>
       </div>
-      <div className="mt-1 row g-4">
-        {jobs.map((job, index) => (
-          <div key={index} className="col-md-6">
-            <div className="card text-white h-100 small-div">
-              <div className="card-body">
-                <div className="d-flex justify-content-between align-items-center mb-3">
-                  <h5 className="card-title">{job.title}</h5>
-                  <button className="btn btn-sm btn-outline-light">
-                    VIEW DETAILS
-                  </button>
-                </div>
-
-                <div className="mb-3">
-                  <div className="d-flex justify-content-between small mb-2">
-                    <span
-                      className="px-2 py-1 rounded time-line description"
-                      style={{ color: "#B3B3B2" }}
-                    >
-                      Salary:{" "}
-                      <span style={{ color: "#E6E6E6" }}>{job.salary}</span>
-                    </span>
-                    <span
-                      className="px-2 py-1 rounded time-line description"
-                      style={{ color: "#B3B3B2" }}
-                    >
-                      Experience:{" "}
-                      <span style={{ color: "#E6E6E6" }}>{job.experience}</span>
-                    </span>
-                  </div>
-                  <div className="small">
-                    <span
-                      className="px-2 py-1 rounded time-line description"
-                      style={{ color: "#B3B3B2" }}
-                    >
-                      Deadline:{" "}
-                      <span style={{ color: "#E6E6E6" }}>{job.deadline}</span>
-                    </span>
-                  </div>
-                </div>
-
-                <div className="mb-3">
-                  <h6>SKILLS</h6>
-                  <p className="small" style={{ color: "#B3B3B2" }}>
-                    {job.skills}
-                  </p>
-                </div>
-
-                <button
-                  className="btn btn-block w-100"
-                  style={{
-                    backgroundColor: "#e9967a",
-                    color: "white",
-                    border: "none",
-                  }}
-                >
-                  APPLY NOW
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
+      <div className="small">
+        <span
+          className="px-2 py-1 rounded time-line description"
+          style={{ color: "#B3B3B2" }}
+        >
+          Deadline:{" "}
+          <span style={{ color: "#E6E6E6" }}>{job.deadline}</span>
+        </span>
       </div>
     </div>
+
+    <div className="mb-3">
+      <h6>SKILLS</h6>
+      <p className="small" style={{ color: "#B3B3B2" }}>
+        {job.skills}
+      </p>
+    </div>
+
+    <button
+      className="btn btn-block w-100"
+      style={{
+        backgroundColor: "#e9967a",
+        color: "white",
+        border: "none",
+      }}
+    >
+      APPLY NOW
+    </button>
+  </div>
+</div>
+</div>
+))}
+</div>
+</div>
+
+        </div>
+      </div>
+
+    </>
+
   );
 };
 export default JobListings;

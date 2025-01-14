@@ -61,7 +61,7 @@ const HowToApply = () => {
   return (
     <div
       className="p-1 p-md-4 mt-3 mt-md-5 mx-3 rounded"
-      style={{ border: "2px solid var(--navbarColor)", width: "98vw" }}
+      style={{ border: "2px solid var(--navbarColor)"}}
     >
       <div
         className="p-4 p-md-4 rounded d-flex justify-content-center align-items-center justify-content-md-start align-items-md-start"

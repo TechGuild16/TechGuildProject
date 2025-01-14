@@ -6,6 +6,7 @@ import Button from '../../Assets/Button.png';
 import star from '../../Assets/Star.png';
 import Ruler from '../../Assets/Ruler Pen.png';
 import Shield from '../../Assets/Shield User.png';
+import halfcircle from '../../Assets/haflcircle.png';
 import Stopwatch from '../../Assets/Stopwatch.png';
 import vector from '../../Assets/Vector.png';
 import Balloon from '../../Assets/Balloon.png';
@@ -177,7 +178,7 @@ const Projects = () => {
                                     <h1 style={{ color: "var(--textColor)" }}>EMPOWERING YOUR</h1>
                                     <h1 style={{ color: "var(--textColor)" }}>DGITAL VISION</h1>
                                 </div>
-                                <img className="img-fluid mb-3 mb-md-1 order-0 order-md-2" src={Button} alt="" />
+                                <img className="img-fluid mb-3 mb-md-1 order-0 order-md-2" src={halfcircle} alt="" />
                             </div>
                             <p className="d-flex align-items-center ms-4 w-75 ms-md-5" style={{ color: 'var( --paraText)', textAlign: 'justify' }}>At NexGen, we are committed to empowering your digital vision with innovative solutions tailored to your unique needs. Our team of skilled professionals, coupled with cutting-edge technologies, ensures that we deliver exceptional results that elevate your online presence.</p>
                         </div>
@@ -315,8 +316,8 @@ const Projects = () => {
 
                     <div className="p-3 mt-3 rounded" style={{ border: "2px solid var(--navbarColor)" }}>
                         <div className="row">
-                            <div className="col-md-4 mb-3 mb-md-1 order-1 order-md-0">
-                                <div className="card p-3 pt-md-5 h-100" style={{ backgroundColor: 'var(--navbarColor)' }}>
+                            <div className="col-md-4 mb-3 mb-md-1 order-2 order-md-0">
+                                <div className="rounded p-3 pt-md-5 h-100 w-100" style={{ backgroundColor: 'var(--navbarColor)' }}>
                                     <div className="d-flex gap-5">
                                         <div className="d-flex justify-content-start align-items-center gap-2">
                                             <img className="p-2 rounded mb-2" style={{ border: "1px solid var(--border)" }} src={vector} alt="" />
@@ -343,24 +344,24 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className="col-12 col-md-4 mb-1 order-2 order-md-0">
-                                <div className="card h-100" style={{ backgroundColor: 'var(--navbarColor)', height: '60vh' }}>
-                                    <img src={projectImg} alt="" style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: "8px" }} />
+                            <div className="col-12 col-md-4 mb-2 order-1 order-md-0">
+                                <div className="h-100 w-100 rounded" style={{ backgroundColor: 'var(--navbarColor)', height: '60vh' }}>
+                                    <img src={projectImg} alt="project Image" style={{ objectFit: 'cover', width: '100%', height: '100%',borderRadius: "8px"}} />
                                 </div>
                             </div>
 
                             <div className="col-md-4 mb-1 d-none d-md-block">
                                 <div className="row mb-2">
                                     <div className="col-md-12">
-                                        <div className="card" style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
-                                            <div className="mt-3">
-                                                <p className="mx-3" style={{ color: "var(--color)" }}>TECHANICAL USED</p>
+                                        <div className="rounded" style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
+                                            <div>
+                                                <p className="mx-3 pt-2" style={{ color: "var(--color)" }}>TECHANICAL USED</p>
                                                 <div className="d-flex flex-wrap mx-3 gap-3">
-                                                    <span className="fs-6 w-25 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>React Native</span>
-                                                    <span className="fs-6 w-25 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Fire base</span>
-                                                    <span className="fs-6 w-25 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Redux</span>
-                                                    <span className="fs-6 w-25 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Rest API</span>
-                                                    <span className="fs-6 w-25 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Mongodb</span>
+                                                    <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>React Native</span>
+                                                    <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Fire base</span>
+                                                    <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Redux</span>
+                                                    <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Rest API</span>
+                                                    <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Mongodb</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -369,7 +370,7 @@ const Projects = () => {
 
                                 <div className="row mb-2">
                                     <div className="col-md-12">
-                                        <div className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: 'var(--navbarColor)', height: '18vh' }}>
+                                        <div className="d-flex justify-content-center align-items-center rounded" style={{ backgroundColor: 'var(--navbarColor)', height: '18vh' }}>
                                             <div className="d-flex justify-content-center align-items-center gap-3">
                                                 <h5 style={{ color: "var(--color)", fontSize: "14px" }}>TEAM MEMBERS</h5>
                                                 <div className="d-flex gap-1">
@@ -386,7 +387,7 @@ const Projects = () => {
                                 </div>
                                 <div className="row mb-4">
                                     <div className="col-md-12">
-                                        <div className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: 'var(--secondaryColor)', height: '10vh' }}>
+                                        <div className="rounded d-flex justify-content-center align-items-center" style={{ backgroundColor: 'var(--secondaryColor)', height: '10vh' }}>
                                             <h5>BOOK A CALL</h5>
                                         </div>
                                     </div>
@@ -399,7 +400,7 @@ const Projects = () => {
                     <div className="p-3 mt-3 rounded" style={{ border: "2px solid var(--navbarColor)" }}>
                         <div className="row">
                             <div className="col-md-4 mb-md-1 order-3 order-md-0">
-                                <div className="card p-3 pt-md-5 h-100" style={{ backgroundColor: 'var(--navbarColor)' }}>
+                                <div className="rounded mt-2 p-3 pt-md-5 h-100 w-100" style={{ backgroundColor: 'var(--navbarColor)' }}>
                                     <div className="d-flex gap-5">
                                         <div className="d-flex justify-content-start align-items-center gap-2">
                                             <img className="p-2 rounded " style={{ border: "1px solid var(--border)" }} src={Balloon} alt="" />
@@ -427,7 +428,7 @@ const Projects = () => {
                             </div>
 
                             <div className=" col-md-4 mb-1">
-                                <div className="card h-100" style={{ backgroundColor: 'var(--navbarColor)', height: '60vh' }}>
+                                <div className="h-100 w-100" style={{ backgroundColor: 'var(--navbarColor)' }}>
                                     <img src={projectShowCase} alt="" style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: "8px" }} />
                                 </div>
                             </div>
@@ -435,9 +436,8 @@ const Projects = () => {
                             <div className="col-md-4 mb-1  d-none d-md-block">
                                 <div className="row mb-2">
                                     <div className="col-md-12">
-                                        <div className="card" style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
-                                            <div className="mt-3">
-                                                <p className="mx-3" style={{ color: "var(--color)" }}>TECHANICAL USED</p>
+                                        <div className="rounded" style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
+                                                <p className="mx-3 pt-2" style={{ color: "var(--color)" }}>TECHANICAL USED</p>
                                                 <div className="d-flex flex-wrap mx-3 gap-2">
                                                     <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>WordPress</span>
                                                     <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>PHP</span>
@@ -445,14 +445,13 @@ const Projects = () => {
                                                     <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>CSS3</span>
                                                     <span className="fs-6 w-25 p-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>JAVASCRIPT</span>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="row mb-2">
                                     <div className="col-md-12">
-                                        <div className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: 'var(--navbarColor)', height: '18vh' }}>
+                                        <div className="d-flex justify-content-center align-items-center rounded" style={{ backgroundColor: 'var(--navbarColor)', height: '18vh' }}>
                                             <div className="d-flex justify-content-center align-items-center gap-3">
                                                 <h5 style={{ color: "var(--color)", fontSize: "14px" }}>TEAM MEMBERS</h5>
                                                 <div className="d-flex gap-1">
@@ -469,7 +468,7 @@ const Projects = () => {
                                 </div>
                                 <div className="row mb-4">
                                     <div className="col-md-12">
-                                        <div className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: 'var(--secondaryColor)', height: '10vh' }}>
+                                        <div className="d-flex justify-content-center align-items-center rounded" style={{ backgroundColor: 'var(--secondaryColor)', height: '10vh' }}>
                                             <h5>BOOK A CALL</h5>
                                         </div>
                                     </div>
@@ -480,12 +479,11 @@ const Projects = () => {
                     </div>
 
                     {/******************visible on small screen**************/}
-                    <div className="p-3 mt-3 rounded d-md-none" style={{ border: "2px solid var(--navbarColor)", display: isVisible ? 'block' : 'none' }}>
+                    <div className="p-2 mt-3 rounded d-md-none" style={{ border: "2px solid var(--navbarColor)", display: isVisible ? 'block' : 'none' }}>
                         <div className="col-md-4 mb-1 d-md-none">
                             <div className="row mb-2">
                                 <div className="col-md-12">
-                                    <div className="card" style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
-                                        <div className="mt-3">
+                                 <div className="mt-2 pt-3 rounded" style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
                                             <p className="mx-3" style={{ color: "var(--color)" }}>TECHANICAL USED</p>
                                             <div className="d-flex flex-wrap mx-4 gap-2">
                                                 <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>React Native</span>
@@ -495,13 +493,12 @@ const Projects = () => {
                                                 <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>Mongodb</span>
                                             </div>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
 
                             <div className="row mb-2">
                                 <div className="col-md-12">
-                                    <div className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: 'var(--navbarColor)', height: '20vh' }}>
+                                    <div className="d-flex rounded pt-3 justify-content-center align-items-center" style={{ backgroundColor: 'var(--navbarColor)', height: '20vh' }}>
                                         <div className="d-flex flex-column justify-content-center align-items-center gap-3">
                                             <h5 style={{ color: "var(--color)", fontSize: "14px" }}>TEAM MEMBERS</h5>
                                             <div className="d-flex gap-1">
@@ -518,7 +515,7 @@ const Projects = () => {
                             </div>
                             <div className="row mb-4">
                                 <div className="col-md-12">
-                                    <div className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: 'var(--secondaryColor)', height: '5vh' }}>
+                                    <div className="d-flex justify-content-center align-items-center rounded" style={{ backgroundColor: 'var(--secondaryColor)', height: '5vh' }}>
                                         <h5>BOOK A CALL</h5>
                                     </div>
                                 </div>
@@ -529,8 +526,7 @@ const Projects = () => {
                         <div className="col-md-4 mb-1 d-md-none">
                             <div className="row mb-2">
                                 <div className="col-md-12">
-                                    <div className="card" style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
-                                        <div className="mt-3">
+                                        <div className="mt-1 pt-3 rounded"  style={{ backgroundColor: 'var(--navbarColor)', height: '25vh' }}>
                                             <p className="mx-3" style={{ color: "var(--color)" }}>TECHANICAL USED</p>
                                             <div className="d-flex flex-wrap mx-4 gap-3">
                                                 <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>HTML5</span>
@@ -540,14 +536,12 @@ const Projects = () => {
                                                 <span className="fs-6 p-2 d-flex justify-content-center align-items-center" style={{ backgroundColor: "var(--btnBackground)", borderRadius: '2rem', color: "var(--color)" }}>PHP</span>
                                             </div>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
 
                             <div className="row mb-2">
                                 <div className="col-md-12">
-                                    <div className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: 'var(--navbarColor)', height: '18vh' }}>
-                                        <div className="d-flex  flex-column justify-content-center align-items-center gap-3">
+                                        <div className="d-flex pt-3 flex-column rounded justify-content-center align-items-center gap-3"style={{ backgroundColor: 'var(--navbarColor)', height: '18vh' }}>
                                             <h5 style={{ color: "var(--color)", fontSize: "14px" }}>TEAM MEMBERS</h5>
                                             <div className="d-flex gap-1">
                                                 <div><img className="w-100" src={Team_1} alt="" /></div>
@@ -558,12 +552,10 @@ const Projects = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                </div>
                             </div>
-                            <div className="row mb-4">
+                            <div className="row">
                                 <div className="col-md-12">
-                                    <div className="card d-flex justify-content-center align-items-center" style={{ backgroundColor: 'var(--secondaryColor)', height: '5vh' }}>
+                                    <div className="d-flex rounded justify-content-center align-items-center" style={{ backgroundColor: 'var(--secondaryColor)', height: '5vh' }}>
                                         <h5>BOOK A CALL</h5>
                                     </div>
                                 </div>
@@ -701,11 +693,12 @@ const Projects = () => {
                         <div className="col-md-5">
                             <div className="row mb-2">
                                 <div className="col-md-12">
-                                    <div className="card d-flex" style={{ backgroundColor: 'var(--navbarColor)' }}>
-                                        <h4 className="p-4 mb-0" style={{ color: "var(--textColor)" }}>Ask Your Question</h4>
+                                    <div className="rounded" style={{ backgroundColor: 'var(--navbarColor)'}}>
+                                        <h4 className="p-2 mb-0" style={{ color: "var(--textColor)" }}>Ask Your Question</h4>
+                                        
                                         <form className="p-4" onSubmit={handleSubmit}>
                                             <div>
-                                                <label className="fs-6" htmlFor="" style={{ color: "var(--textColor)" }}>Name</label>
+                                                <label className="fs-5" htmlFor="" style={{ color: "var(--textColor)" }}>Name</label>
                                                 <input
                                                     type="text"
                                                     className="form-control mt-2 p-3"
@@ -718,7 +711,7 @@ const Projects = () => {
                                             </div>
 
                                             <div className="mt-3">
-                                                <label className="fs-6" htmlFor="" style={{ color: "var(--textColor)" }}>Email</label>
+                                                <label className="fs-5" htmlFor="" style={{ color: "var(--textColor)" }}>Email</label>
                                                 <input
                                                     type="email"
                                                     className="form-control mt-2 p-3"
@@ -742,12 +735,11 @@ const Projects = () => {
                                                     style={{ fontSize: "18px" }}
                                                 />
                                             </div>
-                                            <button type="submit" className="btn sendMessageBtn mt-3 p-2 fs-6">
-                                                Send Your Message
+                                            <button className="rounded w-100 mt-3 p-2 p-md-2 fw-bold fs-5" type="submit" style={{backgroundColor:"var(--secondaryColor)",outline:"none",border:"none",color:"var(--navbarColor)"}} >
+                                               SEND YOUR MESSAGE
                                             </button>
 
                                         </form>
-
                                     </div>
                                 </div>
                             </div>
