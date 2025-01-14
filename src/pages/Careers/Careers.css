@@ -196,5 +196,6 @@
   .paragraph {
     padding-left: 2vw;
     padding-top: 3vw;
+    margin-bottom: 4px;
   }
 }

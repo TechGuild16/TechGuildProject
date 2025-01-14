@@ -41,10 +41,10 @@ const JobListings = () => {
       <div className="OurServiceHeading d-flex align-items-center justify-content-between">
         <h1 className="uppercase">Join Our Team at NexGen</h1>
       </div>
-      <div className="mt-1 row g-4">
+      <div className=" row g-4">
         {jobs.map((job, index) => (
-          <div key={index} className="col-md-6">
-            <div className="card text-white h-100 small-div">
+          <div key={index} className="p-3 col-md-6 ">
+            <div className="card  text-white h-100 small-div">
               <div className="card-body">
                 <div className="d-flex justify-content-between align-items-center mb-3">
                   <h5 className="card-title">{job.title}</h5>

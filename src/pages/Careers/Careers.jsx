@@ -9,11 +9,11 @@ import Testimonials from "./Testimonial/Testimonial.jsx";
 const Careers = () => {
   return (
     <>
-      <div className="career-container">
+      <div className="career-container ">
         <div className="container-fluid">
-          <div className="row">
+          <div className="row ">
             <div className="col-md-8 col-12 firstcareerContainer">
-              <div className="heading">
+              <div className="heading h-100">
                 <h1 className="uppercase careerTextColor d-flex align-items-center gap-4">
                   Unlock Your Potential
                   <div className="d-flex align-items-center">
@@ -40,7 +40,7 @@ const Careers = () => {
                 <div className="heading uppercase">
                   <h1>At NexGen</h1>
                 </div>
-                <span className="paragraph">
+                <span className="paragraph ">
                   We believe in fostering a dynamic and collaborative work
                   environment that empowers our team members to excel in their
                   respective fields. Join us to be part of a passionate and
@@ -51,9 +51,9 @@ const Careers = () => {
                 </span>
               </div>
 
-              <div className="callToActioncareer">
+              <div className="callToActioncareer mt-3">
                 <div className="careerbuttons d-flex justify-content-between align-items-center">
-                  <div className="d-flex gap-2 align-items-center">
+                  <div className="d-flex gap-2 align-items-center mt-2">
                     <img src={arrow} alt="" />
                     <h3 className="uppercase">Know more</h3>
                   </div>
