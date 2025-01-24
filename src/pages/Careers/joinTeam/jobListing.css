@@ -1,0 +1,63 @@
+:root {
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --lightBlack: #1f1f1f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --careersText: #f9efec;
+  --paraText: #676665;
+  --timeLine: #b3b3b2;
+}
+.join-Main-div {
+  margin-left: 2vh;
+  margin-top: 4vw;
+  margin-right: 1.5vw;
+  border: 4px solid var(--navbarColor);
+  border-radius: 23px;
+}
+.join-card-container {
+  padding-top: 1vw;
+  margin-left: 2vh;
+  margin-top: 10px;
+  /* gap: 20px; */
+  border-radius: 24px 24px 24px 24px;
+  border: 2px solid #1f1f1f;
+  opacity: 1;
+}
+
+.join-sub-container {
+  width: 95.2vw;
+  height: 12vh;
+  display: flex;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #1f1f1f;
+  background-color: var(--lightBlack);
+  align-items: center;
+  color: var(--careersText);
+}
+
+.join-sub-container h1 {
+  margin-top: 14px;
+  margin-left: 10px;
+}
+.small-div {
+  background-color: var(--lightBlack);
+}
+
+.size {
+  color: var(--careersText);
+}
+
+.description {
+  background-color: var(--lightBlack);
+}
+
+.card {
+  margin-left: 0.7vh;
+  margin-right: 0.7vh;
+  border-radius: 0.73vw; /* Converted radius (14px) */
+  padding: 1.6vw; /* Converted padding (50px) */
+
+  gap: 0.5vh;
+}

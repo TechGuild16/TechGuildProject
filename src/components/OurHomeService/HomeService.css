@@ -1,0 +1,84 @@
+.HomeService{
+    margin-top: 4vw;
+    min-height: 100vh;
+    border: 4px solid var(--navbarColor);
+    border-radius: 12px;
+    padding: 1vw;
+    margin-right: 1vw;
+}
+.HomeServiceHeading{
+    background-color: var(--navbarColor);
+    padding: 2vw;
+    border-radius: 12px;
+}
+.HomeServiceHeading h3{
+    color: var(--servicesText);
+}
+.homeServiceContainer{
+    width: 46.6vw;
+    min-height: 39.07vh;
+    border-radius: 12px;
+    background-color: var(--navbarColor);
+}
+.HomeServiceCard :nth-child(1) img{
+    width: 4vw;
+}
+.HomeServiceCard :nth-child(1) p{
+    font-size: 1.5vw;
+    color: var(--servicesText);
+    padding-top: .5vw;
+}
+.register p{
+    color: #777777 !important;
+    font-size: 1.3vw !important;
+}
+.serviceDescription{
+    /* padding-left: 2vw; */
+    display: flex;
+    flex-direction: column;
+}
+.serviceDescription p{
+    color:#777777 ;
+}
+.serviceDescription h5{
+    color: var(--servicesText);
+    font-weight: 400;
+}
+@media (max-width: 576px){
+    .ourcarder{
+        flex-direction: column;
+        align-items: start;
+    }
+    .mypadding{
+        padding-left: 1.5vw;
+    }
+    .register p{
+        display: none;
+    }
+    .register img{
+        
+        display: none;
+    }
+    .HomeServiceCard :nth-child(1) img {
+        width: 14vw !important;
+    }
+    .HomeServiceCard :nth-child(1) p {
+        font-size: 4.5vw !important;
+    }
+    .HomeServiceCard :nth-child(1) img {
+        width: 13vw;
+    }
+    .HomeServiceCard :nth-child(1) p {
+        font-size: 3.5vw;
+    }
+    .register p {
+        color: #777777 !important;
+        font-size: 4.3vw !important;
+    }
+    .serviceDescription {
+        padding: 0vw !important;
+    }
+    .serviceDescription h5 {
+        padding-bottom: 3vw;
+    }
+}

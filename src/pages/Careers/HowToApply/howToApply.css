@@ -1,0 +1,7 @@
+.backgroundColor {
+  background-color: var(--navbarColor);
+}
+
+.apply-header {
+  width: 97vw;
+}

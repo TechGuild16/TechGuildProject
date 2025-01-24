@@ -1,10 +1,153 @@
 import React from "react";
-import './Blogs.css'
-const Blog=()=>{
-    return(
-        <>
-                <h1>This is Blog page </h1>
-        </>
-    )
-}
-export default Blog
+import arrow from "../../Assets/Arrow.png";
+import blog_1 from "../../Assets/blog-img-1.png";
+import MoreBlogs from "./MoreBlogs/MoreBlogs.jsx";
+import Testimonial from "./Testimonial/Testimonial.jsx";
+const Blogs = () => {
+  const data = [
+    { label: "Category", value: "• Design" },
+    { label: "Read Time", value: "• 6 Mins" },
+    { label: "Author", value: "• Laura Turner" },
+  ];
+
+  return (
+    <>
+      <div className="container-fluid mt-1 mt-md-4">
+        <div
+          className="p-3 rounded"
+          style={{ border: "2px solid var(--navbarColor)" }}
+        >
+          <div
+            className="d-flex justify-content-between p-4 mt-1 rounded d-none d-md-flex"
+            style={{ backgroundColor: "var(--navbarColor)" }}
+          >
+            <h3 className="mt-2" style={{ color: "var(--textColor)" }}>
+              OUR BLOGS
+            </h3>
+            <div className="d-flex">
+              <button
+                className="mx-2 rounded p-3 font-weight-bold"
+                style={{
+                  backgroundColor: "var(--btnBackground)",
+                  outline: "none",
+                  border: "none",
+                  color: "var(--paragraphText)",
+                }}
+              >
+                BUSINESS
+              </button>
+              <button
+                className="mx-2 rounded border-0 p-3 font-weight-bold"
+                style={{
+                  backgroundColor: "var(--secondaryColor)",
+                  outline: "none",
+                  color: "var(--navbarLinks)",
+                }}
+              >
+                DESIGN
+              </button>
+              <button
+                className="mx-2 rounded p-3 font-weight-bold"
+                style={{
+                  backgroundColor: "var(--btnBackground)",
+                  outline: "none",
+                  border: "none",
+                  color: "var(--paragraphText)",
+                }}
+              >
+                DEVELOPMENT
+              </button>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-4">
+              <img
+                src={blog_1}
+                alt="Blog"
+                style={{
+                  marginTop: "2vh",
+                }}
+              />
+            </div>
+            <div className="col-md-8">
+              <div
+                className=" p-3 col-md-12 rounded pt-5 pt-md-2 mt-3 mt-md-3"
+                style={{
+                  backgroundColor: "var(--navbarColor)",
+                  height: "66vh",
+                }}
+              >
+                <div className="text-white p-2 rounded-3">
+                  <div className="container">
+                    {/* Title */}
+                    <h1 className="display-6 mb-5 mt-4">
+                      WEB DESIGN TRENDS SHAPING 2024
+                    </h1>
+
+                    {/* Meta Information */}
+                    <div className="d-flex gap-4 mb-5 text-secondary">
+                      {data.map((item, index) => (
+                        <div
+                          key={index}
+                          className="d-flex align-items-center"
+                          style={{
+                            border: "2px solid transparent",
+                            borderRadius: "24px",
+                            backgroundColor: "#1f1f1f",
+                            padding: "8px 12px",
+                            gap: "6px",
+                          }}
+                        >
+                          <span className="me-2">{item.label}</span>
+                          <span className="text-white">{item.value}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-secondary mb-5">
+                      Stay ahead of the design curve with insights into the
+                      latest web design trends. From immersive user experiences
+                      to bold color choices, explore the design elements that
+                      will dominate the digital landscape in 2023 and beyond.
+                    </p>
+
+                    {/* Footer */}
+                    <div className="d-flex justify-content-between align-items-center">
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ gap: "3px" }}
+                      >
+                        <div>
+                          <img className="w-55" src={arrow} alt="Right Arrow" />
+                        </div>
+                        <div className="custom-h5 mt-2">
+                          <h5 style={{ color: "#B3B3B2" }}>READ FULL BLOGS</h5>
+                        </div>
+                      </div>
+
+                      <div className="text-secondary">
+                        Published Date{" "}
+                        <span className="text-white">7TH FEBRUARY 2023</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <MoreBlogs />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-2">
+        <Testimonial />
+      </div>
+    </>
+  );
+};
+
+export default Blogs;

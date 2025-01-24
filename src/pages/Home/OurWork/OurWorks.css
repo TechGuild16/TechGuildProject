@@ -1,0 +1,17 @@
+.ourWorks{
+    margin-top: 4vw;
+    min-height: 100vh;
+    margin-right: 1vw;
+}
+.ourWorkHeading{
+    background-color: var(--navbarColor);
+    border-radius: 12px;
+}
+.ourWorkHeading h4{
+    color: var(--servicesText);
+    font-size: 2.5vw;
+}
+.ourWorkHeading :nth-child(2) p{
+    color: var(--paraText);
+    padding-top: .5vw;
+}
