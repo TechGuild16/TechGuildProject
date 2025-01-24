@@ -47,7 +47,7 @@ const Navbar = ({ brandName, brandLink, navLinks, customClass }) => {
             ))}
             <li className="nav-item">
               <Link className="nav-link" to="/contact">
-                <span className="getStarted">GET STARTED</span>
+                <span className="contactUs">CONTACT US</span>
               </Link>
             </li>
           </ul>
