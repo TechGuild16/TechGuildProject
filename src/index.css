@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
 }
 
+=======
+  
+}
+.App{
+  background-color: var(--primaryColor);
+  min-height: 100vw;
+}
+>>>>>>> aaf28504afec27f38012a5fa81405e5f01072747
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD
+=======
+:root{
+  --primaryColor : #0b0b0b;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+>>>>>>> aaf28504afec27f38012a5fa81405e5f01072747
