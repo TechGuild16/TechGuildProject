@@ -59,7 +59,14 @@ const HowToApply = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <>
+=======
+    <div
+      className="p-1 p-md-4 mt-3 mt-md-5 mx-3 rounded"
+      style={{ border: "2px solid var(--navbarColor)"}}
+    >
+>>>>>>> origin/anuja
       <div
         className="p-2 p-md-4 mx-3 mt-3 mt-md-5 rounded apply-header"
         style={{ border: "2px solid var(--navbarColor)" }}

@@ -23,8 +23,8 @@
     padding-left: 1.2vw;
     color: #F3DFD8;
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1.5px;
     text-decoration: none;
 }
 
@@ -65,7 +65,7 @@
 } */
 
 
-.getStarted {
+.contactUs {
     background-color: var(--secondaryColor) !important;
     color: #000 !important;
 }

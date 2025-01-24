@@ -80,7 +80,7 @@ const BottomFooter = () => {
                     <div className="row mt-3">
                         <div className="col-md-12  footerLinksPart4">
                             <div className="d-flex align-items-center justify-content-between">
-                                <p>© 2024 NextGen. All rights reserved.</p>
+                                <p>© 2024 TechGuild. All rights reserved.</p>
                                 <div className="d-flex gap-2 align-items-center">
                                     <p>Terms & Conditions</p>
                                     <p>Privacy Policy</p>
