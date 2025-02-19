@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import downbtn from "../../../Assets/downBtn.png";
-import rightArrow from '../../../Assets/arrowup.png';
+import rightArrow from '../../../Assets/rightArrow.png';
+import arrowUp from '../../../Assets/arrowup.png';
 import serviceArrow from "../../../Assets/serviceArrow.png";
 import TestimonialImg_1 from "../../../Assets/TestimonialImg-1.png";
 import TestimonialImg_2 from "../../../Assets/TestimonialImg-2.png";
