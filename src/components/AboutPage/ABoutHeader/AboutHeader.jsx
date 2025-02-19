@@ -27,9 +27,9 @@ const AboutHeader = () => {
     <>
       
       <div className="row">
-          <div className="col-md-7">
+          <div className="col-md-7 about-header">
             <div
-              className="col-12 rounded pt-5 mt-5 d-none d-md-block"
+              className="col-12 rounded pt-5 mt-3 d-none d-md-block"
               style={{
                 padding: "10px",
                 backgroundColor: "var(--navbarColor)",
@@ -55,7 +55,7 @@ const AboutHeader = () => {
 
             {/******** visible on small screen  *********/}
 
-            <div
+             <div
               className="col-12 rounded pt-4 h-100 d-md-none"
               style={{ backgroundColor: "var(--navbarColor)" }}
             >
@@ -79,7 +79,7 @@ const AboutHeader = () => {
 
           <div className="col-md-5">
             <div
-              className="col-md-12 rounded pt-5 pt-md-2 mt-3 mt-md-5"
+              className="col-md-12 rounded pt-5 pt-md-2 mt-0 mt-md-3"
               style={{ backgroundColor: "var(--navbarColor)", height: "64vh" }}
             >
               <div className="row">
@@ -120,10 +120,14 @@ const AboutHeader = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
+       
+
+
       
     </>
   )
 }
 
 export default AboutHeader
+

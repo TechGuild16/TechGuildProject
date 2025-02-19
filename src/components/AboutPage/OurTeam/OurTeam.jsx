@@ -63,7 +63,7 @@ const OurTeam = () => {
   return (
     <>
        <div
-          className="p-1 p-md-3 mt-3 mt-md-5 rounded"
+          className="p-1 p-md-2 mt-3 mt-md-5 rounded"
           style={{ border: "2px solid var(--navbarColor)" }}
         >
           <div

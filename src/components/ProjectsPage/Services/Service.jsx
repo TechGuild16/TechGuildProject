@@ -4,7 +4,7 @@ import Ruler from '../../../Assets/Ruler Pen.png';
 import Shield from '../../../Assets/Shield User.png';
 import Stopwatch from '../../../Assets/Stopwatch.png';
 import downbtn from '../../../Assets/downBtn.png';
-import rightArrow from '../../../Assets/rightArrow.png';
+import rightArrow from '../../../Assets/arrowup.png';
 const Service = () => {
     const [showMore, setShowMore] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -50,16 +50,16 @@ const Service = () => {
     
   return (
     <>
-       <div className="p-1 mt-3 mt-md-5 rounded" style={{ border: "2px solid var(--navbarColor)" }}>
+       <div className="p-1  rounded ourFeatures" style={{ border: "2px solid var(--navbarColor)" }}>
                     <div className="text-white p-4 rounded" style={{ backgroundColor: "var(--navbarColor)" }}>
                         <h3>KEY FEATURES OF OUR PROJECTS</h3>
                     </div>
                     <div className="container-fluid mt-3">
-                        <div className="row">
+                       
                             <div className="row">
                                 {services.slice(0, showMore || !isMobile ? services.length : 3).map((service, index) => (
-                                    <div key={index} className="col-12 ms-2 ms-md-0 col-md-3 mb-2">
-                                        <div className="p-4 w-100 h-100 rounded" style={{ backgroundColor: "var(--navbarColor)" }}>
+                                    <div key={index} className="col-12  ms-md-0 col-md-3 mb-2">
+                                        <div className="p-4 h-100  rounded" style={{ backgroundColor: "var(--navbarColor)"}}>
                                             <img className="p-2 rounded" style={{ border: "1px solid var(--border)" }} src={service.image} alt={service.title} />
                                             <h5 className="mt-5" style={{ color: "var(--servicesText)" }}>{service.title}</h5>
                                             <p style={{ color: "var(--paragraphText)" }}>{service.description}</p>
@@ -71,13 +71,14 @@ const Service = () => {
                                 <button className="d-block gap-2 d-md-none d-flex p-2 w-100 justify-content-center align-items-center rounded  backgroundColor" onClick={() => setShowMore(!showMore)} style={{ color: "var(--paragraphText)", outline: "none", border: 'none', transition: "ease-in-out 0.3s" }}>
                                     <img src={showMore ? rightArrow : downbtn} alt="" />
                                     {showMore ? "VIEW LESS" : "ALL SERVICES"}
+                                    
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div>
                     </div>
-                </div>
+               
     </>
   )
 }

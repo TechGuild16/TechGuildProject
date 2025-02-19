@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import downbtn from "../../../Assets/downBtn.png";
-import rightArrow from "../../../Assets/rightArrow.png";
+import rightArrow from '../../../Assets/arrowup.png';
 import serviceArrow from "../../../Assets/serviceArrow.png";
 import TestimonialImg_1 from "../../../Assets/TestimonialImg-1.png";
 import TestimonialImg_2 from "../../../Assets/TestimonialImg-2.png";
 import TestimonialImg_3 from "../../../Assets/TestimonialImg-3.png";
 import TestimonialImg_4 from "../../../Assets/TestimonialImg-4.png";
-
+import './Testimonial.css'
 const Testimonial = () => {
     const [showMore, setShowMore] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -68,7 +68,7 @@ const Testimonial = () => {
     return (
         <>
             <div
-                className="p-3 mt-3 mt-md-5 rounded"
+                className="p-3 py-1 pb-0 mt-3 mt-md-5 rounded testimonial-top"
                 style={{ border: "2px solid var(--navbarColor)" }}
             >
                 <div
@@ -88,7 +88,7 @@ const Testimonial = () => {
                         .map((testimonial, index) => (
                             <div key={index} className="col-md-3">
                                 <div
-                                    className="mt-3 rounded"
+                                    className="mt-2 rounded"
                                     style={{ backgroundColor: "var(--navbarColor)" }}
                                 >
                                     <div className="p-3">
@@ -144,7 +144,7 @@ const Testimonial = () => {
 
                 <div className="mt-3">
                     <button
-                        className="d-block d-md-none d-flex gap-2 w-100 p-2 justify-content-center align-items-center rounded backgroundColor"
+                        className="d-block d-md-none d-flex gap-2 w-100 p-2 mb-2 justify-content-center align-items-center rounded backgroundColor"
                         onClick={() => setShowMore(!showMore)}
                         style={{
                             color: "var(--paragraphText)",

@@ -6,7 +6,7 @@ import cards from '../../../Assets/Card.png';
 const ProjectHeader = () => {
     return (
         <>
-            <div className="container-fluid mt-3 mt-md-5" style={{ minHeight: "50vh", borderRadius: "10px", backgroundColor: "var(--navbarColor)" }}>
+            <div className="container-fluid mt-2 mt-md-5 project-header" style={{ minHeight: "50vh", borderRadius: "10px", backgroundColor: "var(--navbarColor)" }}>
                 <div className="row">
                     <div className="col-12 col-md-8 pt-3 md-pt-5 mt-2 md-mt-5">
                         <div className="d-flex flex-column flex-md-row justify-content-start align-items-center ms-0 ms-md-5 gap-4">
