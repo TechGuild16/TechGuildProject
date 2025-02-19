@@ -55,14 +55,40 @@
 }
 
 
-/* @media screen and (min-width: 1024px) {
-    .home{
-        background-color: black;
-        
-       padding: 10px;
-        border-radius: 10px;
-    }
-} */
+ @media screen and (max-width: 768px) {
+   #navbarNav{
+    margin-top: 8vw !important;
+    border-radius: 3vw !important;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+   }
+   .nav-item span{
+    background-color: unset;
+   }
+   .navbar-link.active span {
+    background-color: unset !important;
+   }
+   .navbar-collapse .navbar-nav{
+    text-align: center !important;
+    padding-right: 4vw;
+    padding-left: 4vw;
+   }
+   .navbar-toggler .navbar-toggler-icon{
+    filter: invert(1);
+   }
+   .navbar-toggler{
+    background-color: #0a0a0a;
+   }
+   .contactUs{
+    padding: 2vw 3vw;
+    border-radius: 2vw;
+
+   }.simple-navbar {
+    padding: 18px 0px;
+   }
+} 
 
 
 .contactUs {

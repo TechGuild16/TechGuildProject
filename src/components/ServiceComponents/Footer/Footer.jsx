@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import arrow from '../../../Assets/serviceArrow.png'
+import arrow from '../../../Assets/ServiceArrow.png'
 import MarqueeService from '../MarqueeService'
 import BottomFooter from './bottomFooterSection/BottomFooter'
 const Footer = () => {

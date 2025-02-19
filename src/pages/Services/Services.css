@@ -1,7 +1,7 @@
 
 .service-container {
     width: 100vw;
-    padding-top: 2vw;
+    padding-top: 1vw;
     padding-left: 1.2vw;
 }
 
@@ -78,6 +78,9 @@
 }
 /*************************************Responsive*************************/
 @media (max-width: 991px) {
+    body,html{
+        overflow-x: hidden;
+    }
     .firstServiceContainer {
         height: 50vh; 
     }
@@ -111,10 +114,7 @@
     .service-container {
         padding-left: 5vw; 
     }
-    .firstServiceContainer{
-        height: 68vh;
-        border-radius: 23px;
-    }
+   
     
     .secondServiceContainer {
         height: 50vh;
@@ -149,6 +149,20 @@
         padding-top: 3vw;
     }
     .marquee{
+        border-radius: 23px;
+    }
+  #serviceContainer1{
+    height: 65vh !important;
+  }
+    .Servicebuttons :nth-child(1) h3 {
+        font-size: 4.3vw;
+    }
+    .callToActionService :nth-child(2) h3 {
+        font-size: 4.3vw;
+        padding: 3vw;
+    }
+    .firstServiceContainer {
+        height: 61vh !important;
         border-radius: 23px;
     }
 }

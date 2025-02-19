@@ -4,7 +4,10 @@
     border-radius: 12px;
     margin-right: 1vw;
     padding: 1vw;
-    margin-top: 4vw;
+    margin-top: 1vw;
+}
+.moiblechoosetext{
+    display: none;
 }
 .chooseHeading{
     background-color: var(--navbarColor);
@@ -47,6 +50,9 @@
         border-radius: 12px;
         
     }
+    .guildDetails h5{
+        font-weight: 500;
+    }
     .chooseTech{
         padding-bottom: 6vw;
         padding-left: 3vw;
@@ -56,7 +62,7 @@
         flex-direction: column;
     }
     .guildCard :nth-child(2) img {
-        width: 12vw;
+        width: 10vw;
     }
     .HomeServiceCard :nth-child(1) img {
         width: 11vw;
@@ -72,5 +78,23 @@
     }
     .HomeServiceCard :nth-child(1) img {
         width: 14vw;
+    }
+    .guildCard :nth-child(2) p{
+        padding: 0vw;
+    }
+    .chooseHeading{
+        margin-top: 1vw;
+        margin-right: 1.4vw;
+        padding: 5vw;
+    }
+    .moiblechoosetext{
+        display: block;
+    }
+    .desktopchoosetextr{
+        display: none;
+    }
+    .lastfinalc{
+        gap: 8px !important;
+        align-items: center;
     }
 }

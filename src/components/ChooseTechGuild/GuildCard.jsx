@@ -8,7 +8,7 @@ const GuildCard = ({title,desc}) => {
         <h5 className='uppercase'>{title}</h5>
         <p>{desc}</p>
       </div>
-      <div className="d-flex align-items-center gap-3">
+      <div className="d-flex lastfinalc align-items-center gap-3">
         <img src={arrow} alt="" />
         <p>Learn More</p>
       </div>

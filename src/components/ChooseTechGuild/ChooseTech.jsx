@@ -5,7 +5,8 @@ const ChooseTech = () => {
     return (
         <div className='chooseTech'>
             <div className="chooseHeading d-flex align-items-center justify-content-center">
-                <h3 className='uppercase'>Reasons to Choose Tech Guild </h3>
+                <h3 className='uppercase desktopchoosetextr'>Reasons to Choose Tech Guild </h3>
+                <h3 className='uppercase moiblechoosetext'>Reasons to Choose Tech Guild For your digital journey </h3>
             </div>
             <div className="container-fluid mt-3">
                 <div className="row gap-3">

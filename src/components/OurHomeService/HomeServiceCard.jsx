@@ -16,7 +16,8 @@ const HomeServiceCard = ({imageLink,serviceName,agencyDesc}) => {
       </div>
       <div className="serviceDescription px-4">
         <p>{agencyDesc}</p>
-        <h5 className='align-self-end px-4'>Know More</h5>
+        <h5 className='align-self-end px-4 knowmorecardesk'>Know More</h5>
+        <button className='bookACall'>Book a call</button>
       </div>
     </div>
   )

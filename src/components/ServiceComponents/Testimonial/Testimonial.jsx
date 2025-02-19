@@ -17,7 +17,7 @@ const Testimonial = () => {
                 </div>
             </div>
             <div className="container-fluid mycontainer">
-                <div className="row gap-2 testidiv" >
+                <div className="row gap-2" >
                     <div className="col-md-2 firstTestimonalbox "><TestimonialCard heading="NexGen turned our business around!" desc="Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!" personName='Sarah Thompson' personDesignation='CEO of Bluetooth' personImage={person1} /></div>
                     <div className="col-md-2 firstTestimonalbox "><TestimonialCard heading="NexGen turned our business around!" desc="Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!" personName='Wade Warren' personDesignation='Art Director' personImage={person2}  /></div>
                     <div className="col-md-2 firstTestimonalbox  "><TestimonialCard heading='Working with NexGen was a pleasure' desc="Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive."personName="Lisa Williams" personDesignation="CEO Of HealthTech" personImage={person3} /></div>

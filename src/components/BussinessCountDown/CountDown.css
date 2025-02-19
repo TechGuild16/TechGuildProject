@@ -1,6 +1,6 @@
-/* Main container styling */
+
 .countDown {
-    margin-top: 3vw;
+    margin-top: 1vw;
     width: 97.5vw;
     min-height: 28.33vh;
     border-radius: 12px;
@@ -11,7 +11,6 @@
     padding: 2vw 3vw;
   }
   
-  /* Details section styling */
   .countDownDetails {
     width: 50%;
   }
@@ -73,6 +72,7 @@
     .countDown {
       width: 92.5vw;
       padding-bottom: 8vw;
+      margin-top: 5vw !important;
   }
   .countDown{
     flex-direction: column;
@@ -81,7 +81,8 @@
     width: 100%;
 }
 .countDownDetails h3 {
-  font-size: 8.5vw;
+  font-size: 6.5vw;
+  font-weight: 500;
 }
 .countDownDetails p {
   font-size: 3.2vw;
@@ -92,7 +93,7 @@
   font-size: 3.2vw;
 }
 .footermarquee2 {
-  margin-top: 3vw;
+  margin-top: 3vw !important;
 }
 .chooseTech :nth-child(2) row{
   flex-direction: column;

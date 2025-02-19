@@ -10,10 +10,10 @@ import Testimonial from "../../components/ServiceComponents/Testimonial/Testimon
 import "./Services.css";
 const Services = () => {
   return (
-    <div className="service-container">
+    <div className="service-container " >
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-8 firstServiceContainer">
+          <div className="col-md-8 firstServiceContainer"  id="serviceContainer1">
             <div className="">
               <div className="heading">
                 <h1 className="uppercase serviceTextColor d-flex align-items-center gap-4">

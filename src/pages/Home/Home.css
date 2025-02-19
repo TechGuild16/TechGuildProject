@@ -1,6 +1,6 @@
 .homeContainer{
     min-height: 100vh;
-    padding-top: 2vw;
+    padding-top: 1vw;
     padding-left: 1.2vw;
 }
 .AboutTechGuild{
@@ -54,11 +54,18 @@
         padding-left: 3.2vw;
         padding-right: 4vw;
     }
+    .marqueeContainer {
+        height: 7vh !important;
+        margin-bottom: 3vw;
+    }
     .firstServiceContainer {
         padding-left: 5vw;
     }
     .homeContainer {
         padding-top: 4vw;
+    }
+    .marquee {
+        border-radius: 7px;
     }
     .heading h1 {
         font-size: 34px;
@@ -75,5 +82,12 @@
     .sassimg {
         width: 16.3vw;
         padding-right: .5vw;
+    }
+    .knowmoredeskt{
+        display: none;
+    }
+ 
+    .knowmoremobile{
+
     }
 }
