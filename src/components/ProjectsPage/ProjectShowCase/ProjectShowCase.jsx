@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import './ProjectShowCase';
 
 import downbtn from '../../../Assets/downBtn.png';
+
 import vector from '../../../Assets/Vector.png';
 import Balloon from '../../../Assets/Balloon.png';
 import serviceArrow from '../../../Assets/serviceArrow.png';
-import rightArrow from '../../../Assets/rightArrow.png';
+import rightArrow from '../../../Assets/arrowup.png';
 import projectShowCase from '../../../Assets/projectShowCaseImg.png';
 import projectImg from '../../../Assets/projectImg.png';
 import Team_1 from '../../../Assets/Image-1.png';
@@ -41,7 +42,7 @@ const ProjectShowCase = () => {
         <>
             {/* This block is visible on medium and larger screens */}
             <div
-                className="d-flex justify-content-between p-4 mt-5 rounded d-none d-md-flex"
+                className="d-flex justify-content-between p-4 mt-4 rounded d-none d-md-flex"
                 style={{ backgroundColor: "var(--navbarColor)" }}
             >
                 <h3 style={{ color: "var(--textColor)" }}>PROJECTS SHOWCASE</h3>
@@ -82,9 +83,9 @@ const ProjectShowCase = () => {
             </div>
 
             {/* This block is for buttons and will show on small screens */}
-            <div className="p-2 mt-3 rounded d-md-none" style={{ border: "2px solid var(--navbarColor)" }}>
+           
                 <div
-                    className="d-flex justify-content-between p-4 mt-2 mt-md-5 rounded d-block d-md-none"
+                    className="d-flex justify-content-between p-4 mt-4 mt-md-5 rounded d-block d-md-none"
                     style={{ backgroundColor: "var(--navbarColor)" }}
                 >
                     <h3 style={{ color: "var(--textColor)" }}>PROJECTS SHOWCASE</h3>
@@ -123,12 +124,12 @@ const ProjectShowCase = () => {
                         MARKETING
                     </button>
                 </div>
-            </div>
+           
 
             <div>
                 {/* PROJECT SHOW CASE  */}
 
-                <div className="p-3 mt-3 rounded" style={{ border: "2px solid var(--navbarColor)" }}>
+                <div className="p-3 mt-3 mt-md-2 rounded" style={{ border: "2px solid var(--navbarColor)" }}>
                     <div className="row">
                         <div className="col-md-4 mb-3 mb-md-1 order-2 order-md-0">
                             <div className="rounded p-3 pt-md-5 h-100 w-100" style={{ backgroundColor: 'var(--navbarColor)' }}>

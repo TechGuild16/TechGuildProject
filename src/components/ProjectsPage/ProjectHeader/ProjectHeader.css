@@ -1,0 +1,8 @@
+.project-header{
+    margin-bottom:4rem;
+}
+@media (max-width: 576px){
+    .project-header{
+        margin-bottom:2rem;
+    }
+}

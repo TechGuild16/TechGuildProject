@@ -59,7 +59,7 @@ const FAndQ = () => {
       };
   return (
     <>
-         <div className="d-flex justify-content-between align-items-center  p-4 mt-4 rounded" style={{ backgroundColor: "var(--navbarColor)" }}>
+         <div className="d-flex justify-content-between align-items-center  p-4 mt-4 mt-md-5 rounded" style={{ backgroundColor: "var(--navbarColor)" }}>
                     <h3 style={{ color: "var(--textColor)" }}>FREQUENTLY ASKED QUESTIONS</h3>
                     <div className="d-none d-md-flex  align-items-center gap-3">
                         <img className="mb-2" src={serviceArrow} alt="" />
@@ -117,7 +117,7 @@ const FAndQ = () => {
                             <div className="row mb-2">
                                 <div className="col-md-12">
                                     <div className="rounded" style={{ backgroundColor: 'var(--navbarColor)'}}>
-                                        <h4 className="p-2 mb-0 mt-2 mx-2" style={{ color: "var(--textColor)" }}>Ask Your Question</h4>
+                                        <h4 className="p-2 mb-0 mt-2 mt-md-0 mx-2" style={{ color: "var(--textColor)" }}>Ask Your Question</h4>
                                         
                                         <form className="p-4" onSubmit={handleSubmit}>
                                             <div>
