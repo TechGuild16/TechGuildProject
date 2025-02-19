@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import awardIcon from "../../../Assets/awardIcon.png";
 import downbtn from "../../../Assets/downBtn.png";
-import rightArrow from '../../../Assets/arrowup.png';
+import rightArrow from '../../../Assets/arrowright.png';
+import arrowup from '../../../Assets/arrowup.png';
 import './AwardsAndRecongnition.css'
 const AwardsAndRecongnition = () => {
     const [showMore, setShowMore] = useState(false);
@@ -79,7 +80,7 @@ const AwardsAndRecongnition = () => {
                         {award.dates}
                       </p>
                       <img
-                      className="w-25"
+                     className="w-25"
                         style={{ width: "4vw" }}
                         src={award.icon}
                         alt=""
@@ -112,7 +113,7 @@ const AwardsAndRecongnition = () => {
                 transition: "ease-in-out 0.3s",
               }}
             >
-              <img src={showMore ? rightArrow : downbtn} alt="" />
+              <img src={showMore ? arrowup : downbtn} alt="" />
               {showMore ? "SHOW LESS" : "ALL AWARDS AND RECOGNITIONS"}
             </button>
           </div>
