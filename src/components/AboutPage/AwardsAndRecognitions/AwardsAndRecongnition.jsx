@@ -79,7 +79,7 @@ const AwardsAndRecongnition = () => {
                         {award.dates}
                       </p>
                       <img
-                        // className="w-25"
+                      className="w-25"
                         style={{ width: "4vw" }}
                         src={award.icon}
                         alt=""

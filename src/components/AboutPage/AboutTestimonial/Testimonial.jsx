@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import downbtn from "../../../Assets/downBtn.png";
-import rightArrow from '../../../Assets/rightArrow.png';
-import arrowUp from '../../../Assets/arrowup.png';
+import rightArrow from '../../../Assets/arrowright.png';
+import arrowup from '../../../Assets/arrowup.png';
 import serviceArrow from "../../../Assets/serviceArrow.png";
 import TestimonialImg_1 from "../../../Assets/TestimonialImg-1.png";
 import TestimonialImg_2 from "../../../Assets/TestimonialImg-2.png";
@@ -154,7 +154,7 @@ const Testimonial = () => {
                             transition: "ease-in-out 0.3s",
                         }}
                     >
-                        <img src={showMore ? rightArrow : downbtn} alt="" />
+                        <img src={showMore ? arrowup : downbtn} alt="" />
                         {showMore ? "LESS TESTIMONIAL" : "ALL TESTIMONIAL"}
                     </button>
                 </div>

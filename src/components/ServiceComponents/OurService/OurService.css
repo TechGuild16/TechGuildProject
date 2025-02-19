@@ -2,7 +2,7 @@
 
 .OurServiceMainDiv{
     min-height: 100vh;
-    margin-top: 4vw;
+    margin-top: 1vw;
     border:4px solid var(--navbarColor);
     margin-right: 1.5vw;
     border-radius: 23px;
@@ -74,6 +74,9 @@
     margin-top: 1.2vw;
     position: relative;
 }
+.respbuttonprice{
+    display: none;
+}
 .projectimagefix{
     width: 100%;
     height: 100%;
@@ -82,6 +85,9 @@
     overflow: hidden;
     border-radius: 1vw;
     border: 1px solid #404040;
+}
+.priceflexprice{
+    display: none;
 }
 .bottomCardDiv{
     position: absolute;
@@ -108,17 +114,78 @@
         width: 85vw;
         min-height: 28.17vh;
     }
+    .OurServiceMainDiv{
+        margin-top: 4vw;
+    }
+    .OurServiceHeading {
+        border-radius: 7px !important;
+    }
+    .serviceHeading{
+        align-items: unset;
+    }
+    .serviceCard {
+        padding: 6vw 2vw;
+    }
+    .OurServiceHeading{
+        margin-top: 2vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 4vw;
+    }
+    .OurServiceHeading h1 {
+        font-size: 7vw;
+    }
     .cardimagefix{
         width: 12vw;
     }
     .serviceHeading :nth-child(1) h3 {
         font-size: 4vw;
+        padding-top: 2vw;
     }
     .serviceHeading :nth-child(1){
         gap: 10px !important;
     }
+    .priceflexprice{
+        display: block;
+    }
     .serviceCTA :nth-child(1) {
         width: 8.2vw;
+    }
+    .serviceHeading{
+        width: 44vw !important;
+    }
+    #servicenamerabout{
+        width: 77vw !important;
+    }
+    .serviceHeading :nth-child(1) h3 {
+        font-size: 5vw;
+        width: 91vw;
+    }
+    .ServiceCarddescirption {
+        padding-top: 0vw !important;
+    }
+    .priceignore{
+        display: none;
+    }
+    .respbuttonprice{
+        border: none;
+        width: 100%;
+        padding: 2vw;
+        border-radius: 2vw;
+        background-color: #CE7D63;
+        display: block;
+    }
+    .bottomCardDiv img {
+        width: 10.2vw !important;
+    }
+    .bottomCardDiv h5 {
+        font-size: 4.2vw !important;
+        padding-top: 1vw;
+    }
+    .priceflexer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .serviceCTA :nth-child(2) {
         color: #d4d4d4;
@@ -143,6 +210,9 @@
     .projectimagefix {
         scale: 1.25;
     }
+    .OurServiceMainDiv {
+        border-radius: 12px
+    }
     .bottomCardDiv img {
         width: 5.2vw;
     }
@@ -152,8 +222,8 @@
     .bottomCardDiv h5 {
         font-size: 3.2vw;
     }    
-    .Servicebuttons :nth-child(1) h3 {
-        font-size: 4.3vw;
+    .serviceHeading :nth-child(1) h3 {
+        font-size: 5vw;
     }
     .callToActionService :nth-child(2) h3 {
         font-size: 4.3vw;
@@ -165,4 +235,11 @@
     .responsiveDirectionColumn{
         flex-direction: column;
     }
+    .structure {
+        padding-top: 3vw;
+    }
+    .serviceCTA{
+        display: none !important;
+    }
+    
 }

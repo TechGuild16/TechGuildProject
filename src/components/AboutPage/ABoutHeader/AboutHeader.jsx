@@ -36,20 +36,26 @@ const AboutHeader = () => {
                 height: "65vh",
               }}
             >
-              <div className="d-flex ms-md-5 gap-4 mt-5 mt-md-5 justify-content-start align-items-center gap-4">
-                <div className="text-center text-md-start">
-                  <h1 className="fs-1" style={{ color: "var(--textColor)" }}>
+              <div className="d-flex ms-md-2 gap-4 mt-5 mt-md-5 justify-content-start align-items-center gap-4">
+                <div className="text-center text-md-start d-flex gap-3 ">
+                  <div className="">
+
+                  <h1 className="" style={{ color: "var(--textColor)",fontSize : "4vw" }}>
                     ELEVATING BRANDS
                   </h1>
-                  <h1 className="fs-1" style={{ color: "var(--textColor)" }}>
+                  <h1 className="" style={{ color: "var(--textColor)",fontSize : "4vw" }}>
                     IN THE DIGITAL AGE
                   </h1>
-                </div>
+                  </div>
+                  <div className="">
+
                 <img
-                  className="img-fluid mb-5"
+                  className="img-fluid aboutcircleimage mb-2"
                   src={halfcircle}
                   alt="Button Image"
-                />
+                  />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -77,7 +83,7 @@ const AboutHeader = () => {
             </div>
           </div>
 
-          <div className="col-md-5">
+          <div className="col-md-5 aboutmarginfix">
             <div
               className="col-md-12 rounded pt-5 pt-md-2 mt-0 mt-md-3"
               style={{ backgroundColor: "var(--navbarColor)", height: "64vh" }}

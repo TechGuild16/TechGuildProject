@@ -6,14 +6,14 @@ const SerivceCardSecond = ({imageLink, serviceName,proj1img,proj2img}) => {
     <div className='serviceCard'>
       <div className="d-flex serviceHeading align-items-center justify-content-between">
               <div className="d-flex align-items-center gap-4">
-                <h3 className='uppercase'>{serviceName}</h3>
+                <h3 className='uppercase ' id='servicenamerabout'>{serviceName}</h3>
               </div>
               <div className="serviceCTA d-flex align-items-center gap-2">
                   <img src={arrow}  alt="" />
                   <h4 className='uppercase'>View All</h4>
               </div>
             </div>
-            <div className="row responsiveDirectionColumn d-flex gap-3">
+            <div className="row d-flex gap-3">
                 <div className="col-4 ServiceBox relative">
                     <img src={proj1img} className='projectimagefix ' alt="" />
                     <div className="bottomCardDiv d-flex align-items-center gap-2">
