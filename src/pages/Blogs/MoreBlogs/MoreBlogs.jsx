@@ -45,7 +45,11 @@ function MoreBlogs() {
                   style={{ gap: "3px" }}
                 >
                   <div>
-                    <img className="w-55" src={arrow} alt="Right Arrow" />
+                    <img
+                      style={{ height: "35px", width: "35px" }}
+                      src={arrow}
+                      alt="Right Arrow"
+                    />
                   </div>
                   <div className="custom-h5 mt-2">
                     <h5 style={{ color: "#B3B3B2" }}>READ FULL BLOGS</h5>

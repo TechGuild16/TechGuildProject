@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import halfcircle from '../../Assets/haflcircle.png';
 import awardIcon from "../../Assets/awardIcon.png";
 import Button from "../../Assets/Button.png";
 import downbtn from "../../Assets/downBtn.png";
@@ -256,7 +257,7 @@ const About = () => {
                 </div>
                 <img
                   className="img-fluid mb-5"
-                  src={Button}
+                  src={halfcircle}
                   alt="Button Image"
                 />
               </div>
@@ -289,7 +290,7 @@ const About = () => {
           <div className="col-md-5">
             <div
               className="col-md-12 rounded pt-5 pt-md-2 mt-3 mt-md-5"
-              style={{ backgroundColor: "var(--navbarColor)", height: "65vh" }}
+              style={{ backgroundColor: "var(--navbarColor)", height: "64vh" }}
             >
               <div className="row">
                 <div className="row">
@@ -335,7 +336,7 @@ const About = () => {
         {/*********************SECOND COMPONENT*******************/}
         {/**************MEET OUR TEAM***************/}
         <div
-          className="p-1 p-md-3 mt-5 rounded"
+          className="p-1 p-md-3 mt-3 mt-md-5 rounded"
           style={{ border: "2px solid var(--navbarColor)" }}
         >
           <div
@@ -659,149 +660,119 @@ const About = () => {
 
         {/********************SIXTH COMPONENT**************************/}
         {/*********FREQUENTLY ASKED QUESTIONS**********/}
-        <div
-          className="d-flex justify-content-between align-items-center  p-4 mt-5 rounded"
-          style={{ backgroundColor: "var(--navbarColor)" }}
-        >
-          <h3 style={{ color: "var(--textColor)" }}>
-            FREQUENTLY ASKED QUESTIONS
-          </h3>
-          <div className="d-none d-md-flex  align-items-center gap-3">
-            <img className="mb-2" src={serviceArrow} alt="" />
-            <p style={{ color: "var(--textColor)" }}>VIEW ALL</p>
-          </div>
-        </div>
-
-        <div className="container-fluid mt-3">
-          <div className="row">
-            <div className="col-md-7">
-              <div>
-                {faqs.map((item, index) => (
-                  <div key={index} className="rounded backgroundColor">
-                    <div className="d-flex p-4 mb-2">
-                      <div className="w-100">
-                        <p
-                          className="fw-bold"
-                          style={{ color: "var(--servicesText)" }}
-                        >
-                          {item.question}
-                        </p>
-
-                        {/* Answer Section with Transition */}
-                        <div
-                          style={{
-                            maxHeight: activeQuestion === index ? "500px" : "0",
-                            opacity: activeQuestion === index ? "1" : "0",
-                            overflow: "hidden",
-                            transition:
-                              "max-height 0.3s ease, opacity 0.3s ease",
-                          }}
-                        >
-                          {activeQuestion === index && (
-                            <p style={{ color: "var(--paragraphText)" }}>
-                              {item.answer}
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                      <div>
-                        {/* Plus/Minus Button */}
-                        <img
-                          className="w-100"
-                          src={activeQuestion === index ? minusBtn : plusBtn}
-                          alt="toggle"
-                          onClick={() => toggleContent(index)}
-                          style={{ cursor: "pointer" }}
-                        />
-                      </div>
+      
+        <div className="d-flex justify-content-between align-items-center  p-4 mt-4 rounded" style={{ backgroundColor: "var(--navbarColor)" }}>
+                    <h3 style={{ color: "var(--textColor)" }}>FREQUENTLY ASKED QUESTIONS</h3>
+                    <div className="d-none d-md-flex  align-items-center gap-3">
+                        <img className="mb-2" src={serviceArrow} alt="" />
+                        <p style={{ color: "var(--textColor)" }}>VIEW ALL</p>
                     </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="col-md-5">
-              <div className="row mb-2">
-                <div className="col-md-12">
-                  <div
-                    className="card d-flex"
-                    style={{ backgroundColor: "var(--navbarColor)" }}
-                  >
-                    <h4
-                      className="p-4 mb-0"
-                      style={{ color: "var(--textColor)" }}
-                    >
-                      Ask Your Question
-                    </h4>
-                    <form className="p-4" onSubmit={handleSubmit}>
-                      <div>
-                        <label
-                          className="fs-5"
-                          htmlFor=""
-                          style={{ color: "var(--textColor)" }}
-                        >
-                          Name
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control mt-2 p-3"
-                          placeholder="Enter your email"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          style={{ fontSize: "18px" }}
-                        />
-                      </div>
-
-                      <div className="mt-3">
-                        <label
-                          className="fs-5"
-                          htmlFor=""
-                          style={{ color: "var(--textColor)" }}
-                        >
-                          Email
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control mt-2 p-3"
-                          placeholder="Enter your email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          style={{ fontSize: "18px" }}
-                        />
-                      </div>
-
-                      <div className="mt-3">
-                        <label
-                          className="fs-5"
-                          style={{ color: "var(--textColor)" }}
-                        >
-                          Your Question
-                        </label>
-                        <textarea
-                          className="form-control border-none outline-none mt-3"
-                          rows={3}
-                          placeholder="Enter Your Question Here ..."
-                          name="question"
-                          value={formData.question}
-                          onChange={handleChange}
-                          style={{ fontSize: "18px" }}
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        className="btn sendMessageBtn mt-3 p-2 fs-6"
-                      >
-                        Send Your Message
-                      </button>
-                    </form>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+                <div className="container-fluid mt-3">
+                    <div className="row">
+                        <div className="col-md-7">
+                            <div>
+                                {faqs.map((item, index) => (
+                                    <div key={index} className="rounded backgroundColor">
+                                        <div className="d-flex p-4 mb-2">
+                                            <div className="w-100">
+                                                <p className="fw-bold" style={{ color: "var(--servicesText)" }}>
+                                                    {item.question}
+                                                </p>
+
+                                                {/* Answer Section with Transition */}
+                                                <div
+                                                    style={{
+                                                        maxHeight: activeQuestion === index ? "500px" : "0",
+                                                        opacity: activeQuestion === index ? "1" : "0",
+                                                        overflow: "hidden",
+                                                        transition: "max-height 0.3s ease, opacity 0.3s ease",
+                                                    }}
+                                                >
+                                                    {activeQuestion === index && (
+                                                        <p style={{ color: "var(--paragraphText)" }}>
+                                                            {item.answer}
+                                                        </p>
+                                                    )}
+                                                </div>
+                                            </div>
+                                            <div>
+                                                {/* Plus/Minus Button */}
+                                                <img
+                                                    className="w-100"
+                                                    src={activeQuestion === index ? minusBtn : plusBtn}
+                                                    alt="toggle"
+                                                    onClick={() => toggleContent(index)}
+                                                    style={{ cursor: "pointer" }}
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+
+                        </div>
+
+                        <div className="col-md-5">
+                            <div className="row mb-2">
+                                <div className="col-md-12">
+                                    <div className="rounded" style={{ backgroundColor: 'var(--navbarColor)'}}>
+                                        <h4 className="p-2 mb-0 mt-2 mx-2" style={{ color: "var(--textColor)" }}>Ask Your Question</h4>
+                                        
+                                        <form className="p-4" onSubmit={handleSubmit}>
+                                            <div>
+                                                <label className="fs-5" htmlFor="" style={{ color: "var(--textColor)" }}>Name</label>
+                                                <input
+                                                    type="text"
+                                                    className="form-control mt-2 p-3"
+                                                    placeholder="Enter your email"
+                                                    name="name"
+                                                    value={formData.name}
+                                                    onChange={handleChange}
+                                                    style={{ fontSize: "18px" }}
+                                                />
+                                            </div>
+
+                                            <div className="mt-3">
+                                                <label className="fs-5" htmlFor="" style={{ color: "var(--textColor)" }}>Email</label>
+                                                <input
+                                                    type="email"
+                                                    className="form-control mt-2 p-3"
+                                                    placeholder="Enter your email"
+                                                    name="email"
+                                                    value={formData.email}
+                                                    onChange={handleChange}
+                                                    style={{ fontSize: "18px" }}
+                                                />
+                                            </div>
+
+                                            <div className="mt-3">
+                                                <label className="fs-6" style={{ color: "var(--textColor)" }}>Your Question</label>
+                                                <textarea
+                                                    className="form-control border-none outline-none mt-3"
+                                                    rows={3}
+                                                    placeholder="Enter Your Question Here ..."
+                                                    name="question"
+                                                    value={formData.question}
+                                                    onChange={handleChange}
+                                                    style={{ fontSize: "18px" }}
+                                                />
+                                            </div>
+                                            <button className="rounded w-100 mt-3 p-2 p-md-2 fw-bold fs-5" type="submit" style={{backgroundColor:"var(--secondaryColor)",outline:"none",border:"none",color:"var(--navbarColor)"}} >
+                                               SEND YOUR MESSAGE
+                                            </button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
         {/********************SIXTH COMPONENT END**************************/}
       </div>
     </>

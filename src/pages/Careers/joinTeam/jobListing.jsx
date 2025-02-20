@@ -1,8 +1,14 @@
 import React from "react";
+import arrow from "../../../Assets/Arrow.png";
+import img_1 from "../../../Assets/join-icon-01.png";
+import img_2 from "../../../Assets/join-icon-02.png";
+import img_3 from "../../../Assets/join-icon-03.png";
+import img_4 from "../../../Assets/join-icon-04.png";
 import "./joblisting.css";
 const JobListings = () => {
   const jobs = [
     {
+      img: img_1,
       title: "WEB DESIGNER",
       salary: "$45,000 - $65,000 per year",
       experience: "1+ year",
@@ -11,6 +17,7 @@ const JobListings = () => {
         "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, etc.), strong understanding of UI/UX design principles, responsive design expertise",
     },
     {
+      img: img_2,
       title: "MOBILE APP DEVELOPER",
       salary: "$55,000 - $75,000 per year",
       experience: "2+ years",
@@ -19,6 +26,7 @@ const JobListings = () => {
         "Proficiency in iOS or Android development (Swift, Kotlin), knowledge of mobile app design patterns, experience with mobile testing and debugging",
     },
     {
+      img: img_3,
       title: "DIGITAL MARKETING SPECIALIST",
       salary: "$50,000 - $65,000 per year",
       experience: "3+ years",
@@ -27,6 +35,7 @@ const JobListings = () => {
         "Proficiency in SEO, SEM, and social media marketing, experience with analytics tools (Google Analytics, etc.), content marketing expertise",
     },
     {
+      img: img_4,
       title: "PROJECT MANAGER",
       salary: "$60,000 - $80,000 per year",
       experience: "5+ years",
@@ -37,73 +46,114 @@ const JobListings = () => {
   ];
 
   return (
-    <div className="join-Main-div">
-      <div className="OurServiceHeading d-flex align-items-center justify-content-between">
-        <h1 className="uppercase">Join Our Team at NexGen</h1>
-      </div>
-      <div className=" row g-4">
-        {jobs.map((job, index) => (
-          <div key={index} className="p-3 col-md-6 ">
-            <div className="card  text-white h-100 small-div">
-              <div className="card-body">
-                <div className="d-flex justify-content-between align-items-center mb-3">
-                  <h5 className="card-title">{job.title}</h5>
-                  <button className="btn btn-sm btn-outline-light">
-                    VIEW DETAILS
-                  </button>
-                </div>
+    <>
+      <div className="container-fluid mt-3">
+        <div
+          className="p-1 p-md-4 mt-3 mt-md-5 rounded"
+          style={{ border: "2px solid var(--navbarColor)" }}
+        >
+          <div
+            className="d-flex justify-content-between align-items-center p-4 mt-1 rounded"
+            style={{ backgroundColor: "var(--navbarColor)" }}
+          >
+            <h3 style={{ color: "var(--textColor)" }}>
+              JOIN OUR TEAM AT NEXGEN
+            </h3>
+          </div>
+          <div className="container-fluid mt-3">
+            <div className="row mt-1 g-4">
+              {jobs.map((job, index) => (
+                <div key={index} className="col-md-6">
+                  <div className="text-white p-4 rounded small-div">
+                    <div className="card-body">
+                      <div className="d-flex justify-content-between align-items-center mb-3">
+                        <div className="d-flex">
+                          <img style={{ width: "45px" }} src={job.img} alt="" />
+                          <h5
+                            style={{ marginTop: "6px", paddingLeft: "6px" }}
+                            className="card-title"
+                          >
+                            {job.title}
+                          </h5>
+                        </div>
+                        <div
+                          className="d-flex align-items-center"
+                          style={{ gap: "4px" }}
+                        >
+                          <div>
+                            <img
+                              className="w-20"
+                              src={arrow}
+                              alt="Right Arrow"
+                              style={{ width: "40px", paddingLeft: "2px" }} // Adjusted width and added padding
+                            />
+                          </div>
+                          <div className="mt-2">
+                            <h5 style={{ color: "#B3B3B2" }}>VIEW MORE</h5>
+                          </div>
+                        </div>
+                      </div>
 
-                <div className="mb-3">
-                  <div className="d-flex justify-content-between small mb-2">
-                    <span
-                      className="px-2 py-1 rounded time-line description"
-                      style={{ color: "#B3B3B2" }}
-                    >
-                      Salary:{" "}
-                      <span style={{ color: "#E6E6E6" }}>{job.salary}</span>
-                    </span>
-                    <span
-                      className="px-2 py-1 rounded time-line description"
-                      style={{ color: "#B3B3B2" }}
-                    >
-                      Experience:{" "}
-                      <span style={{ color: "#E6E6E6" }}>{job.experience}</span>
-                    </span>
+                      <div className="mb-3">
+                        <div className="d-flex justify-content-between small mb-2">
+                          <span
+                            className="py-1 rounded time-line description"
+                            style={{ color: "#B3B3B2" }}
+                          >
+                            Salary:{" "}
+                            <span style={{ color: "#E6E6E6" }}>
+                              {job.salary}
+                            </span>
+                          </span>
+                          <span
+                            className="px-2 py-1 rounded time-line description"
+                            style={{ color: "#B3B3B2" }}
+                          >
+                            Experience:{" "}
+                            <span style={{ color: "#E6E6E6" }}>
+                              {job.experience}
+                            </span>
+                          </span>
+                        </div>
+                        <div className="small">
+                          <span
+                            className="px-2 py-1 rounded time-line description"
+                            style={{ color: "#B3B3B2" }}
+                          >
+                            Deadline:{" "}
+                            <span style={{ color: "#E6E6E6" }}>
+                              {job.deadline}
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="mb-3">
+                        <h6>SKILLS</h6>
+                        <p className="small" style={{ color: "#B3B3B2" }}>
+                          {job.skills}
+                        </p>
+                      </div>
+
+                      <button
+                        className="btn btn-block w-100"
+                        style={{
+                          backgroundColor: "#e9967a",
+                          color: "white",
+                          border: "none",
+                        }}
+                      >
+                        APPLY NOW
+                      </button>
+                    </div>
                   </div>
-                  <div className="small">
-                    <span
-                      className="px-2 py-1 rounded time-line description"
-                      style={{ color: "#B3B3B2" }}
-                    >
-                      Deadline:{" "}
-                      <span style={{ color: "#E6E6E6" }}>{job.deadline}</span>
-                    </span>
-                  </div>
                 </div>
-
-                <div className="mb-3">
-                  <h6>SKILLS</h6>
-                  <p className="small" style={{ color: "#B3B3B2" }}>
-                    {job.skills}
-                  </p>
-                </div>
-
-                <button
-                  className="btn btn-block w-100"
-                  style={{
-                    backgroundColor: "#e9967a",
-                    color: "white",
-                    border: "none",
-                  }}
-                >
-                  APPLY NOW
-                </button>
-              </div>
+              ))}
             </div>
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 export default JobListings;
