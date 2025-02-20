@@ -18,10 +18,10 @@ const Home = () => {
       <div className="homeContainer">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-8 firstServiceContainer">
+            <div className="col-md-8 firstServiceContainer homefirstservice">
               <div className="">
                 <div className="heading">
-                  <h1 className="uppercase serviceTextColor d-flex align-items-center gap-4">
+                  <h1 className="uppercase serviceTextColor d-flex align-items-center gap-2">
                     Partner with
                     <div className="d-flex align-items-center">
                       <div className="outerarrowcircle norespcircle">
@@ -41,7 +41,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="paragraph">
-                  <p>
+                  <p className="homepara">
                     At TechGuild, we believe in the transformative power of
                     digital solutions. Our team of experts is dedicated to
                     helping businesses like yours thrive in the fast-paced

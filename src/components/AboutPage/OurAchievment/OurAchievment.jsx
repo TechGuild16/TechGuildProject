@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import downbtn from "../../../Assets/downBtn.png";
 import rightArrow from "../../../Assets/rightArrow.png";
+import arrowup from '../../../Assets/arrowup.png';
+import './OurAchievment.css'
 const OurAchievment = () => {
   
   const [showMore, setShowMore] = useState(false);
@@ -41,12 +43,9 @@ const OurAchievment = () => {
   ];
   return (
     <>
-      <div
-          className="p-2 p-md-4 mt-3 mt-md-5 rounded"
-          style={{ border: "2px solid var(--navbarColor)" }}
-        >
+      
           <div
-            className="p-4 p-md-4 rounded d-flex justify-content-center align-items-center justify-content-md-start align-items-md-start"
+            className="p-4 p-md-4  rounded d-flex justify-content-center align-items-center justify-content-md-start align-items-md-start our-achievment"
             style={{ backgroundColor: "var(--navbarColor)" }}
           >
             <h3 className="" style={{ color: "var(--textColor)" }}>
@@ -100,11 +99,11 @@ const OurAchievment = () => {
                 transition: "ease-in-out 0.3s",
               }}
             >
-              <img src={showMore ? rightArrow : downbtn} alt="" />
+              <img src={showMore ? arrowup  : downbtn} alt="" />
               {showMore ? "SHOW LESS" : "OUR ACHEIVEMENT"}
             </button>
           </div>
-        </div>
+       
     </>
   )
 }

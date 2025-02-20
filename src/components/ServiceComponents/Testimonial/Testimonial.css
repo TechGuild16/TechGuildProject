@@ -1,18 +1,28 @@
 .testimonialMaindiv{
     min-height: 50vh ;
     margin-top: 4vw;
-    border:4px solid var(--navbarColor);
-    margin-right: 1.5vw;
+    border:2px solid var(--navbarColor);
+    margin-right: 2.3vw;
     border-radius: 23px;
 }
 .testimonialdiv h4{
-    color: #fff;
+    color: #9b9b9b;
     font-weight: 400;
-    font-size: 1.5vw;
+
+    font-size: 1.1vw;
+}
+.testimonialheadinger{
+    margin-right: .4vw !important;
+    margin-top: .4vw !important;
+    margin-left: .4vw !important;
+    border-radius: 18px !important;
+}
+.testimonialheadinger h1{
+    font-size: 2.5vw;
 }
 .firstTestimonalbox{
-    width: 23.2vw;
-    border-radius: 7px;
+    width: 22.7vw;
+    border-radius: 10px;
    min-height: 37.41vh;
     background-color: var(--navbarColor);
     
@@ -39,7 +49,7 @@
     padding-top: 1vw;
 }
 .bottomTestimonialDiv{
-    background-color: #313131;
+    background-color: #1f1f1f;
     scale: 1.09;
     height:10vh;
     border-bottom-right-radius: 12px;
@@ -85,34 +95,91 @@
     object-fit: cover;
 }
 @media (max-width: 576px) {
-    .testidiv{
-        flex-direction: column;
-        padding-left: 4vw;
-        padding-top: 2vw;
-        padding-bottom: 5vw;
+    .testimonialMaindiv :nth-child(1) h1{
+        font-size: 4vw !important;
     }
-
+    .testimonialMaindiv{
+        margin-right: 0.3vw !important;
+    }
     .firstTestimonalbox {
-        width: 82vw;
-        border-radius: 7px;
-        min-height: 18.41vh;
-        background-color: var(--navbarColor);
-        margin-top: 2vw;
+        width: 84vw !important;
     }
-    .testimonialheading {
-        font-size: 5vw;
+    .testimonialheadinger {
+        margin-right: 2.4vw !important;
+        margin-top: 2.4vw !important;
+        margin-left: 2.4vw !important;
     }
-    .testimonialdescription {
-        font-size: 4vw;
+    .faqheading :nth-child(2) img{
+        display: none;
+    }
+    .faqheading {
+        border-radius: 10px !important;
+    }
+    .faqQuestion h5 {
+        font-size: 4.2vw !important;
+    }
+    .testimonialdiv{
+        flex-direction: row-reverse;
+    }
+    .testimonialdiv h4{
+        font-size: 3.5vw;
+        display: none;
+    }
+    .testimonialdiv :nth-child(1){
+    }
+    .mycontainer :nth-child(1){
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1vw;
+    }
+    .firstTestimonalbox{
+        width: 81vw;
+    }
+    .testimonialheading{
+        font-size: 7.5vw;
+    }
+    .bottomTestimonialDiv :nth-child(1){
+        flex-direction: row;
+    }
+    .testimonialdescription{
+        font-size: 3vw;
+    }
+    .testimonilaImage {
+        width: 7vh;
+        height: 7vh;
+        margin-left: 3vw;
+    }
+    .faqheading h3 {
+        font-size: 6vw !important;
     }
     .testimonialPersonDetails h5 {
         font-size: 4vw;
-        padding-top:4vw;
+    }
+    .faqItem {
+        padding: 4.8vw 5vw !important;
+        margin-bottom: 3vw;
     }
     .testimonialPersonDetails p {
         font-size: 2.8vw;
     }
     .testimonialArrow img {
-        width: 11vw;
+        width: 12vw;
+    }
+    .faqheading {
+        border-radius: 18px;
+    }
+    .FaqMainSection {
+        margin-top: 3vw;
+    }
+    .faqFirstSection {
+        width: 91vw;
+    }
+    .faqAnswer {
+        margin-top: 1vw;
+        font-size: 3.5vw;
+    }
+    .testimonialMaindiv{
+        border-radius: 12px;
+        padding-bottom: 4vw;
     }
 }

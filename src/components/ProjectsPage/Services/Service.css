@@ -1,0 +1,9 @@
+.ourFeatures{
+    margin-top:4rem;
+}
+
+@media (max-width: 576px){
+    .ourFeatures{
+        margin-top:1rem;
+    }
+}  

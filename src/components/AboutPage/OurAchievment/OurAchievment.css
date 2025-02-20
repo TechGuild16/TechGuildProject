@@ -1,0 +1,8 @@
+.our-achievment{
+    margin-top:3rem;
+}
+@media (max-width: 576px){
+    .our-achievment{
+        margin-top:2rem;
+    }
+}

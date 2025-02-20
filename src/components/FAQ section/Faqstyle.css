@@ -1,37 +1,35 @@
-/* Main FAQ Section */
+
 .FaqMainSection {
     margin-top: 4vw;
     min-height: 100vh;
-    margin-right: 2vw;
+    margin-right: 2.3vw;
   }
   
-  /* Heading Section */
   .faqheading {
     background-color: var(--navbarColor);
-    padding: 2vw;
+    padding: 2.5vw 2vw;
     border-radius: 12px;
     margin-bottom: 1vw;
   }
   .faqheading h3 {
     color: var(--servicesText);
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .faqheading :nth-child(2) h3 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: 400;
   }
   
-  /* FAQ First Section */
   .faqFirstSection {
-    width: 55vw;
+    width: 53.3vw;
     min-height: 80.37vh;
     border-radius: 12px;
-    padding: .2vw;
+    padding: .1vw;
   }
   .faqItem {
-    background-color: #141414;
-    margin-bottom: 2vw; /* Increased margin for spacing */
-    padding: 1.8vw 2vw; /* Adjusted padding for inner spacing */
+    background-color: #1a1a1a;
+    margin-bottom: 1vw; 
+    padding: 2vw 3vw; 
     border-radius: 12px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -44,9 +42,9 @@
     background-color: #292929;
   }
   
-  .faqQuestion {
-    font-size: 1.8vw;
-    font-weight: 500;
+  .faqQuestion h5 {
+    font-size: 1.2vw !important;
+    font-weight: 400;
     color: var(--servicesText);
     display: flex;
     justify-content: space-between;
@@ -54,23 +52,23 @@
   }
   .faqAnswer {
     margin-top: 1vw;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #ccc;
     line-height: 1.6;
   }
   
-  /* FAQ Second Section (Contact Form) */
   .faqSecondSection {
     width: 39.7vw;
     border-radius: 12px;
     background-color: var(--navbarColor);
-    padding: 2vw;
+    padding: 3vw;
     height: 98.3vh;
   }
   
   .faqSecondSection h4 {
     color: var(--servicesText);
-    font-size: 2vw;
+    font-size: 1.4vw;
+    text-transform: uppercase;
     margin-bottom: 2vw;
   }
   
@@ -79,7 +77,7 @@
   }
   
   .form-group label {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: var(--servicesText);
   }
   
@@ -102,7 +100,7 @@
     padding: 1vw 2vw;
     border: none;
     border-radius: 8px;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     width: 100%;
     text-transform: uppercase;
     font-weight: 500;
@@ -120,6 +118,21 @@
       padding-right: 4vw;
       padding-top: 3vw;
   }
+  .FaqMainSection {
+    margin-right: 0.3vw !important;
+  }
+  .faqSecondSection{
+    margin-top: -6vw;
+  }
+  .faqSecondSection {
+    padding: 6vw !important;
+}
+.form-control {
+  font-size: 4.2vw !important;
+}
+.faqSecondSection {
+  height: 79.3vh !important;
+}
     .faqheading h3 {
       font-size: 4vw;
   }

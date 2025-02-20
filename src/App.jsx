@@ -14,15 +14,13 @@ import Home from "./pages/Home/Home.jsx";
 import Projects from "./pages/Projects/Projects.jsx";
 import Services from "./pages/Services/Services.jsx";
 function App() {
-  // Now navbar is an reusable component u can send link according to your need
   const navLinks = [
     { path: "/About", label: "ABOUT", className: "about" },
     { path: "/Services", label: "SERVICES", className: "service" },
     { path: "/Projects", label: "PROJECTS", className: "projects" },
     { path: "/CaseStudy", label: "CASE STUDY", className: "home" },
     { path: "/Blogs", label: "BLOGS", className: "blogs" },
-    { path: "/Careers", label: "CAREERS", className: "careers" },
-    // { path: "/ContactUs", label: "CONTACT US", className: "projects" },
+    { path: "/contact", label: "CONTACT US", className: "contact" },
   ];
   return (
     <div className="App">

@@ -9,30 +9,6 @@ import Testimonials from "./Testimonial/Testimonial.jsx";
 const Careers = () => {
   return (
     <>
-<<<<<<< HEAD
-      <div className="career-container ">
-        <div className="container-fluid">
-          <div className="row ">
-            <div className="col-md-8 col-12 firstcareerContainer">
-              <div className="heading h-100">
-                <h1 className="uppercase careerTextColor d-flex align-items-center gap-4">
-                  Unlock Your Potential
-                  <div className="d-flex align-items-center">
-                    <div className="outerarrowcircle norespcircle">
-                      <img src={circle} alt="" />
-                    </div>
-                  </div>
-                </h1>
-              </div>
-              <div className="headingtwo">
-                <h1 className="uppercase careerTextColor">
-                  in the Digital World
-                </h1>
-              </div>
-              <div className="d-flex align-items-center">
-                <div className="outerarrowcircle responsivelogo">
-                  <img src={circle} alt="" />
-=======
       <div className="container-fluid mt-3">
 
         <div className="row">
@@ -53,7 +29,6 @@ const Careers = () => {
                   <h1 className="fs-1" style={{ color: "var(--textColor)" }}>
                     IN THE DIGITAL WORLD
                   </h1>
->>>>>>> origin/anuja
                 </div>
                 <img
                   className="img-fluid mb-5"
@@ -62,30 +37,6 @@ const Careers = () => {
                 />
               </div>
             </div>
-<<<<<<< HEAD
-
-            <div className="col-md-4 col-12 secondcareerContainer">
-              <div className="m-4 align-items-center">
-                <div className="heading uppercase">
-                  <h1>At NexGen</h1>
-                </div>
-                <span className="paragraph ">
-                  We believe in fostering a dynamic and collaborative work
-                  environment that empowers our team members to excel in their
-                  respective fields. Join us to be part of a passionate and
-                  innovative team dedicated to crafting exceptional digital
-                  solutions for clients across the globe. We are committed to
-                  nurturing talent, encouraging professional growth, and
-                  creating a workplace where creativity thrives.
-                </span>
-              </div>
-
-              <div className="callToActioncareer mt-3">
-                <div className="careerbuttons d-flex justify-content-between align-items-center">
-                  <div className="d-flex gap-2 align-items-center mt-2">
-                    <img src={arrow} alt="" />
-                    <h3 className="uppercase">Know more</h3>
-=======
           </div>
           <div className="col-md-4 d-none d-md-block">
             <div
@@ -109,7 +60,6 @@ const Careers = () => {
                     <p className="fs-5" style={{ color: "var(--textColor)" }}>
                       KNOW MORE
                     </p>
->>>>>>> origin/anuja
                   </div>
                 </div>
               </div>

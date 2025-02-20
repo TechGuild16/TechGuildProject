@@ -1,7 +1,7 @@
 .homeContainer{
     min-height: 100vh;
-    padding-top: 2vw;
-    padding-left: 1.2vw;
+    padding-top: 1vw;
+    padding-left:2.5vw;
 }
 .AboutTechGuild{
     background-color: var(--successSectionLabelColor);
@@ -9,6 +9,9 @@
     border-bottom-left-radius: 6px;
     height: 11.76vh;
     text-align: center;
+}
+.homepara{
+    font-size: 1vw;
 }
 .callToActionHome{
     width: 95%;
@@ -25,43 +28,86 @@
     margin-top: -.5vw;
     font-size: 1vw;
 }
+.firstServiceContainer{
+    border-radius: 14px !important;
+    padding-left: 2.5vw !important;
+    padding-top: 5vw !important;
+}
 .sassButton{
     position: absolute;
     top: -2%;
-    right: -1%;
+    right: -3%;
     background-color: var(--navbarLinks);
     border-radius: 50%;
     display: flex;
-    width: 13.5vh;
-    height: 13.5vh;
+    width:20.5vh;
+    height: 20.5vh;
     align-items: center;
     justify-content: center;
 }
 .sassimg{
-    width: 4.3vw;
-    padding-right: .5vw;
+    width: 7.3vw;
+    padding-right: 1vw;
 }
 .footermarquee2{
     background-color: var(--navbarColor);
     border-radius: 12px;
     margin-top: 1vw;
-    margin-right: 1vw;
+    margin-right: 2.4vw;
 }
+.secondServiceContainer{
+    width: 31vw !important;
+    margin-left: 0 !important;
+    border-radius: 10px !important;
+}
+.sassImage{
+    
+    border-radius: 10px !important;
+}
+.AboutTechGuild{
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
 
+}
 
 @media (max-width: 576px){
     .homeContainer {
-        padding-left: 3.2vw;
+        padding-left: 4.2vw;
         padding-right: 4vw;
+    }
+    .marqueeContainer {
+        height: 7vh !important;
+        margin-bottom: 3vw;
+    }
+    #serviceContainer1{
+        margin-left: 1.3vw;
     }
     .firstServiceContainer {
         padding-left: 5vw;
+      
+    }
+    .firstServiceContainer {
+       min-height: none !important;
+       height: none !important;
     }
     .homeContainer {
         padding-top: 4vw;
+        
+        padding-left: 4.2vw;
+        padding-right: 5vw;
+    }
+  
+    .marquee {
+        border-radius: 5px !important;
+    }
+    .secondServiceContainer{
+        display: none;
     }
     .heading h1 {
         font-size: 34px;
+    }
+    .homepara {
+        font-size: 3.5vw;
     }
     .headingtwo h1 {
         font-size: 34px;
@@ -75,5 +121,16 @@
     .sassimg {
         width: 16.3vw;
         padding-right: .5vw;
+    }
+    .knowmoredeskt{
+        display: none;
+    }
+
+    .knowmoremobile{
+
+    }
+    .paragraph {
+        padding-top: 1vw;
+        width: 93.56% !important;
     }
 }

@@ -12,7 +12,7 @@
 .marqueeContainer .content {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     color: var(--paraText);
     animation: marqueeAnimation 20s linear infinite;
 }

@@ -9,23 +9,28 @@
 /* Navbar Container */
 .simple-navbar {
     background-color: var(--navbarColor);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
-    padding: 10px 0px;
-    border-radius: 15px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 14px;
+    padding-bottom: 30px;
+    border-radius: 10px;
     height: 12vh;
     max-width: 1820px;
+    width: 97%;
+    margin: auto;
 
 }
 
 /* Brand Styling */
 .simple-brand {
-    font-size: 1.5rem;
+    font-size: 1.56vw;
     padding-left: 1.2vw;
     color: #F3DFD8;
     font-weight: 500;
     /* text-transform: uppercase; */
     letter-spacing: 1.5px;
     text-decoration: none;
+    
 }
 
 .simple-brand:hover {
@@ -33,9 +38,9 @@
 }
 
 .nav-item span {
-    font-size: 0.9rem;
+    font-size: 0.94vw;
     font-weight: 500;
-    padding: 1vw;
+    padding: 1vw 1.2vw;
     background-color: var(--navbarLinks);
     color: var(--navbarLinksColor);
     border-radius: 0.5vw;
@@ -55,19 +60,51 @@
 }
 
 
-/* @media screen and (min-width: 1024px) {
-    .home{
-        background-color: black;
-        
-       padding: 10px;
-        border-radius: 10px;
-    }
-} */
+ @media screen and (max-width: 768px) {
+   #navbarNav{
+    margin-top: 8vw !important;
+    border-radius: 3vw !important;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+   }
+   
+   .nav-item span{
+    background-color: unset;
+    font-size: 3.94vw;
+   }
+   .navbar-link.active span {
+    background-color: unset !important;
+   }
+   .navbar-collapse .navbar-nav{
+    text-align: center !important;
+    padding-right: 4vw;
+    padding-left: 4vw;
+   }
+   .navbar-toggler .navbar-toggler-icon{
+    filter: invert(1);
+   }
+   .navbar-toggler{
+    background-color: #0a0a0a;
+   }
+   .contactUs{
+    padding: 2vw 3vw;
+    border-radius: 2vw;
+
+   }.simple-navbar {
+    padding: 20px 0px;
+   }
+   .simple-brand{
+    font-size: 5.56vw;
+   }
+} 
 
 
 .contactUs {
     background-color: var(--secondaryColor) !important;
     color: #000 !important;
+    
 }
 .navbar-collapse {
     background-color:var(--navbarColor);

@@ -10,7 +10,7 @@ import member_4 from "../../../Assets/member-4.png";
 import serviceArrow from "../../../Assets/serviceArrow.png";
 import downbtn from "../../../Assets/downBtn.png";
 import rightArrow from "../../../Assets/rightArrow.png";
-
+import arrowup from '../../../Assets/arrowup.png';
 const OurTeam = () => {
  const [showMore, setShowMore] = useState(false);
  const [isMobile, setIsMobile] = useState(false);  
@@ -63,7 +63,7 @@ const OurTeam = () => {
   return (
     <>
        <div
-          className="p-1 p-md-3 mt-3 mt-md-5 rounded"
+          className="p-1 p-md-2 mt-3 mt-md-5 rounded"
           style={{ border: "2px solid var(--navbarColor)" }}
         >
           <div
@@ -137,7 +137,7 @@ const OurTeam = () => {
                   transition: "ease-in-out 0.3s",
                 }}
               >
-                <img src={showMore ? rightArrow : downbtn} alt="" />
+                <img src={showMore ? arrowup : downbtn} alt="" />
                 {showMore ? "SHOW LESS" : "ALL MEMBERS"}
               </button>
             </div>

@@ -10,10 +10,10 @@ import Testimonial from "../../components/ServiceComponents/Testimonial/Testimon
 import "./Services.css";
 const Services = () => {
   return (
-    <div className="service-container">
+    <div className="service-container " >
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-8 firstServiceContainer">
+          <div className="col-md-8 firstServiceContainer serviceer2"  id="serviceContainer1">
             <div className="">
               <div className="heading">
                 <h1 className="uppercase serviceTextColor d-flex align-items-center gap-4">
@@ -36,7 +36,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="paragraph">
-                <p>
+                <p className="serviceparaG">
                   At NexGen, we offer a comprehensive suite of digital solutions
                   designed to propel your business to new heights in the digital
                   realm. With a team of skilled professionals, cutting-edge

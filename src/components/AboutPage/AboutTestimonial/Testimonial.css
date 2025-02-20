@@ -1,0 +1,18 @@
+/* .testimonial-top{
+   margin-top:4rem;
+}
+@media (max-width: 576px){
+    .testimonial-top{
+        margin-top:2rem;
+    } 
+} */
+
+.rotate {
+    transform: rotate(90deg); /* 90 degree rotate */
+    transition: transform 0.3s ease; /* Smooth animation */
+  }
+  
+  .default {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }

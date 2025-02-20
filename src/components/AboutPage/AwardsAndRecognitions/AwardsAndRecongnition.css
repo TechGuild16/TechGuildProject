@@ -1,0 +1,8 @@
+.about-awards-recognition{
+    margin-top:4rem;
+}
+@media (max-width: 576px){
+    .about-awards-recognition{
+        margin-top:2rem;
+    } 
+}
