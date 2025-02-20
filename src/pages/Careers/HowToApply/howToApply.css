@@ -1,7 +1,24 @@
-.backgroundColor {
-  background-color: var(--navbarColor);
+:root {
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --lightBlack: #1f1f1f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --careersText: #f9efec;
+  --paraText: #676665;
+  --timeLine: #b3b3b2;
+}
+.apply-div {
+  padding-left: 1px;
+  padding-right: 1px;
+  border-radius: 10px;
+  padding-bottom: 17px;
+  width: 95%;
+  margin: auto;
+  border: 2px solid var(--navbarColor);
 }
 
-.apply-header {
-  width: 97vw;
+.card-div {
+  background-color: var(--navbarColor);
 }

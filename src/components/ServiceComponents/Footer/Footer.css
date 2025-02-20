@@ -30,7 +30,7 @@
     border-radius: 7px;
 }
 
-.footerButton img {
+.footerButton img   {
     width: 2vw;
 }
 
@@ -47,7 +47,7 @@
 
 .footerLinks {
     min-height: 32vh;
-    width: 22.5vw;
+    width: 22.8vw;
     border-radius: 12px;
     background-color: var(--navbarColor);
 }
@@ -194,11 +194,21 @@
     }
 
     .FooterSection {
-        padding: 9vw 6vw;
+        padding: 9vw 5vw;
     }
-
+    .footerHeading h3 {
+        padding-left: 8vw;
+    }
     .footerHeading h3 {
         font-size: 8.5vw;
+        margin-left: 3vw;
+    }
+    .footerHeading p {
+        width: 61.20vw;
+        margin-left: 3vw;
+    }
+    .footerLinks {
+        width: 89.5vw !important;
     }
 
     .footerHeading p {

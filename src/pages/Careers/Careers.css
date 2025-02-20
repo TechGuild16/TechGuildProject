@@ -7,7 +7,13 @@
   --careersText: #f9efec;
   --paraText: #676665;
 }
-
+.op {
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 10px;
+  width: 98%;
+  margin: auto;
+}
 .career-container {
   width: 100vw;
   padding-top: 2vw;
@@ -196,6 +202,5 @@
   .paragraph {
     padding-left: 2vw;
     padding-top: 3vw;
-    margin-bottom: 4px;
   }
 }

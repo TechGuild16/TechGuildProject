@@ -31,7 +31,7 @@ const OurWork = () => {
                     <p className='uppercase zelinthtext'>Zenith Fitness App</p>
                    </div>
                    <div className="d-flex gap-2 align-items-center pt-3 px-3">
-                   <img src={arrow} className='zelinth' alt="" />
+                   <img src={arrow} className='zelinth zelinth5' alt="" />
                    <p className='uppercase zelinthtext'>Details</p>
                    </div>
                   </div>
@@ -82,7 +82,7 @@ const OurWork = () => {
                     </div>
                     <div className="row mt-3 myrower">
                       <div className="col-md-12 px-4 mycategorycontainer2 gap-3 d-flex align-items-center ">
-                        <p className='zelinthtext uppercase'>Team Members</p>
+                        <p className='zelinthtext uppercase teammebertext'>Team Members</p>
                         <div className="d-flex align-items-center gap-2">
                           <div className="profilephoto mb-2">
                             <img src={person1} alt="" />
@@ -125,11 +125,11 @@ const OurWork = () => {
                 <div className="col-md-4 mainWork mainworkfirst ">
                   <div className="d-flex justify-content-between align-items-center">
                    <div className="d-flex pt-3 px-2 align-items-center gap-3">
-                    <img src={aura} className='zelinth' alt="" />
+                    <img src={aura} className='zelinth ' alt="" />
                     <p className='uppercase zelinthtext'>A-Aura Ecommerce</p>
                    </div>
                    <div className="d-flex gap-2 align-items-center pt-3 px-3">
-                   <img src={arrow} className='zelinth' alt="" />
+                   <img src={arrow} className='zelinth zelinth5' alt="" />
                    <p className='uppercase zelinthtext'>Details</p>
                    </div>
                   </div>

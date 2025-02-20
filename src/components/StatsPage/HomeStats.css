@@ -1,24 +1,25 @@
 .StatsMain{
     width: 100%;
     min-height: 17.5vh;
-    padding-right: 1.2vw;
-    margin-top: 1.5vw;
+    padding-right: 2vw;
+    margin-top: 1.2vw;
 }
 .statsCover{
     border-radius: 12px;
     height: 100%;
-    border: 4px solid var(--navbarColor);
-    padding: 1vw 1.8vw;
+    border: 2px solid var(--navbarColor);
+    padding: 1vw 0.8vw;
 }
 .statsDiv{
     background-color: var(--navbarColor);
     height: 16vh;
-    width: 15vw;
-    border-radius: 6px;
+    width: 14.5vw ;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 .statsDiv :nth-child(1) p{
     color: #c0b6b3;
@@ -26,9 +27,9 @@
 }
 .statsDiv :nth-child(1) h4{
     margin-top: -1vw;
-    color: var(--secondaryColor);
+    color: #d99d8b;
     font-size: 3vw;
-    font-weight: bolder;
+    font-weight: 500;
 }
 .statsDiv img{
     width: 3vw;
@@ -49,9 +50,20 @@
 @media (max-width: 576px){
     .mystatdiv{
         flex-direction: column;
+   
     }
     .statsDiv {
-        width: 42vw;
+        width: 41vw;
+        gap: 5px !important;
+        height: 14vh;
+
+    }
+    .foloowerwer{
+        margin-top: 1vw;
+    }
+    .tenyearexpe{
+        margin-left: 2vw;
+            width: 84.5vw !important;
     }
     .StatsMain {
         margin-top: 7.5vw;
@@ -62,6 +74,10 @@
     .statsDiv :nth-child(1) h4 {
         font-size: 12vw;
         margin-top: -5vw;
+    }
+    .StatsMain{
+        margin-top: 4vw;
+        padding-right: 0vw  !important;
     }
 .agencyhiden{
     display: none;
@@ -76,9 +92,12 @@
         display: grid
         ;
             grid-template-columns: 1fr 1fr;
+            padding: 1vw 2vw !important;
+            gap: 5px !important;
     }
     .happyclients{
         display: flex;
+        padding-top: 1vw !important;
     }
     .tenyearexpe {
         width: 86vw;
@@ -89,8 +108,10 @@
         display: none;
     }
     .knowmoremobile {
-        width: 86vw;
-        margin-top: 2vw;
+        width: 84.5vw;
+        margin-top: 3vw;
         display: flex;
+        margin-left: 2vw;
+        margin-bottom: 2vw;
     }
 }

@@ -47,30 +47,27 @@ const JobListings = () => {
 
   return (
     <>
-      <div className="container-fluid mt-3">
+      <div className="container-fluid mt-3 job-main-div">
         <div
-          className="p-1 p-md-4 mt-3 mt-md-5 rounded"
+          className="p-md-2 mt-md-3 rounded"
           style={{ border: "2px solid var(--navbarColor)" }}
         >
-          <div
-            className="d-flex justify-content-between align-items-center p-4 mt-1 rounded"
-            style={{ backgroundColor: "var(--navbarColor)" }}
-          >
+          <div className="d-flex justify-content-between align-items-center p-4 rounded nav-div">
             <h3 style={{ color: "var(--textColor)" }}>
               JOIN OUR TEAM AT NEXGEN
             </h3>
           </div>
-          <div className="container-fluid mt-3">
-            <div className="row mt-1 g-4">
+          <div className="mt-1">
+            <div className="row mt-1 g-2">
               {jobs.map((job, index) => (
                 <div key={index} className="col-md-6">
                   <div className="text-white p-4 rounded small-div">
                     <div className="card-body">
                       <div className="d-flex justify-content-between align-items-center mb-3">
                         <div className="d-flex">
-                          <img style={{ width: "45px" }} src={job.img} alt="" />
+                          <img style={{ width: "40px" }} src={job.img} alt="" />
                           <h5
-                            style={{ marginTop: "6px", paddingLeft: "6px" }}
+                            style={{ marginTop: "10px", paddingLeft: "6px" }}
                             className="card-title"
                           >
                             {job.title}
@@ -80,7 +77,7 @@ const JobListings = () => {
                           className="d-flex align-items-center"
                           style={{ gap: "4px" }}
                         >
-                          <div>
+                          <div className="domain-img">
                             <img
                               className="w-20"
                               src={arrow}

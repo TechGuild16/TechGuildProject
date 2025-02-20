@@ -1,15 +1,15 @@
 import React from "react";
 import arrow from "../../Assets/arrowdown.png";
 import circle from "../../Assets/startAProject.png";
+import Testimonials from "../Blogs/Testimonial/Testimonial.jsx";
 import "./Careers.css";
 import HowToApply from "./HowToApply/howToApply.jsx";
 import JobListings from "./joinTeam/jobListing";
-import Testimonials from "./Testimonial/Testimonial.jsx";
 
 const Careers = () => {
   return (
     <>
-      <div className="container-fluid mt-3">
+      <div className="container-fluid op">
         <div className="row">
           <div className="col-md-8">
             <div
@@ -124,16 +124,9 @@ const Careers = () => {
           </div>
         </div>
       </div>
-
-      <div className="mt-3">
-        <JobListings />
-      </div>
-      <div className="mt-3">
-        <HowToApply />
-      </div>
-      <div className="mt-3">
-        <Testimonials />
-      </div>
+      <JobListings />
+      <HowToApply />
+      <Testimonials />
     </>
   );
 };

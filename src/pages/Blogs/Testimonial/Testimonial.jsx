@@ -103,12 +103,9 @@ const Projects = () => {
         {/*********************FOURT COMPONENT START*********************/}
         {/***********TESTIMONIALS************/}
 
-        <div
-          className="p-3 mt-3 mt-md-5 rounded"
-          style={{ border: "2px solid var(--navbarColor)" }}
-        >
+        <div className="p-2 mt-3 mt-md-5 rounded test-div">
           <div
-            className="d-flex justify-content-between align-items-center p-4 mt-1 rounded"
+            className="d-flex justify-content-between align-items-center p-3  rounded"
             style={{ backgroundColor: "var(--navbarColor)" }}
           >
             <h3 style={{ color: "var(--textColor)" }}>TESTIMONIALS</h3>

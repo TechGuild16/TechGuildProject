@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
-import rightArrow from "../../../Assets/arrowdown.png";
 import downbtn from "../../../Assets/downBtn.png";
 import "./howToApply.css";
 
@@ -59,93 +58,94 @@ const HowToApply = () => {
   ];
 
   return (
-    <div
-      className="p-1 p-md-4 mt-3 mt-md-5 mx-3 rounded"
-      style={{ border: "2px solid var(--navbarColor)" }}
-    >
-      <div
-        className="p-4 p-md-4 rounded d-flex justify-content-center align-items-center justify-content-md-start align-items-md-start"
-        style={{ backgroundColor: "var(--navbarColor)" }}
-      >
-        <h3 className="" style={{ color: "var(--textColor)" }}>
-          HOW TO APPLY
-        </h3>
-      </div>
-      <div className="row">
-        {steps
-          .slice(0, showMore || !isMobile ? steps.length : 3)
-          .map((acheivement, index) => (
-            <div key={index} className="col-md-3 mt-2">
-              <div
-                className="mt-3 rounded w-100 h-100 position-relative" // Added position-relative
-                style={{ backgroundColor: "var(--navbarColor)" }}
-              >
-                <p
-                  className="p-4 mb-2"
-                  style={{ color: "var(--navbarLinksColor)" }}
-                >
-                  {acheivement.step}
-                </p>
-                <div
-                  className="d-flex p-4 justify-content-center align-items-center mb-2"
-                  style={{
-                    height: "20vh",
-                    backgroundColor: "var(--btnBackground)",
-                  }}
-                >
-                  <h5 style={{ color: "var(--textColor)" }}>
-                    {acheivement.title}
-                  </h5>
-                </div>
-                <p className="p-4" style={{ color: "var(--paragraphText)" }}>
-                  {acheivement.description}
-                </p>
-
-                {/* Positioned at the bottom of the card */}
-                <div
-                  className="d-flex align-items-center position-absolute"
-                  style={{
-                    bottom: "4px", // Positions the div at the bottom with 4px padding
-                    left: "4px", // Ensures left padding
-                    right: "4px", // Ensures right padding
-                    gap: "4px",
-                  }}
-                >
-                  <div>
-                    <img
-                      className="mb-1"
-                      style={{ width: "40px", height: "40px" }}
-                      src={downbtn}
-                      alt=""
-                    />
-                  </div>
-                  <p
-                    className="fs-5"
-                    style={{ color: "var(--textColor)", paddingTop: "8px" }}
+    <>
+      <div className="container-fluid mt-3 apply-div">
+        <div className="p-1 p-md-2 mt-md-1 rounded">
+          <div
+            className="p-4 p-md-4 rounded d-flex justify-content-center align-items-center justify-content-md-start align-items-md-start"
+            style={{ backgroundColor: "var(--navbarColor)" }}
+          >
+            <h3 className="" style={{ color: "var(--textColor)" }}>
+              HOW TO APPLY
+            </h3>
+          </div>
+          <div className="row">
+            {steps
+              .slice(0, showMore || !isMobile ? steps.length : 3)
+              .map((acheivement, index) => (
+                <div key={index} className="col-md-3 mt-2">
+                  <div
+                    className="mt-1 mb-5 rounded w-100 h-100 position-relative card-div" // Added position-relative
                   >
-                    KNOW MORE
-                  </p>
+                    <h6
+                      className="p-1 mb-2"
+                      style={{
+                        color: "var(--navbarLinksColor)",
+                        marginLeft: "18px",
+                      }}
+                    >
+                      {acheivement.step}
+                    </h6>
+                    <div
+                      className="d-flex align-items-center"
+                      style={{
+                        height: "13vh",
+                        backgroundColor: "var(--btnBackground)",
+                      }}
+                    >
+                      <h6
+                        style={{
+                          color: "var(--textColor)",
+                          paddingLeft: "25px",
+                        }}
+                      >
+                        {acheivement.title}
+                      </h6>
+                    </div>
+                    <p
+                      className="align-items-center p-4"
+                      style={{
+                        color: "var(--paragraphText)",
+                        marginRight: "5px",
+                      }}
+                    >
+                      {acheivement.description}
+                    </p>
+
+                    {/* Positioned at the bottom of the card */}
+                    <div
+                      className="d-flex align-items-center position-absolute"
+                      style={{
+                        bottom: "4px",
+                        gap: "4px",
+                      }}
+                    >
+                      <div>
+                        <img
+                          className="mb-1"
+                          style={{
+                            width: "30px",
+                            height: "30px",
+                            marginLeft: "20px",
+                          }}
+                          src={downbtn}
+                          alt=""
+                        />
+                      </div>
+                      <p
+                        className="fs-5"
+                        style={{ color: "var(--textColor)", paddingTop: "8px" }}
+                      >
+                        KNOW MORE
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              ))}
+          </div>
+        </div>
       </div>
-      <div className="d-block mt-4 d-md-none d-flex gap-2 w-100 p-2 justify-content-center align-items-center rounded backgroundColor">
-        <button
-          className="d-block d-md-none d-flex gap-2 w-100 p-2 justify-content-center align-items-center rounded backgroundColor"
-          onClick={() => setShowMore(!showMore)}
-          style={{
-            color: "var(--paragraphText)",
-            outline: "none",
-            border: "none",
-            transition: "ease-in-out 0.3s",
-          }}
-        >
-          <img src={showMore ? rightArrow : downbtn} alt="" />
-          {showMore ? "SHOW LESS" : "OUR ACHEIVEMENT"}
-        </button>
-      </div>
-    </div>
+    </>
   );
 };
 

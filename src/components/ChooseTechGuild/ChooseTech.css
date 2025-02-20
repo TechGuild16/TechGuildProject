@@ -1,30 +1,31 @@
 .chooseTech{
     min-height: 62vh;
-    border: 4px solid var(--navbarColor);
-    border-radius: 12px;
-    margin-right: 1vw;
+    border: 2px solid var(--navbarColor);
+    border-radius: 18px;
+    margin-right: 2.3vw;
     padding: 1vw;
-    margin-top: 1vw;
+    margin-top: 4vw;
 }
 .moiblechoosetext{
     display: none;
 }
 .chooseHeading{
     background-color: var(--navbarColor);
-    padding: 2vw;
+    padding: 2.6vw;
     border-radius: 12px;
 }
 .chooseHeading h3{
     color: var(--servicesText);
+    font-size: 2.5vw;
 }
 .chooseTechDiv{
-    width: 22.8vw;
+    width: 22.25vw;
     background-color: var(--navbarColor);
     min-height: 36.85vh;
     border-radius: 12px;
 }
 .guildCard{
-    padding: 1.5vw 1vw;
+    padding: 2.5vw 1vw;
     flex-direction: column;
 }
 .guildDetails h5{
@@ -32,8 +33,10 @@
     font-weight: 400;
 }
 .guildDetails p{
-    color: var(--paraText);
+    color: #969696;
     font-weight: 400;
+    line-height: 1.3;
+    font-size: 1vw;
 }
 .guildCard :nth-child(2) img{
     width: 3vw;
@@ -43,20 +46,34 @@
     padding-top: .5vw;
 }
 @media (max-width: 576px){
+    .chooseTech{
+        margin-left: 1vw;
+    }
     .chooseTechDiv {
-        width: 83.8vw;
+        width: 82.5vw !important;
         background-color: var(--navbarColor);
-        min-height: 36.85vh;
         border-radius: 12px;
         
+        min-height: 31.85vh !important;
+    }
+    .mychooseer{
+        gap: 10px !important;
+    }
+    .guildDetails p {
+        font-size: 3.5vw;
+        padding-top: 1vw;
     }
     .guildDetails h5{
         font-weight: 500;
     }
+    .chooseHeading h3 {
+        font-size: 6.5vw !important;
+    }
     .chooseTech{
         padding-bottom: 6vw;
         padding-left: 3vw;
-          }
+        margin-right: 0.3vw;
+     }
     .guildCard {
         padding: 5.5vw 3vw;
         flex-direction: column;
@@ -80,7 +97,7 @@
         width: 14vw;
     }
     .guildCard :nth-child(2) p{
-        padding: 0vw;
+        padding-top: 2vw;
     }
     .chooseHeading{
         margin-top: 1vw;

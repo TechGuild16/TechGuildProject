@@ -14,3 +14,13 @@
 .showcaseBtn {
   width: 20vw;
 }
+
+.test-div {
+  border: 2px solid var(--navbarColor);
+  padding-top: 70px;
+  padding-left: 14px;
+  padding-right: 15px;
+  border-radius: 10px;
+  width: 97%;
+  margin: auto;
+}
