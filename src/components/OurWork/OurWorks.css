@@ -1,5 +1,5 @@
 .ourWorks{
-    margin-top: 4vw;
+    margin-top: 1vw;
     min-height: 100vh;
     margin-right: 1vw;
 }
@@ -130,12 +130,17 @@
     font-weight: 500;
 }
 @media (max-width: 576px){
+    .ourWorks{
+        margin-top: 2vw;
+    }
     .homeServiceContainer {
         width: 82.6vw;
     }
+    .containerWorkone{
+        margin-top: 1vw;
+    }
     .ourWorkHeading {
-        border-radius: 32px;
-        padding-left: 6vw;
+        border-radius: 15px;
     }
     .ourWorkHeading :nth-child(2) img{
         width: 8vw;
@@ -157,12 +162,15 @@
         margin-left: 1vw;
     }
     .zelinth {
-        width: 9.2vw;
+        width: 14.2vw;
     }
     .zelinthtext {
         padding-top: 3.5vw;
         font-size: 3.2vw;
         color: var(--servicesText);
+    }
+    .WorkFirstContainer{
+        margin-top: 3vw !important;
     }
     .categorytext {
         color: var(--servicesText);
@@ -170,7 +178,7 @@
     }
     .categoryoutline {
         background-color: #363636;
-        margin-top: 1vw;
+        margin-top: 5vw;
         width: fit-content;
         padding: 1.2vw 5vw;
         border-radius: 23px;
@@ -208,4 +216,14 @@
         width: 8vh;
         height: 8vh;
     }
+    .ourWorkHeading{
+        padding: 0vw !important;
+        padding-left: 5vw !important;
+    }
+    .WorkFirstContainer{
+        padding-bottom: 4vw;
+    }
+    .zelinthmobile{
+        display: none !important;
+    } 
 }

@@ -33,8 +33,17 @@
 .statsDiv img{
     width: 3vw;
 }
+.happyclients{
+    display: none;
+}
 .knowmore{
     color: #c0b6b3;
+}
+.knowmoremobile{
+    display: none;
+}
+.tenyearexpe{
+    display: none;
 }
 /* mystatdiv */
 @media (max-width: 576px){
@@ -42,22 +51,46 @@
         flex-direction: column;
     }
     .statsDiv {
-        width: 86vw;
+        width: 42vw;
     }
     .StatsMain {
         margin-top: 7.5vw;
     }
-    .statsDiv :nth-child(1) p{
-        font-size: 6vw;
+    .statsDiv :nth-child(1) p {
+        font-size: 4vw;
     }
     .statsDiv :nth-child(1) h4 {
-        font-size: 9vw;
+        font-size: 12vw;
+        margin-top: -5vw;
     }
+.agencyhiden{
+    display: none;
+}
     .statsDiv img {
         width: 14vw;
     }
     .knowmore{
         font-size: 6vw;
     }
-    
+    .mystatdiv{
+        display: grid
+        ;
+            grid-template-columns: 1fr 1fr;
+    }
+    .happyclients{
+        display: flex;
+    }
+    .tenyearexpe {
+        width: 86vw;
+        margin-top: 2vw;
+        display: flex;
+    }
+    .contest{
+        display: none;
+    }
+    .knowmoremobile {
+        width: 86vw;
+        margin-top: 2vw;
+        display: flex;
+    }
 }

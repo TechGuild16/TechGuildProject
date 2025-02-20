@@ -4,67 +4,57 @@ import './CountDown.css';
 const CountDown = () => {
   const initialTime = {
     days: 75,
-    hours: 59,
+    hours: 23, 
     minutes: 59,
     seconds: 0
   };
 
-  // useEffect(() => {
-  //   if (!localStorage.getItem('initialTime')) {
-  //     localStorage.setItem('initialTime', JSON.stringify(initialTime));
-  //   }
-  // }, []);
+  const totalInitialSeconds =
+    initialTime.days * 24 * 60 * 60 +
+    initialTime.hours * 60 * 60 +
+    initialTime.minutes * 60 +
+    initialTime.seconds;
 
-  // const calculateTimeLeft = () => {
-  //   const savedInitialTime = localStorage.getItem('initialTime');
-    
-  //   if (!savedInitialTime) {
-  //     return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-  //   }
+  const calculateTimeLeft = () => {
+    const startTime = localStorage.getItem('startTime');
 
-  //   const parsedInitialTime = JSON.parse(savedInitialTime);
+    if (!startTime) {
+      return initialTime;
+    }
 
-  //   const totalInitialSeconds =
-  //     parsedInitialTime.days * 24 * 60 * 60 +
-  //     parsedInitialTime.hours * 60 * 60 +
-  //     parsedInitialTime.minutes * 60 +
-  //     parsedInitialTime.seconds;
+    const now = Date.now();
+    const elapsedTime = (now - parseInt(startTime)) / 1000; 
+    const remainingTime = totalInitialSeconds - elapsedTime;
 
+    if (remainingTime <= 0) {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 }; 
+    }
 
-  //   const now = Date.now();
-  //   const startTime = localStorage.getItem('startTime');
-  //   const elapsedTime = startTime ? (now - startTime) / 1000 : 0; 
+    const days = Math.floor(remainingTime / (24 * 60 * 60));
+    const hours = Math.floor((remainingTime % (24 * 60 * 60)) / (60 * 60));
+    const minutes = Math.floor((remainingTime % (60 * 60)) / 60);
+    const seconds = Math.floor(remainingTime % 60);
 
-  //   const remainingTime = totalInitialSeconds - elapsedTime;
+    return { days, hours, minutes, seconds };
+  };
 
-  //   if (remainingTime <= 0) {
-  //     return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-  //   }
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  //   const days = Math.floor(remainingTime / (24 * 60 * 60));
-  //   const hours = Math.floor((remainingTime % (24 * 60 * 60)) / (60 * 60));
-  //   const minutes = Math.floor((remainingTime % (60 * 60)) / 60);
-  //   const seconds = Math.floor(remainingTime % 60);
+  useEffect(() => {
+    if (!localStorage.getItem('initialTime')) {
+      localStorage.setItem('initialTime', JSON.stringify(initialTime));
+    }
 
-  //   return { days, hours, minutes, seconds };
-  // };
+    if (!localStorage.getItem('startTime')) {
+      localStorage.setItem('startTime', Date.now());
+    }
 
-  
-  // useEffect(() => {
-  //   if (!localStorage.getItem('startTime')) {
-  //     localStorage.setItem('startTime', Date.now());
-  //   }
-  // }, []);
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
 
-  // const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
-
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setTimeLeft(calculateTimeLeft);
-  //   }, 1000);
-
-  //   return () => clearInterval(timer);
-  // }, []);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="countDown d-flex align-items-center justify-content-between">
@@ -77,19 +67,19 @@ const CountDown = () => {
 
       <div className="countDownTimer d-flex align-self-start">
         <div className="timeBox">
-          <h2>75</h2>
+          <h2>{timeLeft.days}</h2>
           <span className="label">DAYS</span>
         </div>
         <div className="timeBox">
-          <h2>59</h2>
+          <h2>{timeLeft.hours}</h2>
           <span className="label">HOURS</span>
         </div>
         <div className="timeBox">
-          <h2>59</h2>
+          <h2>{timeLeft.minutes}</h2>
           <span className="label">MINUTES</span>
         </div>
         <div className="timeBox">
-          <h2>0</h2>
+          <h2>{timeLeft.seconds}</h2>
           <span className="label">SECONDS</span>
         </div>
       </div>
