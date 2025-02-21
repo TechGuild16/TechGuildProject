@@ -69,11 +69,11 @@ const Testimonial = () => {
     return (
         <>
             <div
-                className="p-3 py-1 pb-0 mt-3 mt-md-5 rounded testimonial-top"
+                className="p-3 py-2 pb-0 mt-3 mt-md-5 rounded testimonial-top"
                 style={{ border: "2px solid var(--navbarColor)" }}
             >
                 <div
-                    className="d-flex justify-content-between align-items-center p-4 mt-1 rounded"
+                     className="d-flex justify-content-between align-items-center p-4 mt-1 rounded about-testimonial"
                     style={{ backgroundColor: "var(--navbarColor)" }}
                 >
                     <h3 style={{ color: "var(--textColor)" }}>TESTIMONIALS</h3>
@@ -89,7 +89,7 @@ const Testimonial = () => {
                         .map((testimonial, index) => (
                             <div key={index} className="col-md-3">
                                 <div
-                                    className="mt-2 rounded"
+                                    className=" mt-3 rounded"
                                     style={{ backgroundColor: "var(--navbarColor)" }}
                                 >
                                     <div className="p-3">
@@ -110,7 +110,7 @@ const Testimonial = () => {
                                         className="d-flex align-items-center justify-content-between gap-1 rounded"
                                         style={{
                                             backgroundColor: "var(--btnBackground)",
-                                            height: "20vh",
+                                           
                                         }}
                                     >
                                         <div className="w-75 d-flex align-items-center justify-content-center gap-2">

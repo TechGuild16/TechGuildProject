@@ -9,7 +9,7 @@ import FAndQ from "../../components/AboutPage/FAndQ/FAndQ";
 const Projects = () => {
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid about-page-padding">
                 <ProjectHeader />
                 <Service />
                 <ProjectShowCase />

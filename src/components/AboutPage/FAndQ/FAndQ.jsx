@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import minusBtn from "../../../Assets/minusbtn.png";
 import plusBtn from "../../../Assets/plusBtn.png";
 import serviceArrow from "../../../Assets/serviceArrow.png";
-
+import './FAndQ.css'
 
 const FAndQ = () => {
 
@@ -59,7 +59,7 @@ const FAndQ = () => {
       };
   return (
     <>
-         <div className="d-flex justify-content-between align-items-center  p-4 mt-4 mt-md-5 rounded" style={{ backgroundColor: "var(--navbarColor)" }}>
+         <div className="d-flex justify-content-between align-items-center  p-4 mt-4 mt-md-5  rounded  frequently-member" style={{ backgroundColor: "var(--navbarColor)" }}>
                     <h3 style={{ color: "var(--textColor)" }}>FREQUENTLY ASKED QUESTIONS</h3>
                     <div className="d-none d-md-flex  align-items-center gap-3">
                         <img className="mb-2" src={serviceArrow} alt="" />
@@ -70,7 +70,7 @@ const FAndQ = () => {
                 <div className="container-fluid mt-3">
                     <div className="row">
                         <div className="col-md-7">
-                            <div>
+                            <div className='about-FandQuestion'>
                                 {faqs.map((item, index) => (
                                     <div key={index} className="rounded backgroundColor">
                                         <div className="d-flex p-4 mb-2">
@@ -116,7 +116,7 @@ const FAndQ = () => {
                         <div className="col-md-5">
                             <div className="row mb-2">
                                 <div className="col-md-12">
-                                    <div className="rounded" style={{ backgroundColor: 'var(--navbarColor)'}}>
+                                    <div className="rounded  about-FandQ" style={{ backgroundColor: 'var(--navbarColor)'}}>
                                         <h4 className="p-2 mb-0 mt-2 mt-md-0 mx-2" style={{ color: "var(--textColor)" }}>Ask Your Question</h4>
                                         
                                         <form className="p-4" onSubmit={handleSubmit}>

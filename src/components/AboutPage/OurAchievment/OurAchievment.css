@@ -1,8 +1,9 @@
-.our-achievment{
-    margin-top:3rem;
+.about-acheivement-member{
+    /* margin-left:6px; */
+    width:92.5vw
 }
-@media (max-width: 576px){
-    .our-achievment{
-        margin-top:2rem;
+@media screen and (max-width: 768px){
+    .about-acheivement-member{
+        width:88vw  
     }
 }

@@ -10,7 +10,7 @@ import FAndQ from "../../components/AboutPage/FAndQ/FAndQ";
 const About = () => {
   return (
     <>
-      <div className="container-fluid mt-3">
+      <div className="container-fluid mt-3 about-page-padding">
            <AboutHeader/>
            <OurTeam/>
            <OurAchievment/>

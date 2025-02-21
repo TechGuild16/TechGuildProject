@@ -1,9 +1,39 @@
 .aboutcircleimage{
-    width: 15vw;
+    width:16vw;
+    margin-top: 5px;
+}
+.about-header-box{
+    width:47vw;
+    height:20.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:25px;
+}
+.about-card-section{
+    height:19vh;
+    border-radius:50px;
+}
+/* .about-cards{
+    width:10vw;
+    height:18vw;
+} */
+.about-header-box h1{
+    font-size:3.021vw;
+    line-height: 4.531vw;
+    margin-left:26px; 
 }
 
-@media (max-width: 576px){
+
+@media screen and (max-width: 768px){
     .aboutmarginfix{
             margin-top: 4vw;
     }
+    .about-card-section{
+        height:12vh;
+        border-radius:50px;
+    }
+  
+   
+   
 }

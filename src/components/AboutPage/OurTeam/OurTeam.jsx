@@ -67,7 +67,7 @@ const OurTeam = () => {
           style={{ border: "2px solid var(--navbarColor)" }}
         >
           <div
-            className="d-flex justify-content-between align-items-center p-4 mt-1 rounded"
+            className="d-flex justify-content-between align-items-center p-4 mt-1 rounded about-team-member"
             style={{ backgroundColor: "var(--navbarColor)" }}
           >
             <h3 style={{ color: "var(--textColor)" }}>
@@ -79,7 +79,7 @@ const OurTeam = () => {
             </div>
           </div>
 
-          <div className="container-fluid mt-3">
+          <div className="container-fluid p-2 mt-1">
             <div className="row">
               {members
                 .slice(0, showMore || !isMobile ?members.length : 3)
