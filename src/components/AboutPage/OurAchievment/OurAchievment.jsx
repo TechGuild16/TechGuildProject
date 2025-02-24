@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import downbtn from "../../../Assets/downBtn.png";
-import rightArrow from "../../../Assets/rightArrow.png";
+// import rightArrow from "../../../Assets/rightArrow.png";
 import arrowup from '../../../Assets/arrowup.png';
+import './OurAchievment.css'
+// import arrowup from '../../../Assets/arrowup.png';
 import './OurAchievment.css'
 const OurAchievment = () => {
   
@@ -102,6 +104,7 @@ const OurAchievment = () => {
                 transition: "ease-in-out 0.3s",
               }}
             >
+              <img src={showMore ? arrowup  : downbtn} alt="" />
               <img src={showMore ? arrowup  : downbtn} alt="" />
               {showMore ? "SHOW LESS" : "OUR ACHEIVEMENT"}
             </button>

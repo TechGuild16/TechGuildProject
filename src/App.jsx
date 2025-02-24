@@ -20,7 +20,7 @@ function App() {
     { path: "/Projects", label: "PROJECTS", className: "projects" },
     { path: "/CaseStudy", label: "CASE STUDY", className: "home" },
     { path: "/Blogs", label: "BLOGS", className: "blogs" },
-    { path: "/contact", label: "CONTACT", className: "contact" },
+    { path: "/contact", label: "CONTACT US", className: "contact" },
   ];
   return (
     <div className="App">

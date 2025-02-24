@@ -9,7 +9,7 @@ import person4 from '../../../Assets/person4.png'
 const Testimonial = () => {
     return (
         <div className=' testimonialMaindiv'>
-            <div className="OurServiceHeading d-flex align-items-center justify-content-between">
+            <div className="OurServiceHeading testimonialheadinger d-flex align-items-center justify-content-between">
                 <h1 className='uppercase'>Testimonails</h1>
                 <div className="d-flex testimonialdiv gap-2 align-items-center">
                     <img src={arrow} alt="" />

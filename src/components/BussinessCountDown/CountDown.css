@@ -1,14 +1,15 @@
 
 .countDown {
-    margin-top: 1vw;
-    width: 97.5vw;
-    min-height: 28.33vh;
-    border-radius: 12px;
+    margin-top: 5vw;
+    width: 95vw;
+    min-height: 26.33vh;
+
+    border-radius: 14px;
     background-color: var(--secondaryColor);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 3vw;
+    padding: 4vw 4vw 3vw 4vw;
   }
   
   .countDownDetails {
@@ -16,9 +17,9 @@
   }
   
   .countDownDetails h3 {
-    font-weight: bold;
+    font-weight: 700;
     color: #000;
-    font-size: 3.5vw;
+    font-size: 3.3vw;
     margin-bottom: 1vw;
   }
   
@@ -31,7 +32,7 @@
   /* Timer container styling */
   .countDownTimer {
     display: flex;
-    gap: 2vw;
+    gap: 3vw;
     align-items: center;
   }
   
@@ -39,10 +40,9 @@
   .timeBox {
     background-color: #000;
     color: #fff;
-    padding: 2vw;
     border-radius: 8px;
     width: 6vw;
-    height: 6vw;
+    height: 5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +66,7 @@
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    font-weight: bold;
+    font-weight: 500;
   }
   @media (max-width: 576px){
     .countDown {
@@ -79,6 +79,10 @@
   }
   .countDownDetails {
     width: 100%;
+}
+.countDown {
+  width: 89.5vw !important;
+  margin-left: 1vw;
 }
 .countDownDetails h3 {
   font-size: 6.5vw;
@@ -94,6 +98,8 @@
 }
 .footermarquee2 {
   margin-top: 3vw !important;
+  margin-right: 0.4vw !important; 
+  margin-left: 1vw;
 }
 .chooseTech :nth-child(2) row{
   flex-direction: column;

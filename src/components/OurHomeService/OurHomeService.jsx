@@ -11,7 +11,7 @@ const OurHomeService = () => {
         <div className="HomeServiceHeading d-flex align-items-center justify-content-center">
         <h3 className='uppercase'>Our Services</h3>
         </div>
-        <div className="container-fluid p-3">
+        <div className="container-fluid pt-3 homeservicecontainerpadding">
             <div className="row gap-3 mypadding">
                 <div className="col-md-6 homeServiceContainer">
                     <HomeServiceCard imageLink={agencyLogo} serviceName="Agnecy connection" agencyDesc="We connect businesses with the most suitable agencies based on specific project requirements. Our platform provides detailed agency profiles, ratings, and reviews to help clients make informed decisions." />

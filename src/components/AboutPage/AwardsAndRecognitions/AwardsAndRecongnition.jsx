@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import awardIcon from "../../../Assets/awardIcon.png";
 import downbtn from "../../../Assets/downBtn.png";
-import rightArrow from '../../../Assets/arrowright.png';
+// import rightArrow from '../../../Assets/arrowright.png';
 import arrowup from '../../../Assets/arrowup.png';
+import './AwardsAndRecongnition.css'
+// import rightArrow from '../../../Assets/arrowright.png';
+// import arrowup from '../../../Assets/arrowup.png';
 import './AwardsAndRecongnition.css'
 const AwardsAndRecongnition = () => {
     const [showMore, setShowMore] = useState(false);
@@ -81,6 +84,7 @@ const AwardsAndRecongnition = () => {
                       </p>
                       <img
                      className="w-25"
+                    
                         style={{ width: "4vw" }}
                         src={award.icon}
                         alt=""

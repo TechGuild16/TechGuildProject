@@ -4,14 +4,13 @@
     padding-top: 1vw;
     padding-left: 1.2vw;
 }
-
+.service-container {
+    padding-left: 2.5vw;
+}
 .firstServiceContainer {
     background-color: var(--navbarColor);
     border-radius: .5vw;
-    padding-top: 3vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    min-height: 57.31vh;
+    
     position: relative;
 }
 .firstServiceContainer h1{
@@ -81,9 +80,6 @@
     body,html{
         overflow-x: hidden;
     }
-    .firstServiceContainer {
-        height: 50vh; 
-    }
 
     .secondServiceContainer {
         width: 45vw; 
@@ -96,12 +92,12 @@
         padding-left: 3vw; 
         padding-right: 4vw;
         padding-top: 4vw;
+        margin-left: 3vw !important;
     }
 
     .firstServiceContainer,
     .secondServiceContainer {
         width: 100%; 
-        margin-left: 0;
     }
 
     .secondServiceContainer {
@@ -113,9 +109,15 @@
 @media (max-width: 576px) {
     .service-container {
         padding-left: 5vw; 
+     
     }
-   
-    
+   .serviceer2{
+
+    margin-left: 1.3vw !important;
+   }
+    .serviceparaG{
+        font-size: 1vw !important;
+    }
     .secondServiceContainer {
         height: 50vh;
         margin-top: 7vw;
@@ -140,7 +142,7 @@
     .responsivelogo img{
         width: 50vw;
         padding-top: 3vw;
-    }
+    }   
     .norespcircle{
         display: none;
     }
@@ -162,7 +164,11 @@
         padding: 3vw;
     }
     .firstServiceContainer {
-        height: 61vh !important;
         border-radius: 23px;
+        padding-left: 3.5vw !important;
     }
+    .secondServiceContainer {
+        width: 30vw !important;
+    }
+
 }

@@ -3,6 +3,7 @@ import './AboutHeader.css'
 
 import halfcircle from '../../../Assets/haflcircle.png';
 import Button from "../../../Assets/Button.png";
+import serviceArrow from "../../../Assets/serviceArrow.png";
 import downbtn from "../../../Assets/downBtn.png";
 const AboutHeader = () => {
   const cards = [
@@ -29,7 +30,7 @@ const AboutHeader = () => {
       <div className="row">
           <div className="col-md-7 about-header">
             <div
-              className="col-12 rounded pt-5 mt-3 d-none d-md-block"
+              className="col-12 rounded pt-3 mt-3 d-none d-md-block"
               style={{
                 padding: "10px",
                 backgroundColor: "var(--navbarColor)",
@@ -91,9 +92,9 @@ const AboutHeader = () => {
             
                 <div className="row">
                   {cards.map((item, index) => (
-                    <div key={index} className="col-6 mb-2 mt-0 about-card-section">
+                    <div key={index} className="col-6 about-header-cards">
                       <div
-                        className="rounded d-flex justify-content-center align-items-center p-2 p-md-2 mx-2"
+                        className="about-header-cards"
                         style={{
                           backgroundColor: "var(--btnBackground)",
                           textAlign: "center",
@@ -101,7 +102,7 @@ const AboutHeader = () => {
                       >
                         <div>
                           <p
-                            className="pt-0 pt-md-2 mb-0"
+                            className="pt-3 pt-md-2 mb-0"
                             style={{ color: "var(--textColor)" }}
                           >
                             {item.content}
@@ -116,9 +117,9 @@ const AboutHeader = () => {
                       </div>
                     </div>
                   ))}
-                  <div className="d-flex justify-content-center align-items-center pt-md-1 pt-0 gap-2">
-                    <img className="mb-2 mb-md-0" src={downbtn} alt="" />
-                    <p className="fs-5" style={{ color: "var(--textColor)" }}>
+                  <div className="d-flex justify-content-center align-items-center pt-md-0 pt-0 gap-2 mt-4">
+                    <img className="mb-2 mb-md-0 about-down-arrow" src={serviceArrow} alt="" />
+                    <p className="about-know-more" style={{ color: "var(--textColor)" }}>
                       KNOW MORE
                     </p>
                   </div>

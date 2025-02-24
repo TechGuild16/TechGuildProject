@@ -7,7 +7,7 @@ const HomeStats = () => {
 
             <div className='statsCover'>
                 <div className="container-fluid">
-                    <div className="row gap-2 mystatdiv">
+                    <div className="row gap-3 mystatdiv">
                         <div className="col-md-1 statsDiv">
                             <div className="">
                                 <p>Clients</p>
@@ -26,13 +26,13 @@ const HomeStats = () => {
                                 <h4>500+</h4>
                             </div>
                         </div>
-                        <div className="col-md-2 statsDiv happyclients">
+                        <div className="col-md-2 statsDiv happyclients foloowerwer">
                             <div className="">
                                 <p>happy clients</p>
                                 <h4>100%</h4>
                             </div>
                         </div>
-                        <div className="col-md-2 statsDiv">
+                        <div className="col-md-2 statsDiv foloowerwer">
                             <div className="">
                                 <p>Followers</p>
                                 <h4>420k</h4>
