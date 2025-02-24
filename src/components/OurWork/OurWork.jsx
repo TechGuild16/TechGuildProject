@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './OurWorks.css'
 import arrow from '../../Assets/serviceArrow.png'
 import zenith from '../../Assets/Zenith.png'
@@ -10,7 +10,10 @@ import person2 from '../../Assets/person7.png'
 import person3 from '../../Assets/person8.png'
 import person4 from '../../Assets/person9.png'
 import person5 from '../../Assets/person10.png'
+import { useLocation } from 'react-router-dom'
 const OurWork = () => {
+
+  
   return (
     <div className='ourWorks'>
       <div className="ourWorkHeading d-flex align-items-center justify-content-between p-4">

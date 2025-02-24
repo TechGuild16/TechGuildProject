@@ -4,7 +4,8 @@
     min-height: 100vh;
     margin-right: 2.3vw;
   }
-  
+  .faqFirstSection {
+  }
   .faqheading {
     background-color: var(--navbarColor);
     padding: 2.5vw 2vw;
@@ -62,7 +63,7 @@
     border-radius: 12px;
     background-color: var(--navbarColor);
     padding: 3vw;
-    height: 98.3vh;
+    height: 93.3vh;
   }
   
   .faqSecondSection h4 {
@@ -88,10 +89,16 @@
     border-radius: 8px;
     padding: 0.8vw;
     font-size: 1.2vw;
+    outline: none;
   }
-  
+  .form-control:focus{
+    border: none;
+    background-color:var(--navbarLinks);
+    color: white;
+  }
   .form-control::placeholder {
     color: #777;
+    text-align: start !important;
   }
   
   .sendMessageBtn {
@@ -118,12 +125,14 @@
       padding-right: 4vw;
       padding-top: 3vw;
   }
-  .FaqMainSection {
-    margin-right: 0.3vw !important;
+  .FaqMainSection{
+    margin-right: 4vw;
+    margin-left: -2vw;  
   }
   .faqSecondSection{
     margin-top: -6vw;
   }
+  
   .faqSecondSection {
     padding: 6vw !important;
 }

@@ -7,6 +7,9 @@
     border-radius: 23px;
     margin-right: 2vw;
 }
+.OurServiceHeading {
+    width: 99% !important;
+}
 .OurServiceHeading{
     background-color: var(--navbarColor);
     padding: 2vw;
@@ -48,6 +51,7 @@
     color: #fff;
     font-weight: 400;
     font-size: 1.4vw;
+    padding-top: .2vw   ;
 }
 .serviceCTA :nth-child(1){
     width: 3.2vw;
@@ -55,6 +59,7 @@
 .serviceCTA :nth-child(2){
     color: #d4d4d4;
     font-weight: 400;
+    padding-top: .2vw;
     font-size: 1.2vw;
 }
 .ServiceCarddescirption{
@@ -136,8 +141,11 @@
         margin-right: 1vw;
         padding: 4vw;
     }
+    .OurServiceHeading {
+        width: 95% !important;
+    }
     .OurServiceHeading h1 {
-        font-size: 7vw;
+        font-size: 7vw !important;
     }
     .cardimagefix{
         width: 12vw;
@@ -216,6 +224,17 @@
     }
     .OurServiceMainDiv {
         border-radius: 12px
+        
+    }
+    .OurServiceMainDiv {
+        border-radius: 12px;
+        margin-left: -3vw !important;
+        padding-bottom: 2vw !important;
+        margin-right: 3vw !important;
+    }
+    .OurServiceHeading {
+        margin-left: 2vw;
+        margin-top: 2vw !important;
     }
     .bottomCardDiv img {
         width: 5.2vw;
@@ -241,6 +260,7 @@
     }
     .structure {
         padding-top: 3vw;
+        padding-left: 5.5vw;
     }
     .serviceCTA{
         display: none !important;

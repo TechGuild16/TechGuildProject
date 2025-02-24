@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Faqstyle.css';
 import arrow from '../../../../Assets/serviceArrow.png';
 import plusButton from '../../../../Assets/plusButton.png'
 import minus from '../../../../Assets/minusButton.png'
+import { useLocation } from 'react-router-dom';
 const FaqSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+console.log('herllo');
 
+  
   const faqs = [
     {
       question: 'How long does it take to complete a web development project?',
@@ -35,7 +38,8 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="FaqMainSection">
+    <div className=<div className={`FaqMainSection faqsecttionsecondservice ${faqclassname}`}>
+>
       <div className="faqheading d-flex align-items-center justify-content-between">
         <h3 className="uppercase">Frequently Asked Questions</h3>
         <div className="d-flex align-items-center gap-2">
@@ -45,7 +49,7 @@ const FaqSection = () => {
       </div>
 
       <div className="faqContactSection container-fluid">
-        <div className="row gap-4">
+        <div className="row contactgapper">
          
           <div className="col-md-6 faqFirstSection">
             {faqs.map((faq, index) => (
@@ -67,7 +71,7 @@ const FaqSection = () => {
             ))}
           </div>
 
-          <div className="col-md-4 faqSecondSection">
+          <div className="col-md-4  faqSecondSection">
             <h4>Ask Your Question</h4>
             <form>
               <div className="form-group">

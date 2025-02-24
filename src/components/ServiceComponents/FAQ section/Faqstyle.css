@@ -12,6 +12,9 @@
     border-radius: 12px;
     margin-bottom: 1vw;
   }
+  .contactgapper{
+    gap: 15px !important;
+  }
   .faqheading h3 {
     color: var(--servicesText);
     font-size: 3vw;
@@ -64,7 +67,7 @@
     width: 39.7vw;
     border-radius: 12px;
     background-color: var(--navbarColor);
-    padding: 2vw;
+    padding: 2vw;;
     height: 98.3vh;
   }
   
@@ -111,5 +114,10 @@
   
   .sendMessageBtn:hover {
     background-color: var(--secondaryHoverColor);
+  }
+  @media (max-width: 768px) {
+    .faqadjustmentsec {
+      margin-left: 1vw !important /* Add a valid margin value */
+    }
   }
   
