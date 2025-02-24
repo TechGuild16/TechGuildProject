@@ -94,6 +94,9 @@
         padding-top: 4vw;
         margin-left: 3vw !important;
     }
+    #serviceContainer1 {
+        margin-left: -3.3vw !important;
+    }
 
     .firstServiceContainer,
     .secondServiceContainer {
@@ -111,13 +114,9 @@
         padding-left: 5vw; 
      
     }
-   .serviceer2{
-
-    margin-left: 1.3vw !important;
-   }
-    .serviceparaG{
-        font-size: 1vw !important;
-    }
+   .serviceparaG {
+    font-size: 4vw !important;
+}
     .secondServiceContainer {
         height: 50vh;
         margin-top: 7vw;
@@ -126,13 +125,13 @@
         border-radius: 23px;
 
     }
-    .heading h1{
-        font-size: 28px;
+    .heading h1 {
+        font-size: 26px;
         padding-top: 3vw;
         padding-left: 2vw;
     }
     .headingtwo h1{
-        font-size: 28px;
+        font-size: 26px;
         padding-left: 2vw;
     }
     .responsivelogo{
@@ -154,7 +153,6 @@
         border-radius: 23px;
     }
   #serviceContainer1{
-    height: 65vh !important;
   }
     .Servicebuttons :nth-child(1) h3 {
         font-size: 4.3vw;

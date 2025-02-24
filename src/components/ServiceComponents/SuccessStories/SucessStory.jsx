@@ -10,7 +10,7 @@ const SucessStory = () => {
     <div className='SuccessStoriesDiv'>
     <div className="OurServiceHeading d-flex align-items-center justify-content-between">
       <h1 className='uppercase'>Sucess Stories</h1>
-      <div className="d-flex align-items-center gap-3 ">
+      <div className="d-flex align-items-center arroweradjustment gap-3 ">
             <img src={arrow} alt="" />
             <h4 className='uppercase text-adjusted'>View All</h4>
       </div>

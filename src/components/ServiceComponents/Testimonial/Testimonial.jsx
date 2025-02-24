@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Testimonial.css'
 import arrow from '../../../Assets/serviceArrow.png'
 import TestimonialCard from './TestimonialCards/TestimonialCard'
@@ -6,9 +6,20 @@ import person1 from '../../../Assets/person1.png'
 import person2 from '../../../Assets/person2.png'
 import person3 from '../../../Assets/person3.png'
 import person4 from '../../../Assets/person4.png'
+import { useLocation } from 'react-router-dom'
 const Testimonial = () => {
+      const location = useLocation().pathname;
+      const [className, setClassName] = useState('');
+      useEffect(() => {
+        if (location === "/") {
+          setClassName('hometestimonialadjustment');
+        } else {
+          setClassName(''); 
+        }
+      }, [location]); 
+      
     return (
-        <div className=' testimonialMaindiv'>
+        <div className={className ?   `${className}` : " testimonialMaindiv forservicetestidiv"}>
             <div className="OurServiceHeading testimonialheadinger d-flex align-items-center justify-content-between">
                 <h1 className='uppercase'>Testimonails</h1>
                 <div className="d-flex testimonialdiv gap-2 align-items-center">

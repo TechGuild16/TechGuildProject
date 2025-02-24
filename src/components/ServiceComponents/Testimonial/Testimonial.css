@@ -5,6 +5,17 @@
     margin-right: 2.3vw;
     border-radius: 23px;
 }
+.hometestimonialadjustment{
+    min-height: 50vh ;
+    margin-top: 4vw;
+    border:2px solid var(--navbarColor);
+    margin-right: 2.3vw;
+    border-radius: 23px;
+}
+.faqclass{
+    margin-right: 2vw;
+    margin-top: 4vw;
+}
 .testimonialdiv h4{
     color: #9b9b9b;
     font-weight: 400;
@@ -16,6 +27,7 @@
     margin-top: .4vw !important;
     margin-left: .4vw !important;
     border-radius: 18px !important;
+    width: 99% !important;
 }
 .testimonialheadinger h1{
     font-size: 2.5vw;
@@ -89,6 +101,10 @@
     width: 3vw;
     transform: rotate(45deg);
 }
+.testimonialheadinger{
+    width: 98% !important;
+    margin-left: 0.9vw !important;
+}
 .testimonilaImage img{
     width: 100%;
     height: 100%;
@@ -98,12 +114,34 @@
     .testimonialMaindiv :nth-child(1) h1{
         font-size: 4vw !important;
     }
-    .testimonialMaindiv{
+    .hometestimonialadjustment{
+        min-height: 50vh ;
+        margin-top: 4vw;
+        border:2px solid var(--navbarColor);
+        border-radius: 18px;
+        padding-bottom: 2vw;
+    }
+    .faqMainSection{
+        margin-right: .3vw !important;
+    }
+    .faqclass{
+        margin-top: 4vw;
+        margin-right: 1vw !important;
+    }
+    .faqFirstSection {
+        width: 90vw !important;
+    }
+    .forservicetestidiv{
+        
+        border-radius: 12px;
+        padding-bottom: 4vw;
+        margin-left: -3vw !important;
         margin-right: 0.3vw !important;
     }
     .firstTestimonalbox {
         width: 84vw !important;
     }
+
     .testimonialheadinger {
         margin-right: 2.4vw !important;
         margin-top: 2.4vw !important;
@@ -125,8 +163,9 @@
         font-size: 3.5vw;
         display: none;
     }
-    .testimonialdiv :nth-child(1){
-    }
+    .testimonialMaindiv :nth-child(1) h1{
+    font-size: 7vw !important;
+    }   
     .mycontainer :nth-child(1){
         flex-direction: column;
         align-items: center;
@@ -166,15 +205,11 @@
     .testimonialArrow img {
         width: 12vw;
     }
+ 
     .faqheading {
         border-radius: 18px;
     }
-    .FaqMainSection {
-        margin-top: 3vw;
-    }
-    .faqFirstSection {
-        width: 91vw;
-    }
+  
     .faqAnswer {
         margin-top: 1vw;
         font-size: 3.5vw;
@@ -182,5 +217,7 @@
     .testimonialMaindiv{
         border-radius: 12px;
         padding-bottom: 4vw;
+        margin-left: -3vw;
+        margin-right: 4.3vw !important;
     }
 }

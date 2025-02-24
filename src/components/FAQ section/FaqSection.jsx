@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Faqstyle.css';
 import arrow from '../../Assets/serviceArrow.png';
 import plusButton from '../../Assets/plusButton.png'
 import minus from '../../Assets/minusButton.png'
+import { useLocation } from 'react-router-dom';
 const FaqSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [faqclassname, setfaqclassname] = useState("")
+  const location = useLocation().pathname;
+  useEffect(() => {
+    if (location === "/") {
+      setfaqclassname('faqclass')
+    }
+    else {
+      setfaqclassname('')
+    }
+  }, [location])
+  console.log(location, faqclassname);
+
 
   const faqs = [
     {
@@ -35,7 +48,7 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="FaqMainSection">
+    <div className={faqclassname ? `${faqclassname} ` : "FaqMainSection faqsecondadjustment"}>
       <div className="faqheading d-flex align-items-center justify-content-between">
         <h3 className="uppercase">Frequently Asked Questions</h3>
         <div className="d-flex align-items-center gap-2">
@@ -46,7 +59,7 @@ const FaqSection = () => {
 
       <div className="faqContactSection container-fluid">
         <div className="row gap-4">
-         
+
           <div className="col-md-6 faqFirstSection">
             {faqs.map((faq, index) => (
               <div
@@ -70,23 +83,36 @@ const FaqSection = () => {
           <div className="col-md-4 faqSecondSection">
             <h4>Ask Your Question</h4>
             <form>
-              <div className="form-group">
-                <label>Name</label>
-                <input type="text" className="form-control p-3 mt-3" placeholder="Enter your name" />
+              <div className="form-group row">
+                <div className="col-md-6">
+                  <input type="text" className="form-control p-3 mt-3" placeholder="Enter your name" />
+                </div>
+                <div className="col-md-6">
+                  <input type="email" className="form-control p-3 mt-3" placeholder="Enter your email" />
+                </div>
               </div>
+
               <div className="form-group">
-                <label>Email</label>
-                <input type="email" className="form-control p-3 mt-3" placeholder="Enter your email" />
+                <select className="form-control p-3 mt-3">
+                  <option value="">Select a Query Type</option>
+                  <option value="agency-support">Agency Side Support</option>
+                  <option value="client-support">Client Side Support</option>
+                  <option value="technical-support">Technical Support</option>
+                  <option value="generic-support">Generic Support / Other</option>
+                </select>
               </div>
+
               <div className="form-group">
-                <label>Your Question</label>
-                <textarea className="form-control mt-3" rows={5} placeholder="Enter Your Question Here ....."></textarea>
+                <textarea className="form-control mt-3" rows={5} placeholder="Enter Your Question Here ..."></textarea>
               </div>
+
               <button type="submit" className="btn sendMessageBtn">
                 Send Your Message
               </button>
             </form>
           </div>
+
+
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@
 .HomeServiceCard :nth-child(1) p{
     font-size: 1.5vw;
     color: var(--servicesText);
-    padding-top: .5vw;
+    padding-top: 1vw;
 }
 .register p{
     color: #999999 !important;
