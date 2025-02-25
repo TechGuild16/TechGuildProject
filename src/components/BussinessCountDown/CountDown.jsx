@@ -3,10 +3,10 @@ import './CountDown.css';
 
 const CountDown = () => {
   const initialTime = {
-    days: 75,
+    days: 59,
     hours: 23, 
     minutes: 59,
-    seconds: 0
+    seconds: 60
   };
 
   const totalInitialSeconds =

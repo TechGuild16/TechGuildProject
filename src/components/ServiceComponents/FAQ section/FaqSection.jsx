@@ -39,7 +39,7 @@ console.log('herllo');
 
   return (
     <div className=<div className={`FaqMainSection faqsecttionsecondservice ${faqclassname}`}>
->
+
       <div className="faqheading d-flex align-items-center justify-content-between">
         <h3 className="uppercase">Frequently Asked Questions</h3>
         <div className="d-flex align-items-center gap-2">
@@ -94,7 +94,7 @@ console.log('herllo');
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default FaqSection;

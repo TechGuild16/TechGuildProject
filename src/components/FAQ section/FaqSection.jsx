@@ -91,6 +91,14 @@ const FaqSection = () => {
                   <input type="email" className="form-control p-3 mt-3" placeholder="Enter your email" />
                 </div>
               </div>
+              <div className="form-group row">
+                <div className="col-md-6">
+                  <input type="text" className="form-control p-3 " placeholder="Enter your location" />
+                </div>
+                <div className="col-md-6">
+                  <input type="email" className="form-control p-3 " placeholder="Enter your Subject" />
+                </div>
+              </div>
 
               <div className="form-group">
                 <select className="form-control p-3 mt-3">
