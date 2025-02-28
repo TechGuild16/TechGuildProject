@@ -42,7 +42,7 @@ const ProjectShowCase = () => {
         <>
             {/* This block is visible on medium and larger screens */}
             <div
-                className="d-flex justify-content-between p-4 mt-4 rounded d-none d-md-flex"
+                className="d-flex justify-content-between p-4 mt-5 rounded d-none d-md-flex"
                 style={{ backgroundColor: "var(--navbarColor)" }}
             >
                 <h3 style={{ color: "var(--textColor)" }}>PROJECTS SHOWCASE</h3>

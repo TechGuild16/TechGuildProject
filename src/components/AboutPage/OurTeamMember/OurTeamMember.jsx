@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './OurTeamMember.css'
-import facebook from "../../../Assets/fb.png";
+import facebook from "../../../Assets/Group-3.png";
 import linkedIn from "../../../Assets/linkedIn.png";
-import twitter from "../../../Assets/twitter_icon.png";
+import twitter from "../../../Assets/twitter.png";
 import member_1 from "../../../Assets/member-1.png";
 import member_2 from "../../../Assets/member-2.png";
 import member_3 from "../../../Assets/member-3.png";
@@ -71,7 +71,7 @@ const OurTeamMember = () => {
             style={{ backgroundColor: "var(--navbarColor)" }}
           >
             <h3 style={{ color: "var(--textColor)" }}>
-              MEET THE BRILLIANT MINDS BEHIND NEXGEN
+              MEET THE DEVELOPMENT DEPARTMENT BEHIND TECHGUILD
             </h3>
             <div className="d-none d-md-flex align-items-center gap-3">
               <img className="mb-2" src={serviceArrow} alt="" />

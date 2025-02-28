@@ -75,7 +75,7 @@ const FAndQ = () => {
                                 <div key={index} className="rounded backgroundColor">
                                     <div className="d-flex p-4 mb-2">
                                         <div className="w-100">
-                                            <p className="fw-bold" style={{ color: "var(--servicesText)" }}>
+                                            <p className="fw-bold pt-2" style={{ color: "var(--servicesText)" }}>
                                                 {item.question}
                                             </p>
 
@@ -113,18 +113,18 @@ const FAndQ = () => {
 
                     </div>
 
-                    <div className="col-md-5">
+                     <div className="col-md-5">
                         <div className="row mb-2">
                             <div className="col-md-12">
                                 <div className="rounded  about-FandQ" style={{ backgroundColor: 'var(--navbarColor)' }}>
                                     <h4 className="p-2 mb-0 mt-2 mt-md-0 mx-2" style={{ color: "var(--textColor)" }}>Ask Your Question</h4>
 
-                                    <form className="p-2" onSubmit={handleSubmit}>
+                                    <form className="p-4" onSubmit={handleSubmit}>
                                         <div className="row mb-4">
                                             <div className='col-md-6'>
                                                 <input
                                                     type="text"
-                                                    className="fAndQ-input-form mt-2 p-3"
+                                                    className="fAndQ-input-form form-control mt-2 p-3"
                                                     placeholder="Name"
                                                     name="name"
                                                     value={formData.name}
@@ -136,7 +136,7 @@ const FAndQ = () => {
                                             <div className='col-md-6'>
                                                 <input
                                                     type="email"
-                                                    className="fAndQ-input-form mt-2 p-3"
+                                                    className="fAndQ-input-form form-control mt-2 p-3"
                                                     placeholder="Enter your email"
                                                     name="email"
                                                     value={formData.email}
@@ -149,10 +149,10 @@ const FAndQ = () => {
                                             <div className='col-md-6'>
                                                 <input
                                                     type="text"
-                                                    className="fAndQ-input-form mt-2 p-3"
-                                                    placeholder="Location"
+                                                    className="fAndQ-input-form form-control mt-2 p-3"
+                                                    placeholder="Our Business"
                                                     name="name"
-                                                    value={formData.location}
+                                                    value={formData.ourBussiness}
                                                     onChange={handleChange}
                                                     style={{ fontSize: "18px" }}
                                                 />
@@ -160,8 +160,8 @@ const FAndQ = () => {
 
                                             <div className='col-md-6'>
                                                 <input
-                                                    type="subject"
-                                                    className="fAndQ-input-form mt-2 p-3"
+                                                    type="text"
+                                                    className="fAndQ-input-form form-control mt-2 p-3"
                                                     placeholder="Subject"
                                                     name="subject"
                                                     value={formData.subject}
@@ -172,7 +172,7 @@ const FAndQ = () => {
                                         </div>
 
                                         <div className="">
-                                            <select className="p-3" name="option"
+                                            <select className="p-3 form-control fAndQ-input-form" name="option"
                                              value={formData.option} onChange={handleChange}>
                                                 <option value="">Select a Query</option>
                                                 <option value="option1">Agency Side Support</option>
@@ -193,7 +193,7 @@ const FAndQ = () => {
                                                 style={{ fontSize: "18px" }}
                                             />
                                         </div>
-                                        <button className="rounded w-100 mt-3 p-2 p-md-2 fw-bold fs-5" type="submit" style={{ backgroundColor: "var(--secondaryColor)", outline: "none", border: "none", color: "var(--navbarColor)" }} >
+                                        <button className="rounded w-100 mt-3 p-2 p-md-2 fw-bold" type="submit" style={{ backgroundColor: "var(--secondaryColor)", outline: "none", border: "none", color: "var(--navbarColor)" }} >
                                             SEND YOUR MESSAGE
                                         </button>
 
@@ -201,7 +201,7 @@ const FAndQ = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
 
 
                 </div>

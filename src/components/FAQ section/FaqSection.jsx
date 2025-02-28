@@ -90,6 +90,12 @@ const FaqSection = () => {
                 <div className="col-md-6">
                   <input type="email" className="form-control p-3 mt-3" placeholder="Enter your email" />
                 </div>
+                <div className="col-md-6">
+                  <input type="text" className="form-control p-3 mt-3" placeholder="Our Business" />
+                </div>
+                <div className="col-md-6">
+                  <input type="text" className="form-control p-3 mt-3" placeholder="Subject" />
+                </div>
               </div>
 
               <div className="form-group">

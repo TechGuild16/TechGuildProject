@@ -1,9 +1,9 @@
 .about-FandQ{
     width:38.5vw;
 }
-.about-FandQuestion{
+/* .about-FandQuestion{
     width:54.8vw; 
-}
+} */
 .about-question-box{
     width:500px;
     margin-right: 20px;
@@ -16,9 +16,10 @@
     width:94.5vw
 }
 .fAndQ-input-form{
-    background-color:black;
-    border:none;
-    outline:none;
+   color:white;
+   outline: none;
+   border-radius:15px;
+   border:none;
 }
 
 @media screen and (max-width: 768px){
