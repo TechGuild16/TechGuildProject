@@ -42,7 +42,7 @@ function App() {
           <Route path="/Blogs" element={<Blog />} />
           <Route path="/ContactUs" element={<ContactUs />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

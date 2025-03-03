@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './OurTeamMember.css'
+import './MarketingDepartment.css'
 import github from "../../../Assets/Group 3.png";
 import linkedIn from "../../../Assets/linkedIn.png";
 import insta from "../../../Assets/twitter.png";
@@ -11,7 +11,7 @@ import serviceArrow from "../../../Assets/serviceArrow.png";
 import downbtn from "../../../Assets/downBtn.png";
 import rightArrow from "../../../Assets/rightArrow.png";
 import arrowup from '../../../Assets/arrowup.png';
-const OurTeamMember = () => {
+const MarketingDepartment = () => {
   const [showMore, setShowMore] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -71,7 +71,7 @@ const OurTeamMember = () => {
           style={{ backgroundColor: "var(--navbarColor)" }}
         >
           <h3 style={{ color: "var(--textColor)" }}>
-            MEET THE DEVELOPMENT DEPARTMENT BEHIND TECHGUILD
+            MEET THE MAKRKETING DEPARTMENT BEHIND TECHGUILD
           </h3>
           <div className="d-none d-md-flex align-items-center gap-3">
             <img className="mb-2" src={serviceArrow} alt="" />
@@ -148,5 +148,5 @@ const OurTeamMember = () => {
   )
 }
 
-export default OurTeamMember;
+export default MarketingDepartment;
 

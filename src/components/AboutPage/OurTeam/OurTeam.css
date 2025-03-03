@@ -3,14 +3,26 @@
     width:92.5vw
 }
 .about-github{
-    width:9vh;
-    height:9vh;
+  width:9vh;
+  height:9vh;
 }
-/* .techguid-box{
-    width:100vw;
-} */
+.marginTop{
+   margin-top: 4vw;
+}
+.about-cards{
+    width:22vw;
+    border-radius:8px;
+}
+
 @media screen and (max-width: 768px){
     .about-team-member{
         width:85vw  
     }
+    .about-cards{
+        width:100%;
+        border-radius:10px;
+        
+    }
+  
+   
 }

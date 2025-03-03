@@ -59,7 +59,7 @@ const FAndQ = () => {
     };
     return (
         <>
-            <div className="d-flex justify-content-between align-items-center  p-4 mt-4 mt-md-5  rounded  frequently-member" style={{ backgroundColor: "var(--navbarColor)" }}>
+            <div className="d-flex justify-content-between align-items-center  p-4 marginTop rounded  frequently-member" style={{ backgroundColor: "var(--navbarColor)" }}>
                 <h3 style={{ color: "var(--textColor)" }}>FREQUENTLY ASKED QUESTIONS</h3>
                 <div className="d-none d-md-flex  align-items-center gap-3">
                     <img className="mb-2" src={serviceArrow} alt="" />

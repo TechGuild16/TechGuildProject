@@ -52,11 +52,11 @@ const AwardsAndRecongnition = () => {
   return (
     <>
         <div
-          className="px-3 rounded about-awards-recognition "
+          className=" p-2 rounded marginTop"
           style={{ border: "2px solid var(--navbarColor)" }}
         >
           <div
-            className="d-flex justify-content-between align-items-center p-4 mt-2 mb-3 rounded about-awards-member"
+            className="d-flex justify-content-between align-items-center p-4 mt-0 mb-3 rounded about-awards-member"
             style={{ backgroundColor: "var(--navbarColor)" }}
           >
             <h3 style={{ color: "var(--textColor)" }}>
@@ -72,7 +72,7 @@ const AwardsAndRecongnition = () => {
                     className="rounded"
                     style={{ backgroundColor: "var(--navbarColor)" }}
                   >
-                    <div className="d-flex justify-content-between align-items-center p-3">
+                    <div className="d-flex justify-content-between  align-items-center p-2">
                       <p
                         className="p-2 rounded-pill"
                         style={{

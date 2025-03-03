@@ -6,21 +6,21 @@ import './OurAchievment.css'
 // import arrowup from '../../../Assets/arrowup.png';
 import './OurAchievment.css'
 const OurAchievment = () => {
-  
+
   const [showMore, setShowMore] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth < 768);
-      };
-  
-      window.addEventListener("resize", handleResize);
-      handleResize();
-  
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-  
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const acheivements = [
     {
       month: "September 2023",
@@ -45,71 +45,70 @@ const OurAchievment = () => {
   ];
   return (
     <>
-         <div
-          className="p-1 p-md-3 mt-3 mt-md-5 rounded"
-          style={{ border: "2px solid var(--navbarColor)" }}
+      <div
+        className="p-1 p-md-3 marginTop rounded"
+        style={{ border: "2px solid var(--navbarColor)" }}
+      >
+        <div
+          className="d-flex justify-content-between align-items-center p-4 rounded about-acheivement-member"
+          style={{ backgroundColor: "var(--navbarColor)" }}
         >
-         <div
-            className="d-flex justify-content-between align-items-center p-4 rounded about-acheivement-member"
-            style={{ backgroundColor: "var(--navbarColor)" }}
-          >
-            <h3 style={{ color: "var(--textColor)" }}>
-              OUR ACHEIVMENT
-            </h3>
-          </div>
-          <div className="row">
-            {acheivements
-              .slice(0, showMore || !isMobile ? acheivements.length : 3)
-              .map((acheivement, index) => (
-                <div key={index} className="col-md-3 mt-1 mt-md-2 mb-2 mb-md-2">
-                  <div
-                    className="mt-1 mt-md-2 rounded w-100 h-100"
-                    style={{ backgroundColor: "var(--navbarColor)" }}
+          <h3 style={{ color: "var(--textColor)" }}>
+            OUR ACHEIVMENT
+          </h3>
+        </div>
+        <div className="row">
+          {acheivements
+            .slice(0, showMore || !isMobile ? acheivements.length : 3)
+            .map((acheivement, index) => (
+              <div key={index} className="col-md-3 mt-1 mt-md-2 mb-2 mb-md-2">
+                <div
+                  className="mt-1 mt-md-2 rounded h-100 our-acheivement-box"
+                  style={{ backgroundColor: "var(--navbarColor)" }}
+                >
+                  <p
+                    className="p-3 mb-2"
+                    style={{ color: "var(--navbarLinksColor)" }}
                   >
-                    <p
-                      className="p-4 mb-2"
-                      style={{ color: "var(--navbarLinksColor)" }}
-                    >
-                      {acheivement.month}
-                    </p>
-                    <div
-                      className="d-flex p-4 justify-content-center align-items-center mb-2"
-                      style={{
-                        height: "20vh",
-                        backgroundColor: "var(--btnBackground",
-                      }}
-                    >
-                      <h5 style={{ color: "var(--textColor)" }}>
-                        {acheivement.header}
-                      </h5>
-                    </div>
-                    <p
-                      className="p-4"
-                      style={{ color: "var(--paragraphText)" }}
-                    >
-                      {acheivement.para}
-                    </p>
+                    {acheivement.month}
+                  </p>
+                  <div
+                    className="d-flex p-4 justify-content-center align-items-center mb-2"
+                    style={{
+
+                      backgroundColor: "var(--btnBackground",
+                    }}
+                  >
+                    <h5 style={{ color: "var(--textColor)" }}>
+                      {acheivement.header}
+                    </h5>
                   </div>
+                  <p
+                    className="p-4"
+                    style={{ color: "var(--paragraphText)" }}
+                  >
+                    {acheivement.para}
+                  </p>
                 </div>
-              ))}
-          </div>
-          <div className="d-block mt-4 d-md-none d-flex gap-2 w-100 p-2 justify-content-center align-items-center rounded backgroundColor">
-            <button
-              className="d-block d-md-none d-flex gap-2 w-100 p-2 justify-content-center align-items-center rounded backgroundColor"
-              onClick={() => setShowMore(!showMore)}
-              style={{
-                color: "var(--paragraphText)",
-                outline: "none",
-                border: "none",
-                transition: "ease-in-out 0.3s",
-              }}
-            >
-              <img src={showMore ? arrowup  : downbtn} alt="" />
-              <img src={showMore ? arrowup  : downbtn} alt="" />
-              {showMore ? "SHOW LESS" : "OUR ACHEIVEMENT"}
-            </button>
-          </div>
-          </div>
+              </div>
+            ))}
+        </div>
+        <div className="d-block mt-4 d-md-none d-flex gap-2 w-100 p-2 justify-content-center align-items-center rounded backgroundColor">
+          <button
+            className="d-block d-md-none d-flex gap-2 w-100 p-2 justify-content-center align-items-center rounded backgroundColor"
+            onClick={() => setShowMore(!showMore)}
+            style={{
+              color: "var(--paragraphText)",
+              outline: "none",
+              border: "none",
+              transition: "ease-in-out 0.3s",
+            }}
+          >
+            <img src={showMore ? arrowup : downbtn} alt="" />
+            {showMore ? "SHOW LESS" : "OUR ACHEIVEMENT"}
+          </button>
+        </div>
+      </div>
     </>
   )
 }

@@ -7,6 +7,7 @@ import AwardsAndRecongnition from "../../components/AboutPage/AwardsAndRecogniti
 import Testimonial from "../../components/AboutPage/AboutTestimonial/Testimonial";
 import FAndQ from "../../components/AboutPage/FAndQ/FAndQ";
 import OurTeamMember from "../../components/AboutPage/OurTeamMember/OurTeamMember";
+import MarketingDepartment from "../../components/AboutPage/MarketingDepartment/MarketingDepartment";
 
 // import cards from '../../Assets/Card.png';
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
            <AboutHeader/>
            <OurTeam/>
            <OurTeamMember/>
+           <MarketingDepartment/>
            <OurAchievment/>
            <AwardsAndRecongnition/>
            <Testimonial/>

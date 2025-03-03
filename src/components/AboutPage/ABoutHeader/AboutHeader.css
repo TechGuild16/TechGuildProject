@@ -2,24 +2,36 @@
     width:16vw;
     margin-top: 5px;
 }
+.about-header{
+    border-radius:14px;
+}
 .about-header-box{
-    width:47vw;
+    width:62vw;
     height:23vw;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    border-radius:25px;
+    border-radius:20px;
 }
 .about-card-section{
     height:19vh;
     border-radius:50px;
+    
+}
+.aboutmarginfix{
+    height:25vw;
+    border-radius:14px;
+    padding:20px; 
 }
 .about-header-cards{
-    width:17vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:13vw;
     height:18vh;
-    border-radius:20px;
-    padding:12px;
-    margin:5px; 
+    border-radius:14px;
+    margin-top:10px;
+    
 }
 .about-know-more{
     font-size:15px;
@@ -34,21 +46,31 @@
 .about-down-arrow{
     width:40px;
 }
-
+.about-main-heading{
+    min-width:fit-content;
+   
+}
 
 @media screen and (max-width: 768px){
-    .aboutmarginfix{
-            margin-top: 4vw;
-    }
+   
     .about-card-section{
         height:12vh;
         border-radius:50px;
     }
+    .aboutmarginfix{
+        height:85vw;
+        border-radius:14px;
+        padding:0px 12px;
+    }
     .about-header-cards{
+        display:flex;
+        justify-content:center;
+        align-items:center;
         width:40vw;
-        height:15vh;
-        border-radius:20px;
-        padding:12px;
-        margin:6px; 
-    } 
+        height:12vh;
+        border-radius:14px;
+        margin-top:10px;
+        
+    }
+   
 }

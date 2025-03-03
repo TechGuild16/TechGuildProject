@@ -1,0 +1,9 @@
+.about-team-member{
+    margin-left:6px;
+    width:92.5vw
+}
+@media screen and (max-width: 768px){
+    .about-team-member{
+        width:85vw  
+    }
+}

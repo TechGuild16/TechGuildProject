@@ -72,7 +72,7 @@ const Testimonial = () => {
     return (
         <>
             <div
-                className="p-3 py-2 pb-0 mt-3 mt-md-5 rounded testimonial-top"
+                className="p-3 py-2 pb-0 marginTop rounded testimonial-top"
                 style={{ border: "2px solid var(--navbarColor)" }}
             >
                 <div
@@ -158,7 +158,6 @@ const Testimonial = () => {
                             transition: "ease-in-out 0.3s",
                         }}
                     >
-                        <img src={showMore ? arrowup : downbtn} alt="" />
                         <img src={showMore ? arrowup : downbtn} alt="" />
                         {showMore ? "LESS TESTIMONIAL" : "ALL TESTIMONIAL"}
                     </button>

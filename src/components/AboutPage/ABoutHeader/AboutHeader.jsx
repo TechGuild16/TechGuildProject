@@ -28,9 +28,9 @@ const AboutHeader = () => {
     <>
       
       <div className="row">
-          <div className="col-md-7 about-header">
+          <div className="col-md-8">
             <div
-              className="col-12 rounded pt-3 mt-3 d-none d-md-block"
+              className="col-12 about-header pt-3 mt-3 d-none d-md-block"
               style={{
                 padding: "10px",
                 backgroundColor: "var(--navbarColor)",
@@ -39,12 +39,12 @@ const AboutHeader = () => {
             >
               <div className="about-header-box">
                 <div className="text-center text-md-start d-flex gap-3 ">
-                  <div className="">
+                  <div className="about-main-heading">
 
-                  <h1 className="" style={{ color: "var(--textColor)" }}>
+                  <h1 className="" style={{ color: "var(--textColor)", fontSize:"4.063vw"}}>
                     ELEVATING BRANDS
                   </h1>
-                  <h1 className="" style={{ color: "var(--textColor)" }}>
+                  <h1 className="" style={{ color: "var(--textColor)",fontSize:"4.063vw" }}>
                     IN THE DIGITAL AGE
                   </h1>
                   </div>
@@ -84,36 +84,31 @@ const AboutHeader = () => {
             </div>
           </div>
 
-          <div className="col-md-5  aboutmarginfix ">
+          <div className="col-12 col-md-4 ">
             <div
-              className="col-md-12 rounded pt-3 p-md-3 mt-0 mt-md-3"
+              className=" pt-3 p-md-3 mt-3 aboutmarginfix"
               style={{ backgroundColor: "var(--navbarColor"}}
             >
-            
-                <div className="row">
+             <div className="row">
                   {cards.map((item, index) => (
-                    <div key={index} className="col-6 about-header-cards">
-                      <div
-                        className="about-header-cards"
-                        style={{
+                    <div key={index} className="col-6">
+                      <div className="about-header-cards" style={{
                           backgroundColor: "var(--btnBackground)",
                           textAlign: "center",
                         }}
                       >
-                        <div>
-                          <p
-                            className="pt-3 pt-md-2 mb-0"
-                            style={{ color: "var(--textColor)" }}
+                         <div className=''>
+                          <p className="pt-3 pt-md-2 mb-0" style={{ color: "var(--textColor)" }}
                           >
                             {item.content}
                           </p>
-                          <h5
-                            className="fs-1 mt-0"
+                          <h5 className="fs-1 mt-0"
                             style={{ color: "var(--aboutNumberColor)" }}
                           >
                             {item.number}
                           </h5>
                         </div>
+                       
                       </div>
                     </div>
                   ))}
@@ -124,6 +119,7 @@ const AboutHeader = () => {
                     </p>
                   </div>
                 </div>
+               
               </div>
             </div>
           </div>

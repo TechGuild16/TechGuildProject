@@ -2,8 +2,16 @@
     /* margin-left:6px; */
     width:92.5vw
 }
+.our-acheivement-box{
+    width:22vw;   
+}
+
 @media screen and (max-width: 768px){
     .about-acheivement-member{
         width:88vw  
     }
+    .our-acheivement-box{
+        width:100%;   
+    }
+    
 }
