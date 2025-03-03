@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import downbtn from "../../../Assets/downBtn.png";
-import rightArrow from "../../../Assets/rightArrow.png";
+// import rightArrow from "../../../Assets/rightArrow.png";
 import arrowup from '../../../Assets/arrowup.png';
+import './OurAchievment.css'
+// import arrowup from '../../../Assets/arrowup.png';
 import './OurAchievment.css'
 const OurAchievment = () => {
   
@@ -43,22 +45,25 @@ const OurAchievment = () => {
   ];
   return (
     <>
-      
-          <div
-            className="p-4 p-md-4  rounded d-flex justify-content-center align-items-center justify-content-md-start align-items-md-start our-achievment"
+         <div
+          className="p-1 p-md-3 mt-3 mt-md-5 rounded"
+          style={{ border: "2px solid var(--navbarColor)" }}
+        >
+         <div
+            className="d-flex justify-content-between align-items-center p-4 rounded about-acheivement-member"
             style={{ backgroundColor: "var(--navbarColor)" }}
           >
-            <h3 className="" style={{ color: "var(--textColor)" }}>
-              OUR ACHIEVMENTS
+            <h3 style={{ color: "var(--textColor)" }}>
+              OUR ACHEIVMENT
             </h3>
           </div>
           <div className="row">
             {acheivements
               .slice(0, showMore || !isMobile ? acheivements.length : 3)
               .map((acheivement, index) => (
-                <div key={index} className="col-md-3 mt-2">
+                <div key={index} className="col-md-3 mt-1 mt-md-2 mb-2 mb-md-2">
                   <div
-                    className="mt-3 rounded w-100 h-100"
+                    className="mt-1 mt-md-2 rounded w-100 h-100"
                     style={{ backgroundColor: "var(--navbarColor)" }}
                   >
                     <p
@@ -100,10 +105,11 @@ const OurAchievment = () => {
               }}
             >
               <img src={showMore ? arrowup  : downbtn} alt="" />
+              <img src={showMore ? arrowup  : downbtn} alt="" />
               {showMore ? "SHOW LESS" : "OUR ACHEIVEMENT"}
             </button>
           </div>
-       
+          </div>
     </>
   )
 }

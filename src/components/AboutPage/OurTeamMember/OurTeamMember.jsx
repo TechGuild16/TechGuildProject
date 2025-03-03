@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import './OurTeam.css'
-import facebook from "../../../Assets/Group 3.png";
+import './OurTeamMember.css'
+import facebook from "../../../Assets/Group-3.png";
 import linkedIn from "../../../Assets/linkedIn.png";
 import twitter from "../../../Assets/twitter.png";
 import member_1 from "../../../Assets/member-1.png";
@@ -11,7 +11,7 @@ import serviceArrow from "../../../Assets/serviceArrow.png";
 import downbtn from "../../../Assets/downBtn.png";
 import rightArrow from "../../../Assets/rightArrow.png";
 import arrowup from '../../../Assets/arrowup.png';
-const OurTeam = () => {
+const OurTeamMember = () => {
  const [showMore, setShowMore] = useState(false);
  const [isMobile, setIsMobile] = useState(false);  
 
@@ -71,7 +71,7 @@ const OurTeam = () => {
             style={{ backgroundColor: "var(--navbarColor)" }}
           >
             <h3 style={{ color: "var(--textColor)" }}>
-              MEET THE BRILLIANT MINDS BEHIND TECHGUID
+              MEET THE DEVELOPMENT DEPARTMENT BEHIND TECHGUILD
             </h3>
             <div className="d-none d-md-flex align-items-center gap-3">
               <img className="mb-2" src={serviceArrow} alt="" />
@@ -79,7 +79,7 @@ const OurTeam = () => {
             </div>
           </div>
 
-          <div className="container-fluid techguid-box  mt-1">
+          <div className="container-fluid p-2 mt-1">
             <div className="row">
               {members
                 .slice(0, showMore || !isMobile ?members.length : 3)
@@ -110,7 +110,7 @@ const OurTeam = () => {
                         />
                       </div>
 
-                      
+                      {/* Social Media Icons */}
                       <div className="d-flex justify-content-center mt-3">
                         <span className="w-25">
                           <img src={member.fb} alt="Facebook" />
@@ -147,5 +147,5 @@ const OurTeam = () => {
   )
 }
 
-export default OurTeam
+export default OurTeamMember;
 

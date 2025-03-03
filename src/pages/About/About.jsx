@@ -6,13 +6,16 @@ import OurAchievment from "../../components/AboutPage/OurAchievment/OurAchievmen
 import AwardsAndRecongnition from "../../components/AboutPage/AwardsAndRecognitions/AwardsAndRecongnition";
 import Testimonial from "../../components/AboutPage/AboutTestimonial/Testimonial";
 import FAndQ from "../../components/AboutPage/FAndQ/FAndQ";
+import OurTeamMember from "../../components/AboutPage/OurTeamMember/OurTeamMember";
+
 // import cards from '../../Assets/Card.png';
 const About = () => {
   return (
     <>
-      <div className="container-fluid mt-3">
+      <div className="container-fluid mt-3 about-page-padding">
            <AboutHeader/>
            <OurTeam/>
+           <OurTeamMember/>
            <OurAchievment/>
            <AwardsAndRecongnition/>
            <Testimonial/>

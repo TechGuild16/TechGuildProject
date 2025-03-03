@@ -142,6 +142,7 @@
 }
 @media (max-width: 576px){
     .ourWorks{
+        margin-top: 2vw;
         margin-top:2vw;
         margin-left: 1vw;
         margin-right: 0.3vw;
@@ -163,6 +164,7 @@
         margin-top: 1vw;
     }
     .ourWorkHeading {
+        border-radius: 15px;
         border-radius: 11px;
         padding-top: 3vw !important;
         padding-left: 5vw !important;

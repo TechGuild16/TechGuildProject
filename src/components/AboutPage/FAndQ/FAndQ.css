@@ -1,0 +1,36 @@
+.about-FandQ{
+    width:38.5vw;
+}
+/* .about-FandQuestion{
+    width:54.8vw; 
+} */
+.about-question-box{
+    width:500px;
+    margin-right: 20px;
+}
+.about-Questions-header{
+    height:8.75vw;
+}
+.frequently-member{
+    margin-left:6px;
+    width:94.5vw
+}
+.fAndQ-input-form{
+   color:white;
+   outline: none;
+   border-radius:15px;
+   border:none;
+}
+
+@media screen and (max-width: 768px){
+    .about-FandQ{
+        width:100%;
+    }
+    .about-FandQuestion{
+        width:100%;
+    }
+    .frequently-member{
+        margin-left:0px;
+        width:92.5vw
+    }
+}

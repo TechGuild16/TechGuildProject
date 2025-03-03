@@ -1,4 +1,12 @@
 .backgroundColor{
     background-color:var(--navbarColor);
   }
-  
+.about-page-padding{
+  padding:0px 35px;
+}
+@media screen and (max-width: 768px){
+  .about-page-padding{
+    padding:0px 16px;
+  }
+ 
+}

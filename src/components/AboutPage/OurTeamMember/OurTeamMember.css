@@ -2,13 +2,6 @@
     margin-left:6px;
     width:92.5vw
 }
-.about-github{
-    width:9vh;
-    height:9vh;
-}
-/* .techguid-box{
-    width:100vw;
-} */
 @media screen and (max-width: 768px){
     .about-team-member{
         width:85vw  

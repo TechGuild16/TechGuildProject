@@ -1,9 +1,56 @@
 .aboutcircleimage{
-    width: 15vw;
+    width:16vw;
+    margin-top: 5px;
+}
+.about-header-box{
+    width:47vw;
+    height:23vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:25px;
+}
+.about-card-section{
+    height:19vh;
+    border-radius:50px;
+}
+.about-header-cards{
+    width:17vw;
+    height:18vh;
+    border-radius:20px;
+    padding:12px;
+    margin:5px; 
+}
+.about-know-more{
+    font-size:15px;
+    margin-top:8px;
+}
+.about-header-box h1{
+    font-size:3.021vw;
+    line-height: 4.531vw;
+    margin-left:26px; 
+   
+}
+.about-down-arrow{
+    width:40px;
+}
+.about-main-heading{
+    min-width: fit-content;
 }
 
-@media (max-width: 576px){
+@media screen and (max-width: 768px){
     .aboutmarginfix{
             margin-top: 4vw;
     }
+    .about-card-section{
+        height:12vh;
+        border-radius:50px;
+    }
+    .about-header-cards{
+        width:40vw;
+        height:15vh;
+        border-radius:20px;
+        padding:12px;
+        margin:6px; 
+    } 
 }

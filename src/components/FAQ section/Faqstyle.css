@@ -1,6 +1,6 @@
 
 .FaqMainSection {
-    margin-top: 4vw;
+    margin-top: 1vw;
     min-height: 100vh;
     margin-right: 2.3vw;
   }
@@ -63,7 +63,7 @@
     border-radius: 12px;
     background-color: var(--navbarColor);
     padding: 3vw;
-    height: 93.3vh;
+    min-height: 93.3vh;
   }
   
   .faqSecondSection h4 {

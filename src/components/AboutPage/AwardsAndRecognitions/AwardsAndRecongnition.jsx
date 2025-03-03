@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import awardIcon from "../../../Assets/awardIcon.png";
 import downbtn from "../../../Assets/downBtn.png";
-import rightArrow from '../../../Assets/arrowright.png';
+// import rightArrow from '../../../Assets/arrowright.png';
 import arrowup from '../../../Assets/arrowup.png';
+import './AwardsAndRecongnition.css'
+// import rightArrow from '../../../Assets/arrowright.png';
+// import arrowup from '../../../Assets/arrowup.png';
 import './AwardsAndRecongnition.css'
 const AwardsAndRecongnition = () => {
     const [showMore, setShowMore] = useState(false);
@@ -49,11 +52,11 @@ const AwardsAndRecongnition = () => {
   return (
     <>
         <div
-          className="p-3 rounded about-awards-recognition"
+          className="px-3 rounded about-awards-recognition "
           style={{ border: "2px solid var(--navbarColor)" }}
         >
           <div
-            className="p-4 mb-3 rounded"
+            className="d-flex justify-content-between align-items-center p-4 mt-2 mb-3 rounded about-awards-member"
             style={{ backgroundColor: "var(--navbarColor)" }}
           >
             <h3 style={{ color: "var(--textColor)" }}>
@@ -81,6 +84,7 @@ const AwardsAndRecongnition = () => {
                       </p>
                       <img
                      className="w-25"
+                    
                         style={{ width: "4vw" }}
                         src={award.icon}
                         alt=""
@@ -102,9 +106,9 @@ const AwardsAndRecongnition = () => {
               ))}
           </div>
 
-          <div>
+          <div className='mb-2'>
             <button
-              className="d-block pt-2 pb-2 d-md-none w-100 d-flex gap-2 justify-content-center align-items-center rounded backgroundColor"
+              className="d-block pt-2 p-3  d-md-none w-100 d-flex justify-content-center align-items-center rounded backgroundColor"
               onClick={() => setShowMore(!showMore)}
               style={{
                 color: "var(--paragraphText)",
@@ -113,7 +117,7 @@ const AwardsAndRecongnition = () => {
                 transition: "ease-in-out 0.3s",
               }}
             >
-              <img src={showMore ? arrowup : downbtn} alt="" />
+              <img className='' src={showMore ? arrowup : downbtn} alt="" />
               {showMore ? "SHOW LESS" : "ALL AWARDS AND RECOGNITIONS"}
             </button>
           </div>
