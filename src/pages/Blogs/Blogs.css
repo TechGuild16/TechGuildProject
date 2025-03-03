@@ -1,10 +1,10 @@
 .BlogContainer {
   max-width: 95%;
-  min-height: 100vh;
+  min-height: 80vh;
   border: 2px solid #1a1a1a;
   margin: 1vw auto;
   border-radius: 12px;
-  padding: 0.7vw 0.7vw 0.7vw 0.7vw;
+  padding: 0.7vw 0.7vw 0vw 0.7vw;
 }
 .ourBlogsHeading {
   border-radius: 12px;
@@ -41,11 +41,10 @@
 .divdierblogcontainer {
   display: flex;
   margin-top: 1vw;
-  padding-left: 0.2vw;
   gap: 17px;
 }
 .leftBlogContainer {
-  width: 30vw;
+  width: 32vw;
   border-radius: 10px;
   height: 60vh;
 }
@@ -56,7 +55,7 @@
   object-fit: cover;
 }
 .rightBlogContainer {
-  width: 61.3vw;
+  width: 64vw;
   border-radius: 12px;
   height: 60vh;
   background-color: #1a1a1a;
@@ -101,20 +100,27 @@
   align-items: center;
   justify-content: space-between;
 }
-.arrowparagraase {
-  color: white;
-  text-transform: uppercase;
+
+.arrowavdsav {
+  height: 40px;
+  width: 40px;
+  transform: rotate(45deg);
 }
+.arrowparagraase {
+  text-transform: uppercase;
+  color: gray;
+  margin-top: 5px;
+}
+
 .blogcarder {
   padding-top: 1vw;
-  padding-left: 0.3vw;
-  padding-bottom: 1vw;
+  padding-bottom: 0.7vw;
   display: flex;
   gap: 15px;
   align-items: center;
 }
 .card1bloger {
-  width: 30.1vw;
+  width: 32vw;
   height: 85vh;
   border-radius: 12px;
   background-color: #1a1a1a;
@@ -161,55 +167,12 @@
     font-size: 6.5vw;
   }
   .divdierblogcontainer {
-    flex-direction: column;
-  }
-  .leftBlogContainer {
-    width: 86vw;
-    margin-top: 1vw;
-    border-radius: 6px;
-    height: 30vh;
-  }
-  .leftBlogContainer img {
-    border-radius: 6px;
-  }
-  .rightBlogContainer {
-    width: 86.3vw;
-  }
-  .rightBlogContainer h1 {
-    color: white;
-    font-size: 5vw;
-  }
-  .buttonerbloger1 {
-    font-size: 1.5vw !important;
-  }
-  .larurablogpara p {
-    color: rgb(169, 169, 169);
-    font-size: 3vw;
-  }
-  .lastdiverbloger :nth-child(1) img {
-    width: 8vw;
-  }
-  .lastdiverbloger {
-    flex-direction: column;
-    align-items: start;
-  }
-  .lastdiverbloger :nth-child(1) p {
-    font-size: 2.6vw;
-  }
-  .seveef {
-    font-size: 4.5vw;
-  }
-  .fdgd {
-    color: #898989 !important   ;
-    font-size: 2v3vw;
-    padding-top: 2vw !important;
-  }
-  .rightBlogContainer {
-    height: 45vh;
+    display: none;
   }
   .blogcarder {
     flex-direction: column;
     margin-top: 2vw;
+    
   }
   .card1bloger {
     width: 85.1vw;
@@ -226,11 +189,12 @@
     font-size: 2vw;
   }
   .arrowavdsav {
-    width: 7vw;
+    width: 10w;
+    height: 4vh;
     margin-left: 1vw;
   }
   .readfullerbloer {
     font-size: 3vw;
-    padding-top: 3vw;
+    padding-top: 1vw;
   }
 }
