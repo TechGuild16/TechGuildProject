@@ -19,23 +19,27 @@
     
 }
 .aboutmarginfix{
+    display:flex;
+    justify-content: center;
     height:25vw;
+    width:30.6vw;
     border-radius:14px;
-    padding:20px; 
+    padding:0 16px;
+    
 }
 .about-header-cards{
     display:flex;
     justify-content:center;
     align-items:center;
-    width:13vw;
+    width:13.8vw;
     height:18vh;
     border-radius:14px;
-    margin-top:10px;
-    
+    margin-top:10px; 
 }
 .about-know-more{
     font-size:15px;
     margin-top:8px;
+    margin-bottom:20px;
 }
 .about-header-box h1{
     font-size:3.021vw;
@@ -58,9 +62,13 @@
         border-radius:50px;
     }
     .aboutmarginfix{
-        height:85vw;
+        display:flex;
+        justify-content: center;
+        height:80vw;
+        width:100%;
         border-radius:14px;
-        padding:0px 12px;
+        padding:0 16px;
+        
     }
     .about-header-cards{
         display:flex;

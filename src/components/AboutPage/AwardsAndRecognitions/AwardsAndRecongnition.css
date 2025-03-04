@@ -2,11 +2,28 @@
     margin-left:0px;
     width:93.5vw
 }
-
+.award-icons{
+    width:4vw;
+}
+.award-header{
+    font-size:1.3vw;
+}
+.award-para{
+    font-size:1vw;
+}
 @media screen and (max-width: 768px){
-   
-    .about-awards-member{
+   .about-awards-member{
         margin-left:0px;
         width:86vw  
+    }
+    .award-icons{
+        width:12vw;
+        margin-bottom: 10px;
+    }
+    .award-header{
+        font-size:4vw;
+    }
+    .award-para{
+        font-size:4vw;
     }
 }

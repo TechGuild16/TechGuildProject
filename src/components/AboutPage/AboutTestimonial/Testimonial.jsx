@@ -72,7 +72,7 @@ const Testimonial = () => {
     return (
         <>
             <div
-                className="p-3 py-2 pb-0 marginTop rounded testimonial-top"
+                className="p-1  pb-0 marginTop rounded testimonial-top"
                 style={{ border: "2px solid var(--navbarColor)" }}
             >
                 <div
@@ -97,13 +97,13 @@ const Testimonial = () => {
                                 >
                                     <div className="p-3">
                                         <h5
-                                            className="pt-3 fs-5"
+                                            className="pt-3 testimonial-title"
                                             style={{ color: "var(--textColor)" }}
                                         >
                                             {testimonial.title}
                                         </h5>
                                         <p
-                                            className="fs-6 pt-3"
+                                            className="pt-3 testimonial-description"
                                             style={{ color: "var(--paragraphText)" }}
                                         >
                                             {testimonial.description}

@@ -1,17 +1,20 @@
-/* .testimonial-top{
-   margin-top:4rem;
-}
-@media (max-width: 576px){
-    .testimonial-top{
-        margin-top:2rem;
-    } 
-} */
 .about-testimonial{
-  /* margin-left:6px; */
-  width:92.5vw
+  width:93.8vw !important;
+}
+.testimonial-title{
+  font-size:1.3vw;
+}
+.testimonial-description{
+  font-size:1vw;
 }
 @media screen and (max-width: 768px){
   .about-testimonial{
-      width:82vw  
+      width:88vw !important; 
   }
+  .testimonial-title{
+    font-size:4vw;
+}
+.testimonial-description{
+    font-size:4vw;
+}
 }

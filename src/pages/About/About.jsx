@@ -16,12 +16,12 @@ const About = () => {
       <div className="container-fluid mt-3 about-page-padding">
            <AboutHeader/>
            <OurTeam/>
-           <OurTeamMember/>
-           <MarketingDepartment/>
-           <OurAchievment/>
-           <AwardsAndRecongnition/>
-           <Testimonial/>
-           < FAndQ/>
+           <OurTeamMember/> 
+            <MarketingDepartment/>
+            <OurAchievment/>
+          <AwardsAndRecongnition/>
+            <Testimonial/>
+           < FAndQ/>     
       </div>
     </>
   );

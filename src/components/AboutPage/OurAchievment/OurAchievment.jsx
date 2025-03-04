@@ -46,45 +46,42 @@ const OurAchievment = () => {
   return (
     <>
       <div
-        className="p-1 p-md-3 marginTop rounded"
+        className="p-1 p-md-1 marginTop rounded"
         style={{ border: "2px solid var(--navbarColor)" }}
       >
         <div
           className="d-flex justify-content-between align-items-center p-4 rounded about-acheivement-member"
           style={{ backgroundColor: "var(--navbarColor)" }}
         >
-          <h3 style={{ color: "var(--textColor)" }}>
-            OUR ACHEIVMENT
+         <h3 className="about-title">
+            OUR ACHEIVMENTS
           </h3>
         </div>
         <div className="row">
           {acheivements
             .slice(0, showMore || !isMobile ? acheivements.length : 3)
             .map((acheivement, index) => (
-              <div key={index} className="col-md-3 mt-1 mt-md-2 mb-2 mb-md-2">
+              <div key={index} className="col-md-3 mt-1 mt-md-2 mb-2 mb-md-0">
                 <div
-                  className="mt-1 mt-md-2 rounded h-100 our-acheivement-box"
+                  className="mt-1 mt-md-2 rounded our-acheivement-box"
                   style={{ backgroundColor: "var(--navbarColor)" }}
                 >
                   <p
-                    className="p-3 mb-2"
+                    className="p-2 mb-2"
                     style={{ color: "var(--navbarLinksColor)" }}
                   >
                     {acheivement.month}
                   </p>
                   <div
                     className="d-flex p-4 justify-content-center align-items-center mb-2"
-                    style={{
-
-                      backgroundColor: "var(--btnBackground",
-                    }}
+                    style={{backgroundColor: "var(--btnBackground"}}
                   >
-                    <h5 style={{ color: "var(--textColor)" }}>
+                    <h5 className='ourAchievment-header' style={{ color: "var(--textColor)" }}>
                       {acheivement.header}
                     </h5>
                   </div>
-                  <p
-                    className="p-4"
+                  <p 
+                    className="p-4 ourAchievment-para"
                     style={{ color: "var(--paragraphText)" }}
                   >
                     {acheivement.para}

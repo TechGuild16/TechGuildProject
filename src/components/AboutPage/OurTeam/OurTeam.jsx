@@ -63,17 +63,17 @@ const OurTeam = () => {
   return (
     <>
       <div
-        className="p-1 p-md-2 marginTop rounded"
+        className="marginTop rounded"
         style={{ border: "2px solid var(--navbarColor)" }}
       >
         <div
-          className="d-flex justify-content-between align-items-center p-4 mt-1 rounded about-team-member"
+          className="d-flex justify-content-between align-items-center p-4 mt-1 rounded about-team-member "
           style={{ backgroundColor: "var(--navbarColor)" }}
         >
-          <h3 style={{ color: "var(--textColor)" }}>
-            MEET THE BRILLIANT MINDS BEHIND TECHGUID
+          <h3 className="about-title">
+            MEET THE BRILLIANT MINDS BEHIND TECHGUILD
           </h3>
-          <div className="d-none d-md-flex align-items-center gap-3">
+          <div className="d-none d-md-flex align-items-center gap-2">
             <img className="mb-2" src={serviceArrow} alt="" />
             <p style={{ color: "var(--textColor)" }}>ALL MEMBERS</p>
           </div>
@@ -93,13 +93,10 @@ const OurTeam = () => {
                       textAlign: "center",
                     }}
                   >
-                    <h5
-                      className="mt-2"
-                      style={{ color: "var(--servicesText)" }}
-                    >
+                    <h5 className="mt-2 about-members-name">
                       {member.name}
                     </h5>
-                    <p style={{ color: "var(--paragraphText)" }}>
+                    <p className='about-members-post' style={{ color: "var(--paragraphText)" }}>
                       {member.post}
                     </p>
                     <div className="text-center">
@@ -111,17 +108,16 @@ const OurTeam = () => {
                     </div>
 
 
-                    <div className="d-flex justify-content-center gap-3 mt-3">
+                    <div className="d-flex justify-content-center gap-2 mt-3">
                       <span className="">
-                        <img  style={{width:"3.5vw"}} src={member.linkedIn} alt="LinkedIn" />
+                        <img src={member.linkedIn} alt="LinkedIn" className='social-icon-img' />
                       </span>
                       <span className="">
-                        <img  style={{width:"3.5vw"}} src={member.github} alt="Github" />
+                        <img src={member.github} alt="Github" className='social-icon-img' />
                       </span>
                       <span className="">
-                        <img  style={{width:"3.5vw"}} src={member.insta} alt="Twitter" />
+                        <img src={member.insta} alt="instagram" className='social-icon-img' />
                       </span>
-
                     </div>
                   </div>
                 </div>

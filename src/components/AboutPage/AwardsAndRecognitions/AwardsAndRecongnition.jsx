@@ -59,8 +59,8 @@ const AwardsAndRecongnition = () => {
             className="d-flex justify-content-between align-items-center p-4 mt-0 mb-3 rounded about-awards-member"
             style={{ backgroundColor: "var(--navbarColor)" }}
           >
-            <h3 style={{ color: "var(--textColor)" }}>
-              AWARDS AND RECOGNITIONS
+            <h3 className="about-title">
+              AWARDS & RECOGNITIONS
             </h3>
           </div>
           <div className="row">
@@ -72,7 +72,7 @@ const AwardsAndRecongnition = () => {
                     className="rounded"
                     style={{ backgroundColor: "var(--navbarColor)" }}
                   >
-                    <div className="d-flex justify-content-between  align-items-center p-2">
+                    <div className="d-flex justify-content-between align-items-center p-4">
                       <p
                         className="p-2 rounded-pill"
                         style={{
@@ -82,21 +82,18 @@ const AwardsAndRecongnition = () => {
                       >
                         {award.dates}
                       </p>
-                      <img
-                     className="w-25"
-                    
-                        style={{ width: "4vw" }}
+                      <img className='award-icons'
                         src={award.icon}
                         alt=""
                       />
                     </div>
-                    <div className="d-flex p-2 justify-content-center align-items-center">
-                      <h5 style={{ color: "var(--textColor)" }}>
+                    <div className="d-flex p-2 px-4">
+                      <h5 className='award-header' style={{ color: "var(--textColor)" }}>
                         {award.header}
                       </h5>
                     </div>
                     <p
-                      className="p-4"
+                      className="p-4 award-para"
                       style={{ color: "var(--paragraphText)" }}
                     >
                       {award.para}
@@ -126,4 +123,4 @@ const AwardsAndRecongnition = () => {
   )
 }
 
-export default AwardsAndRecongnition
+export default AwardsAndRecongnition;

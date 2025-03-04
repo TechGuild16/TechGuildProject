@@ -86,7 +86,7 @@ const AboutHeader = () => {
 
           <div className="col-12 col-md-4 ">
             <div
-              className=" pt-3 p-md-3 mt-3 aboutmarginfix"
+              className=" pt-3 pt-md-2 mt-3 aboutmarginfix"
               style={{ backgroundColor: "var(--navbarColor"}}
             >
              <div className="row">
