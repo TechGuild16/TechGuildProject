@@ -47,7 +47,7 @@ const JobListings = () => {
 
   return (
     <>
-      <div className="container-fluid mt-3 job-main-div">
+      <div className="container-fluid job-main-div">
         <div
           className="p-md-2 mt-md-3 rounded"
           style={{ border: "2px solid var(--navbarColor)" }}

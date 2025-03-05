@@ -75,7 +75,7 @@ const HowToApply = () => {
               .map((acheivement, index) => (
                 <div key={index} className="col-md-3 mt-2">
                   <div
-                    className="mt-1 mb-5 rounded w-100 h-100 position-relative card-div" // Added position-relative
+                    className="mt-1 mb-4 rounded w-100 h-100 position-relative card-div" // Added position-relative
                   >
                     <h6
                       className="p-1 mb-2"

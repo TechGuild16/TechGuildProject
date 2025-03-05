@@ -10,9 +10,10 @@
   --timeLine: #b3b3b2;
 }
 .job-main-div {
-  padding-top: 70px;
+  padding-top: 30px;
   padding-left: 14px;
   padding-right: 15px;
+  padding-bottom: 30px;
   border-radius: 10px;
   width: 97%;
   margin: auto;
